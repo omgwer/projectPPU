@@ -1,0 +1,59 @@
+.course-information {
+  background-image: url("../img/body/title-course/title-course__background.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  height: 820px;
+
+  &__container {
+    max-width: 1337px;
+    margin: 0 auto;
+    padding-top: 83px;
+    color: #ffffff;
+  }
+
+  &__start-time {
+    font: 700 32px/34px 'Proxima Nova', sans-serif;
+    margin-bottom: 15px;
+  }
+
+  &__title {
+    font: 900 60px/64px 'Proxima Nova', sans-serif;
+    max-width: 875px;
+    margin-bottom: 15px;
+  }
+
+  &__subtitle {
+    font: 400 22px/36px 'Proxima Nova', sans-serif;
+    max-width: 717px;
+    margin-bottom: 35px;
+  }
+
+  &__button {
+    border-radius: 30px;
+    background-color: #f75968;
+    font: 600 26px/34px 'Proxima Nova', sans-serif;
+    padding: 18px 71px;
+  }
+
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 95px;
+  }
+
+  &__content {
+    max-width: 316px;
+  }
+
+  &__tags {
+    font: 700 32px/34px 'Proxima Nova', sans-serif;
+  }
+
+  &__tag {
+    font: 400 22px/36px 'Proxima Nova', sans-serif;
+  }
+
+}
+
+

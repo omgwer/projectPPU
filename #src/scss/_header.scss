@@ -1,24 +1,23 @@
 .header {
-  max-width: 1451px;
+  max-width: 1242px;
   display: flex;
   justify-content: space-between;
-  padding-top: 30px;
-  margin-left: 348px;
+  margin: 30px auto;
+  align-items: center;
 
   &__logo {
     margin-right: 30px;
+    align-self: flex-start;
   }
 
   &__nav-menu {
     display: flex;
     justify-content: space-between;
-    width: 989px;
-    align-items: center;
+    width: 808px;
   }
 
   &__link {
     font: 600 22px/48px 'Proxima Nova', sans-serif;
-    vertical-align: center;
     text-decoration: none;
     color: #383838;
   }
