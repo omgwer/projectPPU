@@ -72,22 +72,22 @@
 .header__link {
   font: 600 22px/48px 'Proxima Nova', sans-serif;
   text-decoration: none;
-  color: #383838;
+  color: #484848;
 }
 
 .course-information {
-  background-image: url("../img/body/title-course/title-course__background.png");
+  background-image: url("../img/body/course-information/title-course__background-two.jpg");
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-position: center;
   height: 820px;
+  margin: 0 auto;
 }
 
 .course-information__container {
   max-width: 1337px;
   margin: 0 auto;
-  padding-top: 83px;
   color: #ffffff;
+  padding: 83px 0 0 88px;
 }
 
 .course-information__start-time {
@@ -134,4 +134,100 @@
 
 .course-information__tag {
   font: 400 22px/36px 'Proxima Nova', sans-serif;
+}
+
+.course-advantages {
+  max-width: 1260px;
+  margin: 55px auto 0;
+}
+
+.course-advantages__title {
+  font: 700 40px/44px 'Proxima Nova', sans-serif;
+  color: #484848;
+  margin-bottom: 58px;
+}
+
+.course-advantages__list {
+  font: 400 32px/40px 'Proxima Nova', sans-serif;
+  color: #484848;
+  list-style-type: none;
+  max-width: 1010px;
+}
+
+.course-advantages__list-item {
+  margin-bottom: 41px;
+}
+
+.course-advantages__check-img {
+  float: left;
+  margin-right: 20px;
+}
+
+.about-tutor {
+  width: 1260px;
+  margin: 109px auto 0;
+  color: #484848;
+}
+
+.about-tutor__title {
+  font: 700 40px/44px 'Proxima Nova', sans-serif;
+  margin-bottom: 22px;
+}
+
+.about-tutor__subtitle {
+  font: 400 22px/34px 'Proxima Nova', sans-serif;
+  max-width: 873px;
+}
+
+.about-tutor__subtitle:nth-child(2) {
+  margin-bottom: 24px;
+}
+
+.about-tutor__school {
+  margin-top: 95px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-tutor__school-title {
+  font: 400 22px/34px 'Proxima Nova', sans-serif;
+  max-width: 675px;
+}
+
+.about-tutor__school-button {
+  font: 600 26px/34px 'Proxima Nova', sans-serif;
+  color: #f85a69;
+  border-radius: 30px;
+  border: 2px solid #f85a69;
+  padding: 17px 52px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.about-tutor__quote {
+  margin-top: 41px;
+  font: 400 italic 32px/34px 'EB Garamond', sans-serif;
+  color: #6792ff;
+  text-align: right;
+}
+
+.about-tutor__site {
+  margin-top: 41px;
+  font: 600 22px/34px 'Proxima Nova', sans-serif;
+  text-align: right;
+}
+
+.about-tutor__link {
+  text-decoration: none;
+}
+
+.about-tutor__link:visited {
+  color: #6792ff;
 }

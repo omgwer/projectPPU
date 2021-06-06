@@ -1,15 +1,15 @@
 .course-information {
-  background-image: url("../img/body/title-course/title-course__background.png");
+  background-image: url("../img/body/course-information/title-course__background-two.jpg");
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-position: center;
   height: 820px;
+  margin: 0 auto;
 
   &__container {
     max-width: 1337px;
     margin: 0 auto;
-    padding-top: 83px;
     color: #ffffff;
+    padding: 83px 0 0 88px;
   }
 
   &__start-time {
@@ -53,7 +53,95 @@
   &__tag {
     font: 400 22px/36px 'Proxima Nova', sans-serif;
   }
+}
 
+.course-advantages {
+  max-width: 1260px;
+  margin: 55px auto 0;
+
+  &__title {
+    font: 700 40px/44px 'Proxima Nova', sans-serif;
+    color: #484848;
+    margin-bottom: 58px;
+  }
+
+  &__list {
+    font: 400 32px/40px 'Proxima Nova', sans-serif;
+    color: #484848;
+    list-style-type: none;
+    max-width: 1010px;
+  }
+
+  &__list-item {
+    margin-bottom: 41px;
+  }
+
+  &__check-img {
+    float: left;
+    margin-right: 20px;
+  }
+}
+
+.about-tutor {
+  width: 1260px;
+  margin: 109px auto 0;
+  color: #484848;
+
+  &__title {
+    font: 700 40px/44px 'Proxima Nova', sans-serif;
+    margin-bottom: 22px;
+  }
+
+  &__subtitle {
+    font: 400 22px/34px 'Proxima Nova', sans-serif;
+    max-width: 873px;
+
+    &:nth-child(2){
+      margin-bottom: 24px;
+    }
+  }
+
+  &__school {
+    margin-top: 95px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__school-title {
+    font: 400 22px/34px 'Proxima Nova', sans-serif;
+    max-width: 675px;
+  }
+
+  &__school-button {
+    font: 600 26px/34px 'Proxima Nova', sans-serif;
+    color: #f85a69;
+    border-radius: 30px;
+    border: 2px solid #f85a69;
+    padding: 17px 52px;
+    box-sizing: border-box;
+  }
+
+  &__quote {
+    margin-top: 41px;
+    font: 400 italic 32px/34px 'EB Garamond', sans-serif;
+    color: #6792ff;
+    text-align: right;
+  }
+
+  &__site {
+    margin-top: 41px;
+    font: 600 22px/34px 'Proxima Nova', sans-serif;
+    text-align: right;
+  }
+
+  &__link {
+    text-decoration: none;
+
+    &:visited {
+      color: #6792ff;
+    }
+  }
 }
 
 
