@@ -75,6 +75,19 @@
   color: #484848;
 }
 
+.quote {
+  font: 400 italic 32px/34px 'EB Garamond', sans-serif;
+  color: #6792ff;
+}
+
+.title {
+  font: 700 40px/44px 'Proxima Nova', sans-serif;
+}
+
+.subtitle {
+  font: 400 22px/34px 'Proxima Nova', sans-serif;
+}
+
 .course-information {
   background-image: url("../img/body/course-information/title-course__background-two.jpg");
   background-repeat: no-repeat;
@@ -170,12 +183,10 @@
 }
 
 .about-tutor__title {
-  font: 700 40px/44px 'Proxima Nova', sans-serif;
   margin-bottom: 22px;
 }
 
 .about-tutor__subtitle {
-  font: 400 22px/34px 'Proxima Nova', sans-serif;
   max-width: 873px;
 }
 
@@ -197,7 +208,6 @@
 }
 
 .about-tutor__school-title {
-  font: 400 22px/34px 'Proxima Nova', sans-serif;
   max-width: 675px;
 }
 
@@ -213,8 +223,6 @@
 
 .about-tutor__quote {
   margin-top: 41px;
-  font: 400 italic 32px/34px 'EB Garamond', sans-serif;
-  color: #6792ff;
   text-align: right;
 }
 
@@ -230,4 +238,23 @@
 
 .about-tutor__link:visited {
   color: #6792ff;
+}
+
+.course-questions {
+  width: 1260px;
+  color: #484848;
+  margin: 79px auto 0;
+}
+
+.course-questions__title {
+  margin-bottom: 11px;
+}
+
+.course-questions__subtitle {
+  max-width: 873px;
+}
+
+.course-questions__quote {
+  text-align: right;
+  margin-top: 41px;
 }
