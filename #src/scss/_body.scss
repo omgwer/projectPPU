@@ -61,6 +61,7 @@
 
   &__tags {
     font: 700 32px/34px 'Proxima Nova', sans-serif;
+    margin-bottom: 10px;
   }
 
   &__tag {
@@ -155,7 +156,7 @@
 .course-questions {
   width: 1260px;
   color: #484848;
-  margin: 79px auto 0;
+  margin: 79px auto 141px;
 
   &__title {
     margin-bottom: 11px;
@@ -170,3 +171,51 @@
     margin-top: 41px;
   }
 }
+
+.people-target {
+  padding-top: 54px;
+  padding-bottom: 74px;
+
+  &__block {
+    max-width: 1260px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    margin-bottom: 48px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(460px, 620px));
+    grid-template-rows: repeat(2, minmax(280px,360px));
+    grid-gap: 30px 20px;
+
+  }
+
+  &__list-item {
+    list-style-type: none;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px 0 rgba(0,0,0, 0.15);
+    padding: 32px 0 0 60px;
+    box-sizing: border-box;
+
+    &:first-child,
+    &:nth-child(2){
+      .subtitle {
+        max-width: 535px;
+      }
+    }
+  }
+
+  &__heading {
+    font: 700 30px/34px 'Proxima Nova', sans-serif;
+    margin: 21px 0 24px;
+  }
+
+  &__subtitle {
+    max-width: 520px;
+  }
+}
+

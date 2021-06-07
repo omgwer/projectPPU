@@ -39,8 +39,16 @@
   margin: -1px;
 }
 
+.background-color_whiteblue {
+  background-color: #f9faff;
+}
+
+.background-color__darkblue {
+  background-color: #0A315F;
+}
+
 .header {
-  max-width: 1242px;
+  max-width: 1260px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -143,6 +151,7 @@
 
 .course-information__tags {
   font: 700 32px/34px 'Proxima Nova', sans-serif;
+  margin-bottom: 10px;
 }
 
 .course-information__tag {
@@ -243,7 +252,7 @@
 .course-questions {
   width: 1260px;
   color: #484848;
-  margin: 79px auto 0;
+  margin: 79px auto 141px;
 }
 
 .course-questions__title {
@@ -257,4 +266,50 @@
 .course-questions__quote {
   text-align: right;
   margin-top: 41px;
+}
+
+.people-target {
+  padding-top: 54px;
+  padding-bottom: 74px;
+}
+
+.people-target__block {
+  max-width: 1260px;
+  margin: 0 auto;
+}
+
+.people-target__title {
+  margin-bottom: 48px;
+}
+
+.people-target__list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(460px, 620px));
+  grid-template-rows: repeat(2, minmax(280px, 360px));
+  grid-gap: 30px 20px;
+}
+
+.people-target__list-item {
+  list-style-type: none;
+  background-color: #ffffff;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.15);
+  padding: 32px 0 0 60px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.people-target__list-item:first-child .subtitle,
+.people-target__list-item:nth-child(2) .subtitle {
+  max-width: 535px;
+}
+
+.people-target__heading {
+  font: 700 30px/34px 'Proxima Nova', sans-serif;
+  margin: 21px 0 24px;
+}
+
+.people-target__subtitle {
+  max-width: 520px;
 }

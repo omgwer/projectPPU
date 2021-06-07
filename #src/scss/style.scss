@@ -39,6 +39,15 @@
   margin: -1px;
 }
 
+.background-color {
+  &_whiteblue {
+    background-color: #f9faff;
+  }
+
+  &__darkblue {
+    background-color: #0A315F;
+  }
+}
 
 @@include('_header.scss')
 @@include('_body.scss')
