@@ -313,3 +313,39 @@
 .people-target__subtitle {
   max-width: 520px;
 }
+
+.about-authors {
+  color: #ffffff;
+  padding: 83px 0 0 330px;
+}
+
+.about-authors__title {
+  font: 700 36px/44px 'Proxima Nova', sans-serif;
+  margin: 50px 0 65px;
+}
+
+.about-authors__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 1490px;
+}
+
+.about-authors__list-item {
+  max-width: 343px;
+  list-style-type: none;
+}
+
+.about-authors__avatar {
+  margin-bottom: 71px;
+}
+
+.about-authors__name {
+  font: 600 32px/34px 'Proxima Nova', sans-serif;
+  margin-bottom: 11px;
+}

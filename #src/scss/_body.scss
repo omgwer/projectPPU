@@ -219,3 +219,35 @@
   }
 }
 
+.about-authors {
+  color: #ffffff;
+  padding: 83px 0 0 330px;
+
+  &__title {
+    font: 700 36px/44px 'Proxima Nova', sans-serif;
+    margin: 50px 0 65px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1490px;
+  }
+
+  &__list-item {
+    max-width: 343px;
+    list-style-type: none;
+  }
+
+  &__avatar {
+    margin-bottom: 71px;
+  }
+
+  &__name {
+    font: 600 32px/34px 'Proxima Nova', sans-serif;
+    margin-bottom: 11px;
+  }
+
+
+}
