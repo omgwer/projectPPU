@@ -262,3 +262,43 @@
   }
 }
 
+.discipline-block {
+  padding: 112px 0 94px 330px;
+  color: #484848;
+
+  &__title {
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    max-width: 872px;
+    margin-left: 220px;
+  }
+
+  &__list-item {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__number {
+    align-self: flex-start;
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  &__heading {
+    color: #f85a69;
+    font: 700 30px/30px 'Proxima Nova', sans-serif;
+    margin-bottom: 5px;
+  }
+
+  &__subtitle {
+    max-width: 571px;
+  }
+}

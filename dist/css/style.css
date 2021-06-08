@@ -361,3 +361,54 @@
 .about-authors__change_margin {
   margin-bottom: 30px;
 }
+
+.discipline-block {
+  padding: 112px 0 94px 330px;
+  color: #484848;
+}
+
+.discipline-block__title {
+  margin-bottom: 50px;
+}
+
+.discipline-block__list {
+  max-width: 872px;
+  margin-left: 220px;
+}
+
+.discipline-block__list-item {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.discipline-block__number {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.discipline-block__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 10px;
+}
+
+.discipline-block__heading {
+  color: #f85a69;
+  font: 700 30px/30px 'Proxima Nova', sans-serif;
+  margin-bottom: 5px;
+}
+
+.discipline-block__subtitle {
+  max-width: 571px;
+}
