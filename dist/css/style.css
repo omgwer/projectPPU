@@ -328,6 +328,10 @@
   margin: 77px 0 54px;
 }
 
+.about-authors__subtitle {
+  max-width: 313px;
+}
+
 .about-authors__list {
   display: -webkit-box;
   display: -ms-flexbox;

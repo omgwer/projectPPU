@@ -232,6 +232,10 @@
     }
   }
 
+  &__subtitle {
+    max-width: 313px;
+  }
+
   &__list {
     display: flex;
     justify-content: space-between;
