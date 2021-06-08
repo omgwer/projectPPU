@@ -455,3 +455,29 @@
   max-width: 450px;
   margin: 0 auto;
 }
+
+.teachers-feedback {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 41px 0 207px;
+}
+
+.teachers-feedback__title {
+  margin-bottom: 28px;
+}
+
+.teachers-feedback__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+}
+
+.teachers-feedback__block {
+  border-radius: 10px;
+  -webkit-box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
+}

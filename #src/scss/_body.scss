@@ -343,3 +343,24 @@
     margin: 0 auto;
   }
 }
+
+.teachers-feedback {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 41px 0 207px;
+
+  &__title {
+    margin-bottom: 28px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &__block {
+    border-radius: 10px;
+    box-shadow: 0 4px 20px 0 rgba(0,0,0, 0.1);
+  }
+}
