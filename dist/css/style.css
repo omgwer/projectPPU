@@ -315,13 +315,17 @@
 }
 
 .about-authors {
-  color: #ffffff;
-  padding: 83px 0 0 330px;
+  color: #484848;
+  padding: 33px 0 0 330px;
 }
 
 .about-authors__title {
   font: 700 36px/44px 'Proxima Nova', sans-serif;
   margin: 50px 0 65px;
+}
+
+.about-authors__title:nth-child(3) {
+  margin: 77px 0 54px;
 }
 
 .about-authors__list {
@@ -342,10 +346,14 @@
 }
 
 .about-authors__avatar {
-  margin-bottom: 71px;
+  margin-bottom: 63px;
 }
 
 .about-authors__name {
   font: 600 32px/34px 'Proxima Nova', sans-serif;
   margin-bottom: 11px;
+}
+
+.about-authors__change_margin {
+  margin-bottom: 30px;
 }
