@@ -412,3 +412,46 @@
 .discipline-block__subtitle {
   max-width: 571px;
 }
+
+.methodological-base {
+  padding-bottom: 127px;
+}
+
+.methodological-base__container {
+  max-width: 1260px;
+  margin: 0 auto;
+}
+
+.methodological-base__subtitle {
+  margin: 10px 0 49px;
+}
+
+.methodological-base__list {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 620px 620px;
+  grid-template-rows: repeat(5, 160px);
+  grid-gap: 21px 25px;
+}
+
+.methodological-base__list-item {
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 20px;
+  border: 1px solid #edebeb;
+  -webkit-box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  padding: 28px 0 54px;
+}
+
+.methodological-base__author {
+  font: 700 30px/34px 'Proxima Nova', sans-serif;
+  margin-bottom: 13px;
+}
+
+.methodological-base__book {
+  max-width: 450px;
+  margin: 0 auto;
+}
