@@ -460,6 +460,7 @@
   max-width: 1260px;
   margin: 0 auto;
   padding: 41px 0 207px;
+  color: #242424;
 }
 
 .teachers-feedback__title {
@@ -480,4 +481,85 @@
   border-radius: 10px;
   -webkit-box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
+  padding: 30px 30px 20px;
+}
+
+.teachers-feedback__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 16px;
+}
+
+.teachers-feedback__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.teachers-feedback__subtitle {
+  font: 400 20px/34px 'Proxima Nova', sans-serif;
+}
+
+.teachers-feedback__name {
+  font: 600 22px/34px 'Proxima Nova', sans-serif;
+  max-width: 298px;
+}
+
+.session-dates {
+  max-width: 1260px;
+  margin: 0 auto;
+  color: #484848;
+  padding: 56px 0 85px;
+}
+
+.session-dates__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.session-dates__title {
+  margin-bottom: 43px;
+}
+
+.session-dates__list {
+  font: 400 30px/34px 'Proxima Nova', sans-serif;
+}
+
+.session-dates__list-item {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+.session-dates__diploma {
+  margin: 62px 0 68px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.session-dates__diploma-title {
+  font: 700 30px/46px 'Proxima Nova', sans-serif;
+  max-width: 335px;
+}
+
+.session-dates__subtitle {
+  max-width: 352px;
 }
