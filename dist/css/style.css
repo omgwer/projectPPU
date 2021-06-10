@@ -97,7 +97,7 @@
 }
 
 .course-information {
-  background-image: url("../img/body/course-information/title-course__background-three.jpg");
+  background-image: url("../img/container/course-information/title-course__background-three.jpg");
   background-repeat: no-repeat;
   background-position: center;
   height: 820px;
@@ -530,7 +530,7 @@
 }
 
 .session-dates__title {
-  margin-bottom: 43px;
+  margin: 15px 0 48px;
 }
 
 .session-dates__list {
@@ -539,7 +539,7 @@
 
 .session-dates__list-item {
   list-style-type: none;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .session-dates__diploma {
@@ -562,4 +562,159 @@
 
 .session-dates__subtitle {
   max-width: 352px;
+}
+
+.session-dates__header {
+  margin-bottom: 65px;
+}
+
+.session-dates__to-proceed {
+  max-width: 1129px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.session-dates__block-text {
+  max-width: 400px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.15);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  padding: 18px 11px 18px 18px;
+}
+
+.session-dates__text {
+  font: 400 20px/34px 'Proxima Nova', sans-serif;
+  width: 309px;
+}
+
+.session-dates__text-info {
+  font: 400 20px/34px 'Proxima Nova', sans-serif;
+}
+
+.session-dates__vertical-line {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-top: 9px;
+}
+
+.session-dates__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 18px;
+}
+
+.session-dates__text-list {
+  list-style-type: none;
+  max-width: 650px;
+}
+
+.session-dates__text-list:not(:last-child) {
+  margin-bottom: 54px;
+}
+
+.faq {
+  max-width: 1260px;
+  margin: 0 auto;
+  color: #484848;
+  padding-bottom: 100px;
+}
+
+.faq__title {
+  margin-bottom: 26px;
+}
+
+.faq__container {
+  display: grid;
+  grid-template-rows: repeat(4, minmax(80px, -webkit-max-content));
+  grid-template-rows: repeat(4, minmax(80px, max-content));
+  grid-template-columns: repeat(1, 620px);
+  grid-gap: 20px;
+}
+
+.faq__accordion {
+  color: #242424;
+  max-width: 620px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.faq__position {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.faq__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font: 700 22px/34px 'Proxima Nova', sans-serif;
+  background-color: #ffffff;
+  color: #444;
+  cursor: pointer;
+  padding: 23px 20px 23px 30px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 10px;
+}
+
+.faq__accordion_hide {
+  font: 400 20px/34px 'Proxima Nova', sans-serif;
+  padding: 0 35px 16px 30px;
+}
+
+.hidden {
+  display: none;
+  overflow: hidden;
+}
+
+.rotate {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.program-authors {
+  color: #484848;
 }

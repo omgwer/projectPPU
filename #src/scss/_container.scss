@@ -400,7 +400,7 @@
   }
 
   &__title {
-    margin-bottom: 43px;
+    margin: 15px 0 48px;
   }
 
   &__list {
@@ -409,7 +409,7 @@
 
   &__list-item {
     list-style-type: none;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
 
   &__diploma {
@@ -427,4 +427,124 @@
   &__subtitle {
     max-width: 352px;
   }
+
+  &__header {
+    margin-bottom: 65px;
+  }
+
+  &__to-proceed {
+    max-width: 1129px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__block-text {
+    max-width: 400px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px 0 rgba(0,0,0, 0.15);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 18px 11px 18px 18px;
+  }
+
+  &__text {
+    font: 400 20px/34px 'Proxima Nova', sans-serif;
+    width: 309px;
+  }
+
+  &__text-info {
+    font: 400 20px/34px 'Proxima Nova', sans-serif;
+  }
+
+  &__vertical-line {
+    align-self: flex-start;
+    margin-top: 9px;
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+  }
+
+  &__text-list {
+    list-style-type: none;
+    max-width: 650px;
+  }
+
+  &__text-list:not(:last-child) {
+    margin-bottom: 54px;
+  }
+}
+//
+.faq {
+  max-width: 1260px;
+  margin: 0 auto;
+  color: #484848;
+  padding-bottom: 100px;
+
+  &__title {
+    margin-bottom: 26px;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-rows: repeat(4, minmax(80px, max-content));
+    grid-template-columns: repeat(1, 620px);
+    grid-gap: 20px;
+  }
+
+  &__accordion {
+    color: #242424;
+    max-width: 620px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px 0 rgba(0,0,0, 0.1);
+    cursor: pointer;
+  }
+
+  &__position {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font: 700 22px/34px 'Proxima Nova', sans-serif;
+    background-color: #ffffff;
+    color: #444;
+    cursor: pointer;
+    padding: 23px 20px 23px 30px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    border-radius: 10px;
+  }
+
+  &__accordion_hide {
+    font: 400 20px/34px 'Proxima Nova', sans-serif;
+    padding: 0 35px 16px 30px;
+  }
+}
+
+.hidden {
+  display: none;
+  overflow: hidden;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+//
+.program-authors {
+  color: #484848;
 }
