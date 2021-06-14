@@ -545,6 +545,50 @@
   transform: rotate(180deg);
 }
 //
-.program-authors {
+.program-experts {
   color: #484848;
+  max-width: 1365px;
+  margin: 0 auto;
+  padding: 73px 0 91px;
+
+  &__title {
+    margin-left: 50px;
+    font: 700 40px/54px 'Proxima Nova', sans-serif;
+    max-width: 752px;
+    margin-bottom: 100px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1260px;
+    margin: 0 auto 31px;
+  }
+
+  &__subtitle {
+    font: 400 20px/30px 'Proxima Nova', sans-serif;
+    max-width: 220px;
+    text-align: center;
+    position: relative;
+    right: 60px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1365px;
+  }
+
+  &__text {
+    font: 400 20px/30px 'Proxima Nova', sans-serif;
+    text-align: center;
+    display: block;
+  }
+
+  &__list-item img {
+    display: block;
+    margin: 0 auto 16px;
+  }
 }
