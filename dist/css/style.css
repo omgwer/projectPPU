@@ -103,9 +103,7 @@
 .course-information {
   background-image: url("../img/container/course-information/title-course__background-three.jpg");
   background-repeat: no-repeat;
-  background-position: center;
   height: 820px;
-  margin: 0 auto;
 }
 
 .course-information__container {
