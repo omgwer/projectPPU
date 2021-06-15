@@ -55,6 +55,10 @@
 
   &__content {
     max-width: 316px;
+
+    &:last-child {
+      max-width: 350px;
+    }
   }
 
   &__tags {

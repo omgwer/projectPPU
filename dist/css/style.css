@@ -151,6 +151,10 @@
   max-width: 316px;
 }
 
+.course-information__content:last-child {
+  max-width: 350px;
+}
+
 .course-information__tags {
   font: 700 32px/34px 'Proxima Nova', sans-serif;
   margin-bottom: 10px;
