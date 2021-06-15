@@ -1,0 +1,79 @@
+@media screen and (max-width: 1024px) {
+  .header__link {
+    font-size: 18px;
+  }
+  .course-information__button {
+    font-size: 22px;
+    padding: 13px 60px;
+  }
+  .course-information__block {
+    margin-top: 50px;
+  }
+  .course-information__start-time {
+    font-size: 26px;
+  }
+  .course-information__title {
+    font-size: 46px;
+    line-height: 58px;
+  }
+  .course-information__subtitle {
+    font-size: 16px;
+  }
+  .course-information__tags {
+    font-size: 24px;
+  }
+  .course-information__tag {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .course-information {
+    background-position: 65%;
+    background-size: cover;
+  }
+  .course-information__container {
+    padding: 83px 54px 0 54px;
+  }
+  .course-information__block {
+    flex-wrap: wrap;
+  }
+  .course-information__content {
+    max-width: 186px;
+    margin-bottom: 22px;
+  }
+}
+@media screen and (max-width: 600px) {
+
+  .course-information__container {
+    padding: 30px 10px;
+  }
+
+  .course-information {
+    background-position: left;
+    background-size: cover;
+  }
+
+  .course-information__start-time {
+    font-size: 22px;
+  }
+
+  .course-information__title {
+    line-height: 32px;
+    font-size: 28px;
+  }
+
+  .course-information__subtitle {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .course-information__content {
+    max-width: 173px;
+    margin-bottom: 22px;
+  }
+  .course-information__tags {
+    font-size: 18px;
+  }
+  .course-information__tag {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}

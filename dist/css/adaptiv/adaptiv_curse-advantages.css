@@ -1,0 +1,45 @@
+
+@media screen and (max-width: 1300px) {
+  .course-advantages {
+    padding: 0 10px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .course-advantages__title {
+    font-size: 30px;
+  }
+  .course-advantages__list {
+    font-size: 24px;
+  }
+  .course-advantages {
+    margin: 40px 0 0;
+    padding: 0 40px;
+  }
+  .course-advantages__check-img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .course-advantages__title {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .course-advantages__list {
+    font-size: 12px;
+    line-height: 20px;
+
+  }
+  .course-advantages__list-item {
+    margin-bottom: 15px;
+  }
+  .course-advantages {
+    margin: 40px 0 0;
+    padding: 30px;
+  }
+  .course-advantages__check-img {
+    width: 30px;
+    height: 30px;
+  }
+}
