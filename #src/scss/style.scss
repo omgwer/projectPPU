@@ -44,10 +44,15 @@
     background-color: #f9faff;
   }
 
-  &__darkblue {
+  &_darkblue {
     background-color: #0A315F;
+  }
+
+  &_greenblue {
+    background-color: #087C96;
   }
 }
 
 @@include('_header.scss')
 @@include('_container.scss')
+@@include('_footer.scss')

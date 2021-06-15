@@ -88,6 +88,8 @@
 
   &__list-item {
     margin-bottom: 41px;
+    display: flex;
+    align-items: center;
   }
 
   &__check-img {
@@ -590,5 +592,125 @@
   &__list-item img {
     display: block;
     margin: 0 auto 16px;
+  }
+}
+
+.join-form {
+  padding: 68px 0 91px;
+
+  &__container {
+    max-width: 1260px;
+    margin: 0 auto;
+    color: #484848;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__price-form {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 18px 4px 25px 0 rgba(0,0,0, 0.15);
+    max-width: 620px;
+    padding: 84px 120px 118px 60px;
+    z-index: 1;
+  }
+
+  &__start-time {
+    font: 600 32px/34px 'Proxima Nova', sans-serif;
+    color: #feac31;
+    margin-bottom: 10px;
+  }
+
+  &__price-title {
+    margin-bottom: 35px;
+  }
+
+  &__price-month {
+    font: 900 60px/70px 'Proxima Nova', sans-serif;
+    color: #f85a69;
+    margin-bottom: 15px;
+
+    & span {
+      font: 600 32px/34px 'Proxima Nova', sans-serif;
+    }
+  }
+
+  &__price-full {
+    margin-bottom: 44px;
+
+    & span {
+      font: 600 32px/34px 'Proxima Nova', sans-serif;
+    }
+  }
+
+  &__check {
+    padding-top: 10px;
+  }
+
+  &__list-item {
+    font: 400 22px/34px 'Proxima Nova', sans-serif;
+    list-style-type: none;
+    display: flex;
+    max-width: 390px;
+    align-items: flex-start;
+    margin-bottom: 22px;
+    gap: 12px;
+  }
+
+  &__block {
+    max-width: 634px;
+    padding: 53px 51px 61px 137px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    position: relative;
+    right: 54px;
+  }
+
+  &__subtitle {
+    margin: 12px 0 23px;
+    max-width: 446px;
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    max-width: 420px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid #484848;
+    padding: 24px 0 24px 23px;
+
+    &::placeholder {
+      font: 400 22px/22px 'Proxima Nova', sans-serif;
+      color: #484848;
+    }
+
+    &:focus-visible {
+      outline: none;
+    }
+
+    &:focus::placeholder {
+      color: transparent;
+    }
+  }
+
+  &__description {
+    text-align: center;
+    max-width: 412px;
+    font: 400 20px/24px 'Proxima Nova', sans-serif;
+    margin-bottom: 35px;
+  }
+
+  &__button {
+    background-color: #f85a69;
+    border-radius: 30px;
+    color: #ffffff;
+    font: 600 22px/34px 'Proxima Nova', sans-serif;
+    border: none;
+    margin: 0 auto;
+    display: block;
+    padding: 18px 58px;
+    cursor: pointer;
   }
 }

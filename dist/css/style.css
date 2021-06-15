@@ -43,8 +43,12 @@
   background-color: #f9faff;
 }
 
-.background-color__darkblue {
+.background-color_darkblue {
   background-color: #0A315F;
+}
+
+.background-color_greenblue {
+  background-color: #087C96;
 }
 
 .header {
@@ -178,6 +182,12 @@
 
 .course-advantages__list-item {
   margin-bottom: 41px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .course-advantages__check-img {
@@ -770,4 +780,193 @@
 .program-experts__list-item img {
   display: block;
   margin: 0 auto 16px;
+}
+
+.join-form {
+  padding: 68px 0 91px;
+}
+
+.join-form__container {
+  max-width: 1260px;
+  margin: 0 auto;
+  color: #484848;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.join-form__price-form {
+  background-color: #ffffff;
+  border-radius: 10px;
+  -webkit-box-shadow: 18px 4px 25px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 18px 4px 25px 0 rgba(0, 0, 0, 0.15);
+  max-width: 620px;
+  padding: 84px 120px 118px 60px;
+  z-index: 1;
+}
+
+.join-form__start-time {
+  font: 600 32px/34px 'Proxima Nova', sans-serif;
+  color: #feac31;
+  margin-bottom: 10px;
+}
+
+.join-form__price-title {
+  margin-bottom: 35px;
+}
+
+.join-form__price-month {
+  font: 900 60px/70px 'Proxima Nova', sans-serif;
+  color: #f85a69;
+  margin-bottom: 15px;
+}
+
+.join-form__price-month span {
+  font: 600 32px/34px 'Proxima Nova', sans-serif;
+}
+
+.join-form__price-full {
+  margin-bottom: 44px;
+}
+
+.join-form__price-full span {
+  font: 600 32px/34px 'Proxima Nova', sans-serif;
+}
+
+.join-form__check {
+  padding-top: 10px;
+}
+
+.join-form__list-item {
+  font: 400 22px/34px 'Proxima Nova', sans-serif;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 390px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 22px;
+  gap: 12px;
+}
+
+.join-form__block {
+  max-width: 634px;
+  padding: 53px 51px 61px 137px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  position: relative;
+  right: 54px;
+}
+
+.join-form__subtitle {
+  margin: 12px 0 23px;
+  max-width: 446px;
+}
+
+.join-form__input {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  margin-bottom: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  border: 1px solid #484848;
+  padding: 24px 0 24px 23px;
+}
+
+.join-form__input::-webkit-input-placeholder {
+  font: 400 22px/22px 'Proxima Nova', sans-serif;
+  color: #484848;
+}
+
+.join-form__input::-moz-placeholder {
+  font: 400 22px/22px 'Proxima Nova', sans-serif;
+  color: #484848;
+}
+
+.join-form__input:-ms-input-placeholder {
+  font: 400 22px/22px 'Proxima Nova', sans-serif;
+  color: #484848;
+}
+
+.join-form__input::-ms-input-placeholder {
+  font: 400 22px/22px 'Proxima Nova', sans-serif;
+  color: #484848;
+}
+
+.join-form__input::placeholder {
+  font: 400 22px/22px 'Proxima Nova', sans-serif;
+  color: #484848;
+}
+
+.join-form__input:focus-visible {
+  outline: none;
+}
+
+.join-form__input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.join-form__input:focus::-moz-placeholder {
+  color: transparent;
+}
+
+.join-form__input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.join-form__input:focus::-ms-input-placeholder {
+  color: transparent;
+}
+
+.join-form__input:focus::placeholder {
+  color: transparent;
+}
+
+.join-form__description {
+  text-align: center;
+  max-width: 412px;
+  font: 400 20px/24px 'Proxima Nova', sans-serif;
+  margin-bottom: 35px;
+}
+
+.join-form__button {
+  background-color: #f85a69;
+  border-radius: 30px;
+  color: #ffffff;
+  font: 600 22px/34px 'Proxima Nova', sans-serif;
+  border: none;
+  margin: 0 auto;
+  display: block;
+  padding: 18px 58px;
+  cursor: pointer;
+}
+
+.footer {
+  padding: 18px 0 18px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.footer__link {
+  color: #ffffff;
+  text-decoration: none;
+  font: 600 22px/48px 'Proxima Nova', sans-serif;
+}
+
+.footer__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 508px;
+  margin: 0 auto;
 }
