@@ -52,14 +52,14 @@
 }
 
 .header {
-  max-width: 1260px;
+  max-width: 1458px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 30px auto;
+  margin: 30px 0 30px 330px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -78,13 +78,20 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 808px;
+  width: 1036px;
 }
 
 .header__link {
   font: 600 22px/48px 'Proxima Nova', sans-serif;
   text-decoration: none;
   color: #484848;
+}
+
+.button_red {
+  color: #ffffff;
+  border-radius: 30px;
+  padding: 1px 51px;
+  background-color: #f85a69;
 }
 
 .quote {

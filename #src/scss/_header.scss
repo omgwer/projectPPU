@@ -1,8 +1,8 @@
 .header {
-  max-width: 1260px;
+  max-width: 1458px;
   display: flex;
   justify-content: space-between;
-  margin: 30px auto;
+  margin: 30px 0 30px 330px;
   align-items: center;
 
   &__logo {
@@ -13,7 +13,7 @@
   &__nav-menu {
     display: flex;
     justify-content: space-between;
-    width: 808px;
+    width: 1036px;
   }
 
   &__link {
@@ -21,4 +21,11 @@
     text-decoration: none;
     color: #484848;
   }
+}
+
+.button_red {
+  color: #ffffff;
+  border-radius: 30px;
+  padding: 1px 51px;
+  background-color: #f85a69;
 }
