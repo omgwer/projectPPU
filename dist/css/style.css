@@ -104,6 +104,7 @@
   background-image: url("../img/container/course-information/title-course__background-three.jpg");
   background-repeat: no-repeat;
   height: 820px;
+  background-position: center;
 }
 
 .course-information__container {
