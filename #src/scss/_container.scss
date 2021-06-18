@@ -718,3 +718,36 @@
     cursor: pointer;
   }
 }
+
+.yandex-map {
+  position: relative;
+}
+
+.contacts {
+  border-radius: 20px;
+  box-shadow: 0 4px 25px 0 rgba(0,0,0, 0.15);
+  padding: 67px 195px 64px 98px;
+  max-width: 760px;
+  position: absolute;
+  z-index: 1;
+  background-color: #ffffff;
+  color: #232323;
+  top: 71px;
+  left: 283px;
+
+  &__subtitle {
+    margin: 42px 0 45px;
+    font: 700 32px/32px 'Proxima Nova', sans-serif;
+  }
+
+  &__description {
+    font: 400 22px/34px 'Proxima Nova', sans-serif;
+    max-width: 380px;
+    margin-bottom: 50px;
+  }
+
+  &__link {
+    text-decoration: none;
+    margin-right: 30px;
+  }
+}
