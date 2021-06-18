@@ -1,9 +1,21 @@
+.header-container {
+  position: fixed;
+  background-color: #ffffff;
+  width: 100%;
+  top: 0;
+  transition: top 0.3s;
+  z-index: 2;
+  box-shadow: 0 0 2px 0 #000000;
+}
+
 .header {
   max-width: 1458px;
   display: flex;
   justify-content: space-between;
   margin: 30px 0 30px 330px;
   align-items: center;
+
+
 
   &__logo {
     margin-right: 30px;

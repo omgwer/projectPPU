@@ -51,6 +51,19 @@
   background-color: #087C96;
 }
 
+.header-container {
+  position: fixed;
+  background-color: #ffffff;
+  width: 100%;
+  top: 0;
+  -webkit-transition: top 0.3s;
+  -o-transition: top 0.3s;
+  transition: top 0.3s;
+  z-index: 2;
+  -webkit-box-shadow: 0 0 2px 0 #000000;
+          box-shadow: 0 0 2px 0 #000000;
+}
+
 .header {
   max-width: 1458px;
   display: -webkit-box;
@@ -112,6 +125,7 @@
   background-repeat: no-repeat;
   height: 820px;
   background-position: center;
+  margin-top: 110px;
 }
 
 .course-information__container {
