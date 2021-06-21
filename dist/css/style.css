@@ -198,10 +198,10 @@
 }
 
 .course-advantages__list {
-  font: 400 32px/40px 'Proxima Nova', sans-serif;
+  font: 400 22px/40px 'Proxima Nova', sans-serif;
   color: #484848;
   list-style-type: none;
-  max-width: 1010px;
+  max-width: 760px;
 }
 
 .course-advantages__list-item {
@@ -251,7 +251,7 @@
 }
 
 .about-tutor__school-title {
-  max-width: 675px;
+  max-width: 932px;
 }
 
 .about-tutor__school-button {
@@ -294,7 +294,7 @@
 }
 
 .course-questions__subtitle {
-  max-width: 873px;
+  max-width: 1139px;
 }
 
 .course-questions__quote {
