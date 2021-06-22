@@ -1,0 +1,135 @@
+.slider {
+  position: relative;
+  max-width: 1488px;
+  margin: 0 auto;
+  color: #484848;
+  padding-bottom: 104px;
+
+  &__name {
+    font: 600 32px/34px 'Proxima Nova', sans-serif;
+    max-width: 300px;
+    margin: 21px auto 11px;
+  }
+
+  &__subtitle {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  &__avatar {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.slider__container {
+  overflow: hidden;
+}
+
+.slider__wrapper {
+  /*overflow: hidden;*/
+}
+
+.slider__items {
+  display: flex;
+  transition: transform 0.5s ease;
+  align-content: center;
+}
+
+.slider_disable-transition {
+  transition: none;
+}
+
+.slider__item {
+  flex: 0 0 33.3333333333%;
+  max-width: 33.3333333333%;
+  user-select: none;
+}
+
+/* кнопки влево и вправо */
+
+.slider__control {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 82px;
+  color: #fff;
+  text-align: center;
+  height: 50px;
+  transform: translateY(-50%);
+}
+
+.slider__control_hide {
+  display: none;
+}
+
+.slider__control[data-slide='prev'] {
+  left: -144px;
+}
+
+.slider__control[data-slide='next'] {
+  right: -114px;
+}
+
+.slider__control:hover,
+.slider__control:focus {
+  text-decoration: none;
+  outline: 0;
+}
+
+.slider__control::before {
+  content: '';
+  display: inline-block;
+  width: 82px;
+  height: 30px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.slider__control[data-slide='prev']::before {
+  background-image: url("../img/container/slider/arrow.svg");
+  transform: rotate(180deg);
+}
+
+.slider__control[data-slide='next']::before {
+  background-image: url("../img/container/slider/arrow.svg");
+}
+
+/* индикаторы */
+
+.slider__indicators {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  margin-right: 15%;
+  margin-left: 15%;
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.slider__indicators li {
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 30px;
+  height: 5px;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-clip: padding-box;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+
+.slider__indicators li.active {
+  background-color: rgba(255, 255, 255, 0.9);
+}

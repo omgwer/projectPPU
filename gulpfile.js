@@ -39,8 +39,6 @@ let {src,dest} = require('gulp'),
   uglify = require('gulp-uglify-es').default,
   imagemin = require('gulp-imagemin');
 
-
-
 function browserSync() {
   browsersync.init ({
     server:{

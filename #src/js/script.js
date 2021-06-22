@@ -43,3 +43,5 @@ function accordionList() {
     })
   });
 }
+
+@@include('slider.js');
