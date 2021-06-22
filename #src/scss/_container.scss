@@ -227,12 +227,12 @@
 
 .about-authors {
   color: #484848;
-  padding: 33px 0 138px 330px;
+  padding: 33px 0 138px;
 
   &__title {
     font: 700 36px/44px 'Proxima Nova', sans-serif;
     margin: 50px 0 65px;
-
+    padding-left: 330px;
     &:nth-child(3) {
       margin: 77px 0 54px;
     }
@@ -246,7 +246,8 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 1490px;
+    max-width: 1539px;
+    margin: 0 auto;
   }
 
   &__list-item {
@@ -403,14 +404,31 @@
   &__container {
     display: flex;
     justify-content: space-between;
+    max-width: 1323px;
+    margin: 0 auto;
+    color: #484848;
   }
 
   &__title {
-    margin: 15px 0 48px;
+    margin: 15px 0 74px 31px;
   }
 
   &__list {
     font: 400 30px/34px 'Proxima Nova', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    text-align: center;
+  }
+
+  &__items {
+    font: 400 30px/34px 'Proxima Nova', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    text-align: center;
+    max-width: 756px;
+    margin: 45px auto 0;
   }
 
   &__list-item {
@@ -419,10 +437,11 @@
   }
 
   &__diploma {
-    margin: 62px 0 68px;
+    margin-bottom: 68px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1260px;
   }
 
   &__diploma-title {
@@ -436,6 +455,7 @@
 
   &__header {
     margin-bottom: 65px;
+    max-width: 1260px;
   }
 
   &__to-proceed {
@@ -468,7 +488,7 @@
 
   &__vertical-line {
     align-self: flex-start;
-    margin-top: 9px;
+    margin-top: 12px;
   }
 
   &__box {
