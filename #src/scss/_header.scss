@@ -40,4 +40,10 @@
   border-radius: 30px;
   padding: 1px 51px;
   background-color: #f85a69;
+  transition: 0.3s ease;
+
+  &:hover {
+    background: #ff4e58;
+    box-shadow: 0 0 15px rgba(255, 78, 88, 0.4);
+  }
 }

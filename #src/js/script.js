@@ -2,6 +2,7 @@ window.addEventListener('load', evt => {
   headerSmoothHide();
   accordionList();
   setMenuScrollNavigation();
+  setScrollToStartPage();
 });
 // header scripts
 function headerSmoothHide() {
@@ -42,6 +43,28 @@ function accordionList() {
       animatedArrow.classList.toggle('rotate');
     })
   });
+}
+
+function setScrollToStartPage() {
+  const button = document.getElementById('scrollToStart');
+  window.addEventListener('scroll', function (evt){
+    let offsetYPosition = window.pageYOffset.toFixed();
+    const offsetYToButtonVisible = 750;
+    if (offsetYPosition >= offsetYToButtonVisible ) {
+      button.classList.remove('visually-hidden');
+    } else {
+      button.classList.add('visually-hidden');
+    }
+  })
+
+  button.addEventListener('click', function (evt){
+    evt.preventDefault();
+    window.scroll({
+      left: 0,
+      top: 0,
+      behavior: 'smooth',
+    })
+  })
 }
 
 @@include('slider.js');

@@ -27,7 +27,7 @@
 
   &__start-time {
     font: 700 32px/34px 'Proxima Nova', sans-serif;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
 
   &__title {
@@ -43,16 +43,29 @@
   }
 
   &__button {
+    color: #ffffff;
+    display: inline-block;
     border-radius: 30px;
     background-color: #f75968;
     font: 600 26px/34px 'Proxima Nova', sans-serif;
     padding: 18px 71px;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    position: relative;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+
+    &:hover {
+      background: #ff4e58;
+      box-shadow: 0 15px 20px rgba(255, 78, 88, 0.4);
+      color: white;
+      transform: translateY(-7px);
+    }
   }
 
   &__block {
     display: flex;
     justify-content: space-between;
-    margin-top: 95px;
+    margin-top: 57px;
   }
 
   &__content {
@@ -736,6 +749,11 @@
     display: block;
     padding: 18px 58px;
     cursor: pointer;
+
+    &:hover {
+      background: #ff4e58;
+      box-shadow: 0 0 15px 0 rgba(255, 78, 88, 0.4);
+    }
   }
 }
 
@@ -770,4 +788,17 @@
     text-decoration: none;
     margin-right: 30px;
   }
+}
+
+.scrollUp-button {
+  opacity: 0.95;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    cursor: pointer;
+  }
+
 }

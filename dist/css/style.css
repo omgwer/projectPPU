@@ -107,6 +107,15 @@
   border-radius: 30px;
   padding: 1px 51px;
   background-color: #f85a69;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.button_red:hover {
+  background: #ff4e58;
+  -webkit-box-shadow: 0 0 15px rgba(255, 78, 88, 0.4);
+          box-shadow: 0 0 15px rgba(255, 78, 88, 0.4);
 }
 
 .quote {
@@ -139,7 +148,7 @@
 
 .course-information__start-time {
   font: 700 32px/34px 'Proxima Nova', sans-serif;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .course-information__title {
@@ -155,10 +164,29 @@
 }
 
 .course-information__button {
+  color: #ffffff;
+  display: inline-block;
   border-radius: 30px;
   background-color: #f75968;
   font: 600 26px/34px 'Proxima Nova', sans-serif;
   padding: 18px 71px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  position: relative;
+  -webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.course-information__button:hover {
+  background: #ff4e58;
+  -webkit-box-shadow: 0 15px 20px rgba(255, 78, 88, 0.4);
+          box-shadow: 0 15px 20px rgba(255, 78, 88, 0.4);
+  color: white;
+  -webkit-transform: translateY(-7px);
+      -ms-transform: translateY(-7px);
+          transform: translateY(-7px);
 }
 
 .course-information__block {
@@ -168,7 +196,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 95px;
+  margin-top: 57px;
 }
 
 .course-information__content {
@@ -1003,6 +1031,12 @@
   cursor: pointer;
 }
 
+.join-form__button:hover {
+  background: #ff4e58;
+  -webkit-box-shadow: 0 0 15px 0 rgba(255, 78, 88, 0.4);
+          box-shadow: 0 0 15px 0 rgba(255, 78, 88, 0.4);
+}
+
 .yandex-map {
   position: relative;
 }
@@ -1035,6 +1069,20 @@
 .contacts__link {
   text-decoration: none;
   margin-right: 30px;
+}
+
+.scrollUp-button {
+  opacity: 0.95;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.scrollUp-button:hover {
+  cursor: pointer;
 }
 
 .footer {

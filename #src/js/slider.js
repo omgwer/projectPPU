@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', function () {
   const slider = new ChiefSlider('.slider', {
     loop: true,
@@ -44,7 +43,7 @@ var CLASS_CONTROL_HIDE = 'slider__control_hide';
 var CLASS_ITEM_ACTIVE = 'slider__item_active';
 var CLASS_INDICATOR_ACTIVE = 'active';
 
-function ChiefSlider(selector, config) {
+export function ChiefSlider(selector, config) {
   // элементы слайдера
   var $root = typeof selector === 'string' ?
     document.querySelector(selector) : selector;

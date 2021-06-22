@@ -2,6 +2,7 @@ window.addEventListener('load', evt => {
   headerSmoothHide();
   accordionList();
   setMenuScrollNavigation();
+  setScrollToStartPage();
 });
 // header scripts
 function headerSmoothHide() {
@@ -44,6 +45,27 @@ function accordionList() {
   });
 }
 
+function setScrollToStartPage() {
+  const button = document.getElementById('scrollToStart');
+  window.addEventListener('scroll', function (evt){
+    let offsetYPosition = window.pageYOffset.toFixed();
+    const offsetYToButtonVisible = 750;
+    if (offsetYPosition >= offsetYToButtonVisible ) {
+      button.classList.remove('visually-hidden');
+    } else {
+      button.classList.add('visually-hidden');
+    }
+  })
+
+  button.addEventListener('click', function (evt){
+    evt.preventDefault();
+    window.scroll({
+      left: 0,
+      top: 0,
+      behavior: 'smooth',
+    })
+  })
+}
 
 document.addEventListener('DOMContentLoaded', function () {
   const slider = new ChiefSlider('.slider', {
@@ -90,7 +112,7 @@ var CLASS_CONTROL_HIDE = 'slider__control_hide';
 var CLASS_ITEM_ACTIVE = 'slider__item_active';
 var CLASS_INDICATOR_ACTIVE = 'active';
 
-function ChiefSlider(selector, config) {
+export function ChiefSlider(selector, config) {
   // элементы слайдера
   var $root = typeof selector === 'string' ?
     document.querySelector(selector) : selector;
