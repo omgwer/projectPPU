@@ -1,24 +1,25 @@
 .slider {
   position: relative;
-  max-width: 1488px;
-  margin: 0 auto;
-  color: #484848;
-  padding-bottom: 104px;
+  max-width: 1162px;
+  margin: 128px auto 127px;
+  padding-left: 43px;
+  box-sizing: border-box;
 
   &__name {
-    font: 600 32px/34px 'Proxima Nova', sans-serif;
+    font: 700 28px/34px 'Raleway', sans-serif;
     max-width: 300px;
-    margin: 21px auto 11px;
+    margin-bottom: 17px;
   }
 
   &__subtitle {
     max-width: 300px;
     margin: 0 auto;
+    font: 500 18px/30px 'Raleway', sans-serif;
   }
 
   &__avatar {
     display: block;
-    margin: 0 auto;
+    align-self: flex-start;
   }
 }
 
@@ -41,9 +42,12 @@
 }
 
 .slider__item {
-  flex: 0 0 33.3333333333%;
-  max-width: 33.3333333333%;
+  flex: 0 0 50%;
+  max-width: 50%;
   user-select: none;
+  display: flex;
+  gap: 38px;
+
 }
 
 /* кнопки влево и вправо */
@@ -66,7 +70,7 @@
 }
 
 .slider__control[data-slide='prev'] {
-  left: -144px;
+  left: -114px;
 }
 
 .slider__control[data-slide='next'] {

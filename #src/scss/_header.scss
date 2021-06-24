@@ -9,10 +9,10 @@
 }
 
 .header {
-  max-width: 1458px;
+  max-width: 1260px;
   display: flex;
   justify-content: space-between;
-  margin: 30px 0 30px 330px;
+  margin: 30px auto 30px;
   align-items: center;
 
 
@@ -29,7 +29,7 @@
   }
 
   &__link {
-    font: 600 22px/48px 'Proxima Nova', sans-serif;
+    font: 600 22px/48px 'Raleway', sans-serif;
     text-decoration: none;
     color: #484848;
   }
