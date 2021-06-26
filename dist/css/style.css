@@ -515,11 +515,28 @@
 }
 
 .teachers-feedback {
-  max-width: 1260px;
+  max-width: 1030px;
   position: relative;
-  height: 300px;
-  margin: 0 auto;
-  padding: 41px 0 207px;
+  margin: 0 auto 85px;
+  padding: 41px 0;
+}
+
+.teachers-feedback__title {
+  font: 700 60px/65px 'Raleway', sans-serif;
+  margin: 198px auto 42px;
+  max-width: 702px;
+}
+
+.teachers-feedback__slider {
+  position: relative;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 35px;
+  padding: 76px 0 134px;
+  height: 480px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .teachers-feedback__prev,
@@ -531,7 +548,7 @@
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: white;
+  color: black;
   font-weight: bold;
   font-size: 18px;
   -webkit-transition: 0.6s ease;
@@ -541,27 +558,30 @@
 }
 
 .teachers-feedback__next {
-  right: 0;
+  right: -43px;
+  border-radius: 3px 0 0 3px;
+}
+
+.teachers-feedback__prev {
+  left: -43px;
   border-radius: 3px 0 0 3px;
 }
 
 .teachers-feedback__prev:hover,
 .teachers-feedback__next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .teachers-feedback__slideText {
-  position: absolute;
-  color: #fff;
-  font-size: 35px;
-  /* Выравнивание текста по горизонтали и по вертикали*/
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  /* Тень*/
-  text-shadow: 1px 1px 1px #000, 0 0 1em #000;
+  color: #000;
+  font: 500 18px/30px 'Raleway', sans-serif;
+  max-width: 756px;
+  margin: 0 auto;
+}
+
+.teachers-feedback__author {
+  font: 700 24px/34px 'Raleway', sans-serif;
+  margin-top: 24px;
 }
 
 .slider-dots {
@@ -572,13 +592,47 @@
   cursor: pointer;
   height: 12px;
   width: 12px;
-  margin: 0 2px;
+  margin: 0 25px;
   background-color: #ddd;
   border-radius: 50%;
   display: inline-block;
   -webkit-transition: background-color 0.6s ease;
   -o-transition: background-color 0.6s ease;
   transition: background-color 0.6s ease;
+}
+
+.active,
+.slider-dots_item:hover {
+  background-color: #aaa;
+}
+
+/* Анимация слайдов */
+
+.teachers-feedback__item {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 .session-dates__container {

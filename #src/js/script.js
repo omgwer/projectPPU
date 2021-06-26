@@ -67,6 +67,16 @@ function setScrollToStartPage() {
   })
 }
 
+const prevs = document.querySelector('.teachers-feedback__prev');
+prevs.addEventListener('click', evt=> {
+  minusSlide();
+});
+const nexts = document.querySelector('.teachers-feedback__next');
+nexts.addEventListener('click', evt=> {
+  plusSlide();
+});
+
+
 /* Индекс слайда по умолчанию */
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -85,6 +95,8 @@ function minusSlide() {
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
+
+
 
 /* Основная функция слайдера */
 function showSlides(n) {
