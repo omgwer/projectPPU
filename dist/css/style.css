@@ -32,7 +32,7 @@
 }
 
 .header {
-  max-width: 1260px;
+  max-width: 1360px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,6 +43,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 72px;
 }
 
 .header__logo {
@@ -64,14 +65,44 @@
 .header__link {
   font: 600 22px/48px 'Raleway', sans-serif;
   text-decoration: none;
-  color: #484848;
+  color: #000000;
+  position: relative;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.header__link::after {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0;
+  content: '.';
+  color: transparent;
+  background: #000000;
+  height: 1px;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+
+.header__link:hover {
+  color: #555555;
+}
+
+.header__link:hover::after {
+  width: 100%;
 }
 
 .button_red {
+  font: 600 22px/48px 'Raleway', sans-serif;
+  text-decoration: none;
   color: #ffffff;
   border-radius: 30px;
   padding: 1px 51px;
-  background-color: #f85a69;
+  background-color: #e83042;
   -webkit-transition: 0.3s ease;
   -o-transition: 0.3s ease;
   transition: 0.3s ease;
@@ -121,7 +152,7 @@
   color: #ffffff;
   display: inline-block;
   border-radius: 30px;
-  background-color: #e83942;
+  background-color: #e83042;
   font: 600 22px/34px 'Raleway', sans-serif;
   padding: 18px 71px;
   -webkit-transition: all 0.3s ease-in-out;
@@ -485,59 +516,69 @@
 
 .teachers-feedback {
   max-width: 1260px;
+  position: relative;
+  height: 300px;
   margin: 0 auto;
   padding: 41px 0 207px;
-  color: #242424;
 }
 
-.teachers-feedback__title {
-  margin-bottom: 28px;
+.teachers-feedback__prev,
+.teachers-feedback__next {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-transition: 0.6s ease;
+  -o-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
 }
 
-.teachers-feedback__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  gap: 20px;
+.teachers-feedback__next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
 
-.teachers-feedback__block {
-  border-radius: 10px;
-  -webkit-box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
-          box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
-  padding: 30px 30px 20px;
+.teachers-feedback__prev:hover,
+.teachers-feedback__next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
-.teachers-feedback__top {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  gap: 40px;
-  margin-bottom: 16px;
+.teachers-feedback__slideText {
+  position: absolute;
+  color: #fff;
+  font-size: 35px;
+  /* Выравнивание текста по горизонтали и по вертикали*/
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  /* Тень*/
+  text-shadow: 1px 1px 1px #000, 0 0 1em #000;
 }
 
-.teachers-feedback__bottom {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.slider-dots {
+  text-align: center;
 }
 
-.teachers-feedback__subtitle {
-  font: 400 20px/34px 'Raleway', sans-serif;
-}
-
-.teachers-feedback__name {
-  font: 600 22px/34px 'Raleway', sans-serif;
-  max-width: 298px;
+.slider-dots_item {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 2px;
+  background-color: #ddd;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  -o-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
 }
 
 .session-dates__container {

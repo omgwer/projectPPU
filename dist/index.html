@@ -21,7 +21,7 @@
             <a href=".discipline-block" class="header__link js-menu-item">Программа</a>
             <a href=".session-dates__header" class="header__link js-menu-item">Как поступить</a>
             <a href=".yandex-map" class="header__link js-menu-item">Контакты</a>
-            <a href=".join-form" class="header__link button_red js-menu-item">Записаться</a>
+            <a href=".join-form" class="button_red js-menu-item">Записаться</a>
         </nav>
     </div>
 </header>
@@ -104,9 +104,6 @@
                 </div>
             </div>
         </div>
-
-
-
     </section>
 
     <section class="who-is-tutor">
@@ -539,27 +536,32 @@
     </section>
 
     <section class="teachers-feedback">
-        <h3 class="teachers-feedback__title title">
-            Отзывы учителей
-        </h3>
-        <div class="teachers-feedback__container">
-            <div class="teachers-feedback__block">
-                <div class="teachers-feedback__top">
-                    <img class="teachers-feedback__avatar" src="img/container/teachers-feedback/gubaidyllinVS.png" alt="Фотография Губайдуллина В.С.">
-                    <p class="teachers-feedback__subtitle">
-                        Очень круто, курс огонь! Просто кайф, я теперь тьютор и это
-                        очень помогает работать! От души!
-                    </p>
-                </div>
-                <div class="teachers-feedback__bottom">
-                    <div class="teachers-feedback__name">
-                        Губайдуллин
-                        Владислав Селиверстович
-                    </div>
-                    <img class="teachers-feedback__logo" src="img/container/teachers-feedback/vk-logo.png" alt='Логотип "Вконтакте" '>
+        <div class="teachers-feedback__slider">
+            <div class="teachers-feedback__item">
+                <div class="teachers-feedback__slideText">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Consequuntur ex excepturi harum ipsum mollitia nisi quaerat
+                    quisquam? Dicta labore nihil officiis quam reprehenderit sed
+                    sequi suscipit! Aliquam dicta facere quam. Ad aperiam consequatur
+                    consequuntur culpa earum error expedita explicabo, inventore libero
+                    nesciunt nihil nulla omnis placeat quam quis sed tempora?
                 </div>
             </div>
+            <div class="teachers-feedback__item">
 
+                <div class="teachers-feedback__slideText">Заголовок слайда 2</div>
+            </div>
+            <div class="teachers-feedback__item">
+                <div class="teachers-feedback__slideText">Заголовок слайда 3</div>
+            </div>
+
+            <a class="teachers-feedback__prev" onclick="minusSlide()">&#10094;</a>
+            <a class="teachers-feedback__next" onclick="plusSlide()">&#10095;</a>
+        </div>
+        <div class="slider-dots">
+            <span class="slider-dots_item" onclick="currentSlide(1)"></span>
+            <span class="slider-dots_item" onclick="currentSlide(2)"></span>
+            <span class="slider-dots_item" onclick="currentSlide(3)"></span>
         </div>
     </section>
 

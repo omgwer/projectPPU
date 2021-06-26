@@ -9,11 +9,12 @@
 }
 
 .header {
-  max-width: 1260px;
+  max-width: 1360px;
   display: flex;
   justify-content: space-between;
   margin: 30px auto 30px;
   align-items: center;
+  gap: 72px;
 
 
 
@@ -31,15 +32,40 @@
   &__link {
     font: 600 22px/48px 'Raleway', sans-serif;
     text-decoration: none;
-    color: #484848;
+    color: #000000;
+    position: relative;
+    transition: all .5s ease;
+
+    &::after {
+      position: absolute;
+      bottom: 5px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 0;
+      content: '.';
+      color: transparent;
+      background: #000000;
+      height: 1px;
+      transition: all .5s;
+    }
+
+    &:hover {
+      color: #555555;
+      &::after {
+        width: 100%;
+      }
+    }
   }
 }
 
 .button_red {
+  font: 600 22px/48px 'Raleway', sans-serif;
+  text-decoration: none;
   color: #ffffff;
   border-radius: 30px;
   padding: 1px 51px;
-  background-color: #f85a69;
+  background-color: #e83042;
   transition: 0.3s ease;
 
   &:hover {
