@@ -11,10 +11,12 @@ function headerSmoothHide() {
     let currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
       document.getElementById("js-navigation-bar").style.top = "0";
+      prevScrollpos = currentScrollPos;
     } else {
       document.getElementById("js-navigation-bar").style.top = "-110px";
+      prevScrollpos = currentScrollPos;
     }
-    prevScrollpos = currentScrollPos;
+
   }
 }
 
