@@ -1,8 +1,9 @@
 window.addEventListener('load', evt => {
   headerSmoothHide();
-  accordionListt();
+  accordionList();
   setMenuScrollNavigation();
   setScrollToStartPage();
+  customDropList();
   });
 // header scripts
 function headerSmoothHide() {
@@ -40,19 +41,6 @@ function accordionList() {
   accordionsList.forEach(element => {
     element.addEventListener('click', evt => {
       const accordionTrigger = element.querySelector('.faq__accordion_hide');
-      accordionTrigger.classList.toggle('hidden');
-      const animatedArrow = element.querySelector('.faq__arrow');
-      animatedArrow.classList.toggle('rotate');
-    })
-  });
-}
-
-function accordionListt() {
-  const accordionsList = document.querySelectorAll('.faq__accordion');
-  const accordionButton = document.querySelectorAll('.faq__button');
-  accordionsList.forEach(element => {
-    element.addEventListener('click', evt => {
-      const accordionTrigger = element.querySelector('.faq__accordion_hide');
       const animatedArrow = element.querySelector('.faq__arrow');
       if (accordionTrigger.classList.contains('target')) {
         accordionTrigger.style.height = getComputedStyle(accordionTrigger).height;
@@ -76,10 +64,22 @@ function accordionListt() {
   });
 }
 
+function customDropList() {
+  const selected = document.querySelector(".selected");
+  const optionsContainer = document.querySelector(".options-container");
+  const optionsList = document.querySelectorAll(".option");
 
+  selected.addEventListener("click", () => {
+    optionsContainer.classList.toggle("active");
+  });
 
-
-
+  optionsList.forEach(option => {
+    option.addEventListener("click", () => {
+      selected.innerHTML = option.querySelector("label").innerHTML;
+      optionsContainer.classList.remove("active");
+    });
+  });
+}
 
 function setScrollToStartPage() {
   const button = document.getElementById('scrollToStart');

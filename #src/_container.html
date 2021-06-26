@@ -909,15 +909,47 @@
                                required
                         />
                     </label>
-                    <label class="join-form__job">
-                        <input class="join-form__input"
-                               type="text"
-                               placeholder="Выберите вид деятельности"
-                               title="Введите свой телефон"
-                               name="userJob"
-                               required
-                        />
-                    </label>
+                    <div class="feedback-form__container">
+                        <div class="select-box">
+                            <div class="options-container">
+                                <div class="option">
+                                    <input type="radio"
+                                           class="radio"
+                                           id="grade-a"
+                                           name="category"
+                                           value="prog"
+                                           required="required"
+                                    />
+                                    <label for="grade-a">
+                                        <h3>Программист</h3>
+                                    </label>
+                                </div>
+                                <div class="option">
+                                    <input type="radio"
+                                           class="radio"
+                                           id="grade-b"
+                                           name="category"
+                                           value="diz" />
+                                    <label for="grade-b">
+                                        <h3>Дизайнер</h3>
+                                    </label>
+                                </div>
+                                <div class="option">
+                                    <input type="radio"
+                                           class="radio"
+                                           id="grade-c"
+                                           name="category"
+                                           value="mark" />
+                                    <label for="grade-c">
+                                        <h3>Маркетолог</h3>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="selected">
+                                <h3>Вид деятельности</h3>
+                            </div>
+                        </div>
+                    </div>
                     <label class="join-form__phone">
                         <input class="join-form__input"
                                type="tel"
