@@ -1,9 +1,9 @@
 window.addEventListener('load', evt => {
   headerSmoothHide();
-  accordionList();
+  accordionListt();
   setMenuScrollNavigation();
   setScrollToStartPage();
-});
+  });
 // header scripts
 function headerSmoothHide() {
   let prevScrollpos = window.pageYOffset;
@@ -45,6 +45,40 @@ function accordionList() {
   });
 }
 
+function accordionListt() {
+  const accordionsList = document.querySelectorAll('.faq__accordion');
+  const accordionButton = document.querySelectorAll('.faq__button');
+  accordionsList.forEach(element => {
+    element.addEventListener('click', evt => {
+      const accordionTrigger = element.querySelector('.faq__accordion_hide');
+      const animatedArrow = element.querySelector('.faq__arrow');
+      if (accordionTrigger.classList.contains('target')) {
+        accordionTrigger.style.height = getComputedStyle(accordionTrigger).height;
+        accordionTrigger.classList.remove('target');
+        getComputedStyle(accordionTrigger).height; // reflow
+        accordionTrigger.style.height = '';
+        animatedArrow.classList.remove('rotate');
+      } else {
+        accordionTrigger.classList.add('target');
+        let h = getComputedStyle(accordionTrigger).height;
+        accordionTrigger.style.height = '0';
+        getComputedStyle(accordionTrigger).height; // reflow
+        accordionTrigger.style.height = h;
+        setTimeout(function () { accordionTrigger.style.height = '' }, 1000);
+        animatedArrow.classList.add('rotate');
+      }
+      // accordionTrigger.classList.toggle('hidden');
+      //
+      // animatedArrow.classList.toggle('rotate');
+    })
+  });
+}
+
+
+
+
+
+
 function setScrollToStartPage() {
   const button = document.getElementById('scrollToStart');
   window.addEventListener('scroll', function (evt){
@@ -66,6 +100,8 @@ function setScrollToStartPage() {
     })
   })
 }
+
+
 
 const prevs = document.querySelector('.teachers-feedback__prev');
 prevs.addEventListener('click', evt=> {
@@ -118,8 +154,7 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
 }
-
-
+;
 document.addEventListener('DOMContentLoaded', function () {
   const slider = new ChiefSlider('.slider', {
     loop: true,

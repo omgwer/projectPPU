@@ -802,7 +802,6 @@
 }
 
 .faq__accordion {
-  color: #242424;
   max-width: 620px;
   background-color: #ffffff;
   border-radius: 10px;
@@ -849,12 +848,18 @@
 
 .faq__accordion_hide {
   font: 400 20px/34px 'Raleway', sans-serif;
-  padding: 0 35px 16px 30px;
+  padding: 0 35px 0 30px;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 0.8s ease-out;
+  -o-transition: height 0.8s ease-out;
+  transition: height 0.8s ease-out;
 }
 
-.hidden {
-  display: none;
-  overflow: hidden;
+.target {
+  height: auto;
+  overflow: visible;
+  padding-bottom: 16px;
 }
 
 .rotate {
