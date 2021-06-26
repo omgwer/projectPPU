@@ -775,7 +775,7 @@
 
   &__subtitle {
     margin: 12px 0 23px;
-    max-width: 446px;
+    max-width: 420px;
     font: 400 20px/32px 'Raleway', sans-serif;
   }
 
@@ -787,7 +787,7 @@
     box-sizing: border-box;
     border-radius: 10px;
     border: 1px solid #000000;
-    padding: 24px 0 24px 23px;
+    padding: 24px 23px 24px 23px;
 
     &::placeholder {
       font: 400 22px/24px 'Raleway', sans-serif;
@@ -807,7 +807,7 @@
     text-align: center;
     max-width: 412px;
     font: 400 16px/18px 'Raleway', sans-serif;
-    margin-top: 15px;
+    margin-top: 21px;
   }
 
   &__button {
@@ -826,7 +826,6 @@
     }
   }
 
-
 }
 // dropout menu for join-form
 .feedback-form__container {
@@ -834,8 +833,7 @@
   display: grid;
   grid-template-columns: 1fr;
   place-items: center;
-  margin: 0 auto;
-  width: 420px;
+  max-width: 420px;
 }
 
 .top-text-wrapper {
@@ -857,10 +855,10 @@
 }
 
 .select-box {
+  width: 100%;
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 420px;
   &:hover {
     cursor: pointer;
   }
@@ -868,7 +866,7 @@
 
 .select-box .options-container {
   max-height: 0;
-  width: calc( 100% - 4px);
+  width: calc( 100% - 2px);
   opacity: 0;
   transition: all 0.4s;
   overflow: hidden;
@@ -927,7 +925,7 @@
 }
 
 .select-box .options-container::-webkit-scrollbar-thumb {
-  background: #525861;
+  background: #f85a69;
   border-radius: 0 5px 5px 0;
 }
 
@@ -1000,5 +998,4 @@
   &:hover {
     cursor: pointer;
   }
-
 }
