@@ -4,6 +4,7 @@ window.addEventListener('load', evt => {
   setMenuScrollNavigation();
   setScrollToStartPage();
   customDropList();
+  contactsHide();
   });
 // header scripts
 function headerSmoothHide() {
@@ -105,6 +106,22 @@ function setScrollToStartPage() {
 
 
 
+function contactsHide() {
+  const contactsBlock = document.querySelector('.contacts');
+  const contactsButton = document.querySelector('.contacts__button');
+
+  let trigger =  function (evt) {
+    if (contactsBlock.classList.contains('contacts_hidden')) {
+      contactsBlock.classList.remove('contacts_hidden');
+    } else {
+      contactsBlock.classList.add('contacts_hidden');
+      
+    }
+  }
+  contactsButton.addEventListener('click', trigger);
+}
+
+
 const prevs = document.querySelector('.teachers-feedback__prev');
 prevs.addEventListener('click', evt=> {
   minusSlide();
@@ -114,9 +131,15 @@ nexts.addEventListener('click', evt=> {
   plusSlide();
 });
 
-
+const allDots = document.querySelectorAll('.slider-dots_item');
+for (let i = 0; i < allDots.length ; i++) {
+  allDots[i].addEventListener('click', evt => {
+    let dotIndex = i + 1;
+    currentSlide(dotIndex);
+  })
+}
 /* Индекс слайда по умолчанию */
-var slideIndex = 1;
+let slideIndex = 1;
 showSlides(slideIndex);
 
 /* Функция увеличивает индекс на 1, показывает следующй слайд*/
@@ -133,14 +156,11 @@ function minusSlide() {
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
-
-
-
 /* Основная функция слайдера */
 function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("teachers-feedback__item");
-  var dots = document.getElementsByClassName("slider-dots_item");
+  let i;
+  const slides = document.getElementsByClassName("teachers-feedback__item");
+  const dots = document.getElementsByClassName("slider-dots_item");
   if (n > slides.length) {
     slideIndex = 1
   }
@@ -155,8 +175,7 @@ function showSlides(n) {
   }
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
-}
-;
+};
 document.addEventListener('DOMContentLoaded', function () {
   const slider = new ChiefSlider('.slider', {
     loop: true,

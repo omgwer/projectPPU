@@ -4,6 +4,7 @@ window.addEventListener('load', evt => {
   setMenuScrollNavigation();
   setScrollToStartPage();
   customDropList();
+  contactsHide();
   });
 // header scripts
 function headerSmoothHide() {
@@ -103,6 +104,22 @@ function setScrollToStartPage() {
   })
 }
 
+
+
+function contactsHide() {
+  const contactsBlock = document.querySelector('.contacts');
+  const contactsButton = document.querySelector('.contacts__button');
+
+  let trigger =  function (evt) {
+    if (contactsBlock.classList.contains('contacts_hidden')) {
+      contactsBlock.classList.remove('contacts_hidden');
+    } else {
+      contactsBlock.classList.add('contacts_hidden');
+
+    }
+  }
+  contactsButton.addEventListener('click', trigger);
+}
 
 @@include('feedbackSlider.js');
 @@include('slider.js');

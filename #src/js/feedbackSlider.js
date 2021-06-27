@@ -8,9 +8,15 @@ nexts.addEventListener('click', evt=> {
   plusSlide();
 });
 
-
+const allDots = document.querySelectorAll('.slider-dots_item');
+for (let i = 0; i < allDots.length ; i++) {
+  allDots[i].addEventListener('click', evt => {
+    let dotIndex = i + 1;
+    currentSlide(dotIndex);
+  })
+}
 /* Индекс слайда по умолчанию */
-var slideIndex = 1;
+let slideIndex = 1;
 showSlides(slideIndex);
 
 /* Функция увеличивает индекс на 1, показывает следующй слайд*/
@@ -27,14 +33,11 @@ function minusSlide() {
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
-
-
-
 /* Основная функция слайдера */
 function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("teachers-feedback__item");
-  var dots = document.getElementsByClassName("slider-dots_item");
+  let i;
+  const slides = document.getElementsByClassName("teachers-feedback__item");
+  const dots = document.getElementsByClassName("slider-dots_item");
   if (n > slides.length) {
     slideIndex = 1
   }
