@@ -16,6 +16,7 @@
   width: 1px;
   height: 1px;
   margin: -1px;
+  opacity: 0;
 }
 
 .header-container {
@@ -44,6 +45,7 @@
       -ms-flex-align: center;
           align-items: center;
   gap: 72px;
+  padding: 0 20px;
 }
 
 .header__logo {
@@ -1345,12 +1347,9 @@
   position: fixed;
   right: 30px;
   bottom: 30px;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.scrollUp-button:hover {
+  -webkit-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
   cursor: pointer;
 }
 

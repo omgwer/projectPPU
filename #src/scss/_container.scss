@@ -1027,13 +1027,6 @@
   & .contacts__button {
     transform: rotateX(180deg);
   }
-
-
-
-
-
-
-
 }
 
 .scrollUp-button {
@@ -1041,9 +1034,6 @@
   position: fixed;
   right: 30px;
   bottom: 30px;
-  transition: all 0.3s ease;
-
-  &:hover {
-    cursor: pointer;
-  }
+  transition:  opacity 0.3s ease;
+  cursor: pointer;
 }
