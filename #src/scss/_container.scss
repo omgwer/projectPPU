@@ -1011,24 +1011,6 @@
   }
 }
 
-.contacts_hidden {
-  padding: 20px 85px 10px 25px;
-  bottom: 0;
-  top: auto;
-  left: 26%;
-  border-radius: 20px 20px 0 0;
-  cursor: pointer;
-
-  & .contacts__content_hide {
-    opacity: 0;
-    display: none;
-  }
-
-  & .contacts__button {
-    transform: rotateX(180deg);
-  }
-}
-
 .scrollUp-button {
   opacity: 0.95;
   position: fixed;
