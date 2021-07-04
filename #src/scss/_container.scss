@@ -104,6 +104,7 @@
 .course-advantages {
   max-width: 1160px;
   margin: 116px auto 0;
+  padding: 0 20px;
 
   &__container {
     display: flex;
@@ -173,6 +174,7 @@
 .about-training {
   max-width: 1162px;
   margin: 0 auto;
+  padding: 0 20px;
 
   &__heading {
     font: 700 60px/90px 'Raleway', sans-serif;
@@ -216,8 +218,7 @@
 }
 
 .people-target {
-  padding-top: 54px;
-  padding-bottom: 74px;
+  padding: 54px 20px 74px;
   max-width: 1162px;
   margin: 0 auto;
 
@@ -466,32 +467,16 @@
 .active {
   border: 4px solid #087C96;
 }
-
-@-webkit-keyframes fade {
-  from {
-    opacity: .4
-  }
-  to {
-    opacity: 1
-  }
-}
-@keyframes fade {
-  from {
-    opacity: .4
-  }
-  to {
-    opacity: 1
-  }
-}
-
+// end slider for teachers-feedback
 .session-dates {
+  padding: 0 20px;
 
   &__container {
     max-width: 1378px;
     margin: 0 auto;
     border-radius: 30px;
     background-color: rgba(100, 100, 100, 0.1);
-    padding: 73px 0 83px;
+    padding: 73px 20px 83px;
   }
 
   &__block {
@@ -602,7 +587,7 @@
     margin-bottom: 90px;
   }
 }
-//
+
 .faq {
   max-width: 1262px;
   margin: 0 auto;

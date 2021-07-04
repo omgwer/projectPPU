@@ -2,8 +2,8 @@
   position: relative;
   max-width: 1162px;
   margin: 128px auto 127px;
-  padding-left: 43px;
   box-sizing: border-box;
+  padding: 0 20px 0 43px;
 
   &__name {
     font: 700 28px/34px 'Raleway', sans-serif;
@@ -21,21 +21,22 @@
     display: block;
     align-self: flex-start;
   }
+
+  &__container {
+    overflow: hidden;
+  }
+
+  &__wrapper {
+    /*overflow: hidden;*/
+  }
+
+  &__items {
+    display: flex;
+    transition: transform 0.5s ease;
+    align-content: center;
+  }
 }
 
-.slider__container {
-  overflow: hidden;
-}
-
-.slider__wrapper {
-  /*overflow: hidden;*/
-}
-
-.slider__items {
-  display: flex;
-  transition: transform 0.5s ease;
-  align-content: center;
-}
 
 .slider_disable-transition {
   transition: none;
@@ -47,7 +48,6 @@
   user-select: none;
   display: flex;
   gap: 38px;
-
 }
 
 /* кнопки влево и вправо */
@@ -94,11 +94,11 @@
 
 .slider__control[data-slide='prev']::before {
   background-image: url("../img/container/slider/arrow.svg");
-  transform: rotate(180deg);
 }
 
 .slider__control[data-slide='next']::before {
   background-image: url("../img/container/slider/arrow.svg");
+  transform: rotate(180deg);
 }
 
 /* индикаторы */
