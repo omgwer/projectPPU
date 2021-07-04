@@ -1698,11 +1698,15 @@
 
 @media screen and (max-width: 740px) {
   .course-faq__content {
-    max-width: 80%;
+    max-width: 80vw;
   }
 
   .course-faq__content:nth-child(2) .course-faq__tag {
-    max-width: 80%;
+    max-width: 80vw;
+  }
+
+  .course-faq__tag br {
+    display: none;
   }
 }
 
@@ -1722,6 +1726,16 @@
 
   .course-information__subtitle {
     text-align: left;
+  }
+
+  .course-faq {
+    padding: 56px 15px 61px 30px;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .course-faq__content {
+    max-width: 90vw;
   }
 }
 

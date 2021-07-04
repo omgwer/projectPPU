@@ -45,7 +45,6 @@
       &:nth-child(2) .course-faq__tag {
         max-width: 210px;
       }
-
     }
   }
 }
@@ -64,21 +63,18 @@
 @media screen and (max-width: 740px) {
   .course-faq {
     &__content {
-      max-width: 80%;
-      
+      max-width: 80vw;
+
       &:nth-child(2) .course-faq__tag {
-        max-width: 80%;
+        max-width: 80vw;
       }
+    }
+
+    &__tag br {
+      display: none;
     }
   }
 }
-
-
-
-
-
-
-
 
 @media screen and (max-width: 660px) {
   .course-information {
@@ -97,6 +93,16 @@
 
     &__subtitle {
       text-align: left;
+    }
+  }
+
+  .course-faq {
+    padding: 56px 15px 61px 30px;
+    margin: 0;
+    border-radius: 0;
+
+    &__content {
+      max-width: 90vw;
     }
   }
 }
