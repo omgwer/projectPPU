@@ -1,11 +1,11 @@
 window.addEventListener('load', evt => {
   headerSmoothHide();
   accordionList();
-  setMenuScrollNavigation();
-  setScrollToStartPage();
+  menuScrollNavigation();
+  scrollToStartPage();
   customDropList();
-  contactsHide();
   feedbackSlider();
+  initBurgerMenu();
   });
 
 function headerSmoothHide() {
@@ -19,11 +19,10 @@ function headerSmoothHide() {
       document.getElementById("js-navigation-bar").style.top = "-110px";
       prevScrollpos = currentScrollPos;
     }
-
   }
 }
 
-function setMenuScrollNavigation() {
+function menuScrollNavigation() {
   const smoothLinks = document.querySelectorAll('.js-menu-item');
   smoothLinks.forEach(smoothLink => {
     smoothLink.addEventListener('click', evt => {
@@ -59,9 +58,6 @@ function accordionList() {
         setTimeout(function () { accordionTrigger.style.height = '' }, 1000);
         animatedArrow.classList.add('rotate');
       }
-      // accordionTrigger.classList.toggle('hidden');
-      //
-      // animatedArrow.classList.toggle('rotate');
     })
   });
 }
@@ -83,7 +79,7 @@ function customDropList() {
   });
 }
 
-function setScrollToStartPage() {
+function scrollToStartPage() {
   const button = document.getElementById('scrollToStart');
   window.addEventListener('scroll', function (evt){
     let offsetYPosition = window.pageYOffset.toFixed();
@@ -103,20 +99,6 @@ function setScrollToStartPage() {
       behavior: 'smooth',
     })
   })
-}
-
-function contactsHide() {
-  const contactsBlock = document.querySelector('.contacts');
-  const contactsButton = document.querySelector('.contacts__button');
-
-  let trigger =  function (evt) {
-    if (contactsBlock.classList.contains('contacts_hidden')) {
-      contactsBlock.classList.remove('contacts_hidden');
-    } else {
-      contactsBlock.classList.add('contacts_hidden');
-    }
-  }
-  contactsButton.addEventListener('click', trigger);
 }
 
 function feedbackSlider() {
@@ -175,6 +157,13 @@ function feedbackSlider() {
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
   }
+}
+
+function initBurgerMenu() {
+  const burgerMenu = document.querySelector('.header__burger-menu');
+  burgerMenu.addEventListener('click', () =>{
+    burgerMenu.classList.toggle('open');
+  });
 }
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -700,6 +689,3 @@ ChiefSlider.prototype.moveTo = function(index) {
 ChiefSlider.prototype.refresh = function() {
   this._refresh();
 };;
-
-
-

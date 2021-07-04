@@ -54,6 +54,14 @@
     font: 400 22px/34px 'Raleway', sans-serif;
     margin-left: 45px;
   }
+
+  &__box {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    gap: 50px;
+  }
 }
 
 .course-faq {
@@ -67,10 +75,17 @@
   padding: 56px 64px 61px 64px;
   box-sizing: border-box;
   background-color: #ffffff;
+  gap: 50px;
+
+  &__container {
+    width: 480px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 
   &__content {
     max-width: 219px;
-
     &:nth-child(2) .course-faq__tag {
       max-width: 160px;
     }

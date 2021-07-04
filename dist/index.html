@@ -14,8 +14,8 @@
     <header id="js-navigation-bar" class="header-container">
     <div class="header">
         <a href="" class="header__img">
-        <img class="header__logo" src="img/header/header__logo.png" height="37"
-             width="216" alt="Логотип сайта Профессиональная переподготовка учителей">
+        <img class="header__logo" src="img/header/header__logo.png"
+             alt="Логотип сайта Профессиональная переподготовка учителей">
         </a>
         <nav class="header__nav-menu">
             <a href=".about-tutor" class="header__link js-menu-item">Кто такой тьютор</a>
@@ -25,6 +25,13 @@
             <a href=".yandex-map" class="header__link js-menu-item">Контакты</a>
             <a href=".join-form" class="button_red js-menu-item">Записаться</a>
         </nav>
+
+        <div class="header__burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </div>
 </header>
     <div>
@@ -39,38 +46,44 @@
                 и средним специальным образованием по направлениям: учитель информатики,
                 учитель математики, учитель физики, учитель начальных классов
             </p>
+            <div class="course-information__box">
             <a href=".join-form"  class="course-information__button js-menu-item">
                 Записаться
             </a>
             <span class="course-information__start-time">Старт 28 сентября</span>
+            </div>
         </div>
     </section>
 
     <section class="course-faq">
-        <div class="course-faq__content">
-            <h4 class="course-faq__tags">Длительность</h4>
-            <p class="course-faq__tag">
-                8 месяцев или 720 часов,
-                из них 150 аудиторных часов
-            </p>
+        <div class="course-faq__container">
+            <div class="course-faq__content">
+                <h4 class="course-faq__tags">Длительность</h4>
+                <p class="course-faq__tag">
+                    8 месяцев или 720 часов,
+                    из них 150 аудиторных часов
+                </p>
+            </div>
+            <div class="course-faq__content">
+                <h4 class="course-faq__tags">Формат</h4>
+                <p class="course-faq__tag">
+                    5 очных сессий <br> 4 дистанционных модуля
+                </p>
+            </div>
         </div>
-        <div class="course-faq__content">
-            <h4 class="course-faq__tags">Формат</h4>
-            <p class="course-faq__tag">
-                5 очных сессий <br> 4 дистанционных модуля
-            </p>
-        </div>
-        <div class="course-faq__content">
-            <h4 class="course-faq__tags">Специалисты</h4>
-            <p class="course-faq__tag">
-                Приглашенные преподаватели международного уровня
-            </p>
-        </div>
-        <div class="course-faq__content">
-            <h4 class="course-faq__tags">Диплом</h4>
-            <p class="course-faq__tag">
-                о профессиональной переподготовке
-            </p>
+        <div class="course-faq__container">
+            <div class="course-faq__content">
+                <h4 class="course-faq__tags">Специалисты</h4>
+                <p class="course-faq__tag">
+                    Приглашенные преподаватели международного уровня
+                </p>
+            </div>
+            <div class="course-faq__content">
+                <h4 class="course-faq__tags">Диплом</h4>
+                <p class="course-faq__tag">
+                    о профессиональной переподготовке
+                </p>
+            </div>
         </div>
     </section>
 
@@ -1012,9 +1025,6 @@
     <section class="yandex-map">
         <h3 class="visually-hidden">Карта проезда к учебному заведению</h3>
         <div class="contacts">
-            <div class="contacts__button">
-                <img src="img/container/contacts/arrow.svg" alt="скрыть меню">
-            </div>
             <p class="contacts__title">
                 Контакты
             </p>
@@ -1051,8 +1061,6 @@
         <img src="img/container/interactive/scrollUpButton.png" alt="ScrollUp">
     </div>
 </div>
-
-
     <div class="footer">
   <div>
     <a href="https://isphera.ru/" target="_blank" class="footer__link">
