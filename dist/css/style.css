@@ -884,7 +884,7 @@
 .faq {
   max-width: 1262px;
   margin: 0 auto;
-  padding-bottom: 100px;
+  padding: 0 20px 100px;
 }
 
 .faq__title {
@@ -896,12 +896,11 @@
   display: grid;
   grid-template-rows: repeat(4, minmax(80px, -webkit-max-content));
   grid-template-rows: repeat(4, minmax(80px, max-content));
-  grid-template-columns: repeat(1, 620px);
+  grid-template-columns: repeat(1, minmax(80px, 620px));
   grid-gap: 20px;
 }
 
 .faq__accordion {
-  max-width: 620px;
   background-color: #ffffff;
   border-radius: 10px;
   -webkit-box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
@@ -913,8 +912,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  gap: 20px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1623,6 +1621,11 @@
   .slider__control[data-slide='next'] {
     right: -50px;
   }
+
+  .faq__title {
+    font-size: 50px;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 1250px) {
@@ -1647,9 +1650,36 @@
   .slider__control[data-slide='next'] {
     right: -15px;
   }
+
+  .program-experts__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+
+  .program-experts__subtitle {
+    margin: 0 auto;
+  }
+
+  .program-experts__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 1220px) {
+  .faq__position {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
   .course-faq {
     margin: 0 20px;
     padding: 56px 30px 61px 50px;
@@ -1708,6 +1738,21 @@
 
   .session-dates__block {
     padding: 0;
+  }
+
+  .session-dates__header {
+    margin: 100px auto 50px;
+    text-align: center;
+  }
+
+  .program-experts {
+    padding: 0 0 201px;
+  }
+
+  .program-experts__title {
+    font-size: 35px;
+    text-align: center;
+    margin: 0 auto 65px;
   }
 }
 
@@ -1810,6 +1855,23 @@
   .teachers-feedback__slideText {
     padding: 0 20px;
   }
+
+  .session-dates__to-proceed {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 35px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .session-dates__block-text {
+    max-width: 650px;
+  }
+
+  .session-dates__text {
+    width: auto;
+  }
 }
 
 @media screen and (max-width: 1131px) {
@@ -1817,6 +1879,9 @@
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     gap: 25px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 
   .session-dates__items {
@@ -1824,6 +1889,9 @@
         flex-wrap: wrap;
     gap: 25px;
     margin-top: 25px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 
   .session-dates__list-item {
@@ -1834,6 +1902,29 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+
+  .session-dates__dates {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .session-dates__diploma {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 15px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .session-dates__diploma-title {
+    max-width: none;
+  }
+
+  .session-dates__header {
+    margin: 100px auto 65px;
   }
 }
 
@@ -2063,6 +2154,15 @@
   .session-dates__list-item {
     gap: 15px;
   }
+
+  .session-dates__diploma-title {
+    font-size: 26px;
+  }
+
+  .session-dates__subtitle {
+    font-size: 20px;
+    line-height: 1.6rem;
+  }
 }
 
 @media screen and (max-width: 758px) {
@@ -2078,14 +2178,13 @@
             justify-content: center;
   }
 
-  .session-dates__list-item {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    max-width: 330px;
-    gap: 0;
-    -webkit-column-gap: 85px;
-       -moz-column-gap: 85px;
-            column-gap: 85px;
+  .session-dates__dates {
+    display: block;
+  }
+
+  .faq__title {
+    font-size: 40px;
+    margin: 100px 0 45px;
   }
 }
 
@@ -2231,6 +2330,45 @@
     max-width: none;
     text-align: center;
   }
+
+  .faq {
+    padding: 0 10px 100px;
+  }
+
+  .faq__title {
+    font-size: 30px;
+    margin: 40px 0 35px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .session-dates__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 25px;
+  }
+
+  .session-dates__items {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .session-dates__dates {
+    display: block;
+    line-height: 40px;
+  }
+
+  .session-dates__list-item {
+    gap: 5px;
+    max-width: 296px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media screen and (max-width: 570px) {
@@ -2260,6 +2398,28 @@
     line-height: 60px;
     text-align: center;
     margin-bottom: 20px;
+  }
+
+  .session-dates {
+    padding: 73px 0 83px;
+  }
+
+  .session-dates__container {
+    padding: 73px 0 83px;
+    border-radius: 0;
+  }
+
+  .session-dates__diploma {
+    margin: 40px 0 40px;
+  }
+
+  .session-dates__diploma-title {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .session-dates__content {
+    padding: 0 20px;
   }
 }
 
@@ -2312,6 +2472,31 @@
 
   .about-authors__list-item {
     gap: 10px;
+  }
+
+  .session-dates__header {
+    font-size: 40px;
+  }
+
+  .session-dates__block-text {
+    border-radius: 0;
+    padding: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+
+  .session-dates__text-list:not(:last-child) {
+    margin-bottom: 25px;
+  }
+
+  .session-dates__vertical-line {
+    display: none;
+  }
+
+  .faq__title {
+    font-size: 24px;
+    line-height: normal;
+    margin: 20px 0 25px;
   }
 }
 
@@ -2414,5 +2599,9 @@
 
   .course-information__box {
     gap: 20px;
+  }
+
+  .session-dates__header {
+    font-size: 34px;
   }
 }
