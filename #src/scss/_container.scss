@@ -580,7 +580,7 @@
   }
 
   &__text-list:not(:last-child) {
-    margin-bottom: 54px;
+    margin-bottom: 90px;
   }
 
   &__text-list:nth-child(2) {
@@ -614,7 +614,6 @@
 
   &__position {
     display: flex;
-    //flex-wrap: wrap;
     gap: 20px;
     justify-content: space-between;
   }
@@ -661,11 +660,11 @@
 .rotate {
   transform: rotateX(-180deg);
 }
-//
+
 .program-experts {
   max-width: 1365px;
   margin: 0 auto;
-  padding: 73px 0 201px;
+  padding: 73px 20px 201px;
 
   &__title {
     margin-left: 50px;
@@ -957,7 +956,7 @@
 .select-box .option .radio {
   display: none;
 }
-//
+// end dropout menu for join-form
 .yandex-map {
   position: relative;
 }
@@ -970,8 +969,8 @@
   position: absolute;
   z-index: 1;
   background-color: #ffffff;
-  top: 71px;
-  left: 283px;
+  bottom: 71px;
+  left: 180px;
 
   &__button {
     position: absolute;

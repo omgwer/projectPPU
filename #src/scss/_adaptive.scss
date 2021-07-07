@@ -48,14 +48,29 @@
     &__container {
       flex-direction: column;
       text-align: center;
+      max-width: 372px;
+    }
+
+    &__box {
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+      gap: 10px;
+    }
+
+    &__text {
+      max-width: 310px;
     }
 
     &__subtitle {
       margin: 0 auto;
+      right: auto;
     }
 
     &__list {
       flex-direction: column;
+      max-width: 372px;
+      gap: 15px;
     }
   }
 }
@@ -135,7 +150,7 @@
   }
 
   .program-experts {
-    padding: 0 0 201px;
+    padding: 0 20px 201px;
     &__title {
       font-size: 35px;
       text-align: center;
@@ -184,6 +199,24 @@
       max-width: none;
     }
   }
+
+  .program-experts {
+    padding: 0 20px 100px;
+  }
+
+  .yandex-map {
+    padding: 0 20px;
+
+    &__script {
+      display: none;
+    }
+  }
+
+  .contacts {
+    position: static;
+    margin: 0 auto 25px;
+  }
+
 }
 
 @media screen and (max-width: 1180px) {
@@ -590,6 +623,37 @@
       height: auto;
     }
   }
+
+  .program-experts {
+    &__title {
+      font-size: 28px;
+      line-height: 32px;
+    }
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .program-experts {
+    padding: 0 20px 100px;
+
+    &__box {
+      display: block;
+    }
+
+    &__container {
+      gap: 25px;
+    }
+
+    &__link_adaptive {
+      transform: scale(0.7);
+      position: relative;
+      right: 15px;
+    }
+
+    &__list {
+      gap: 25px;
+    }
+  }
 }
 
 @media screen and (max-width: 660px) {
@@ -609,6 +673,13 @@
 
     &__subtitle {
       text-align: left;
+    }
+  }
+
+  .people-target {
+    &__title {
+      font-size: 40px;
+      line-height: normal;
     }
   }
 
