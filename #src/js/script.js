@@ -57,7 +57,6 @@ function initHeaderMenu() {
   headerArrow.addEventListener('click', hideHeaderMenu);
 }
 
-
 function menuScrollNavigation() {
   const smoothLinks = document.querySelectorAll('.js-menu-item');
   smoothLinks.forEach(smoothLink => {
