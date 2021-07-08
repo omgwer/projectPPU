@@ -8,6 +8,7 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .visually-hidden {
@@ -1550,7 +1551,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 82px;
+  width: 30px;
   color: #fff;
   text-align: center;
   height: 50px;
@@ -1564,11 +1565,11 @@
 }
 
 .slider__control[data-slide='prev'] {
-  left: -114px;
+  left: -15px;
 }
 
 .slider__control[data-slide='next'] {
-  right: -114px;
+  right: -15px;
 }
 
 .slider__control:hover,
@@ -1642,14 +1643,6 @@
 }
 
 @media screen and (max-width: 1395px) {
-  .slider__control[data-slide='prev'] {
-    left: -50px;
-  }
-
-  .slider__control[data-slide='next'] {
-    right: -50px;
-  }
-
   .faq__title {
     font-size: 50px;
     text-align: center;
@@ -1672,11 +1665,11 @@
   }
 
   .slider__control[data-slide='prev'] {
-    left: -25px;
+    left: 0;
   }
 
   .slider__control[data-slide='next'] {
-    right: -15px;
+    right: 15px;
   }
 
   .program-experts__container {
@@ -1907,7 +1900,7 @@
   }
 
   .slider__control[data-slide='next'] {
-    right: -20px;
+    right: 25px;
   }
 
   .teachers-feedback {
@@ -2217,6 +2210,14 @@
     position: absolute;
     bottom: 20px;
     left: 40px;
+  }
+
+  .slider__control[data-slide='next'] {
+    right: 10px;
+  }
+
+  .slider__control[data-slide='prev'] {
+    left: 10px;
   }
 }
 
@@ -2554,12 +2555,12 @@
   }
 
   .slider__control[data-slide='next'] {
-    right: -30px;
+    right: 10px;
     top: 80px;
   }
 
   .slider__control[data-slide='prev'] {
-    right: -20px;
+    right: 10px;
     top: 80px;
   }
 
@@ -2652,6 +2653,10 @@
     padding: 0;
   }
 
+  .teachers-feedback__title {
+    font-size: 40px;
+  }
+
   .teachers-feedback__slider {
     padding: 20px 30px 60px;
     border-radius: 0;
@@ -2662,11 +2667,11 @@
   }
 
   .teachers-feedback__prev {
-    left: -10px;
+    left: 1px;
   }
 
   .teachers-feedback__next {
-    right: -10px;
+    right: 1px;
   }
 
   .slider-dots {

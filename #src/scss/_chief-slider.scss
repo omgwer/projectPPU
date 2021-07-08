@@ -58,7 +58,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 82px;
+  width: 30px;
   color: #fff;
   text-align: center;
   height: 50px;
@@ -70,11 +70,11 @@
 }
 
 .slider__control[data-slide='prev'] {
-  left: -114px;
+  left: -15px;
 }
 
 .slider__control[data-slide='next'] {
-  right: -114px;
+  right: -15px;
 }
 
 .slider__control:hover,
