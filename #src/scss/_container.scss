@@ -452,6 +452,7 @@
   border-radius: 50%;
   transition: background-color 0.6s ease;
 }
+
 .active,
 .slider-dots_item:hover {
   background-color: #aaa;
@@ -467,7 +468,7 @@
 .active {
   border: 4px solid #087C96;
 }
-// end slider for teachers-feedback
+//
 .session-dates {
   padding: 0 20px;
 
@@ -972,6 +973,10 @@
   bottom: 71px;
   left: 180px;
 
+  &__adaptive {
+    display: none;
+  }
+
   &__button {
     position: absolute;
     top: 35px;
@@ -1006,6 +1011,23 @@
   &__link {
     text-decoration: none;
     margin-right: 30px;
+  }
+
+  &__information {
+    display: block;
+    text-decoration: none;
+    color: #000000;
+
+    &:hover {
+      color: #444444;
+    }
+  }
+
+  &__information {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
   }
 }
 

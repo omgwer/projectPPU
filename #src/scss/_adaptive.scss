@@ -205,16 +205,16 @@
   }
 
   .yandex-map {
-    padding: 0 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 15px;
 
-    &__script {
-      display: none;
-    }
   }
 
   .contacts {
     position: static;
     margin: 0 auto 25px;
+    z-index: 0;
   }
 
 }
@@ -395,6 +395,12 @@
       font-size: 26px;
     }
 
+  }
+}
+
+@media screen and (max-width: 846px) {
+  .contacts {
+    margin: 0 20px;
   }
 }
 
@@ -630,6 +636,10 @@
       line-height: 32px;
     }
   }
+
+  .contacts {
+    padding: 50px 20px 64px 80px;
+  }
 }
 
 @media screen and (max-width: 690px) {
@@ -653,6 +663,12 @@
     &__list {
       gap: 25px;
     }
+  }
+
+  .contacts {
+    padding: 50px 20px 80px;
+    margin: 0 20px;
+
   }
 }
 
@@ -858,6 +874,13 @@
       top: 80px;
     }
   }
+
+  .footer {
+    &__img {
+      display: none;
+    }
+  }
+
 }
 
 @media screen and (max-width: 530px) {
@@ -964,7 +987,31 @@
     padding: 0 20px;
   }
 
+  .contacts {
+    padding: 50px 20px 80px;
+    margin: 0;
+    border-radius: 0;
 
+    &__title {
+      font-size: 30px;
+      line-height: normal;
+    }
+
+    &__subtitle {
+      font-size: 26px;
+      line-height: normal;
+    }
+
+    &__links {
+      display: flex;
+      max-width: 280px;
+      justify-content: space-between;
+    }
+
+    &__link {
+      margin: 0;
+    }
+  }
 }
 
 @media screen and (max-width: 420px) {
@@ -1006,6 +1053,12 @@
       font-size: 8vw;
     }
   }
+
+  .footer {
+    &__link {
+      font-size: 18px;
+    }
+  }
 }
 
 @media screen and (max-width: 350px) {
@@ -1030,6 +1083,12 @@
   .session-dates {
     &__header {
       font-size: 34px;
+    }
+  }
+
+  .contacts {
+    &__adaptive {
+      display: block;
     }
   }
 }

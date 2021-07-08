@@ -1364,6 +1364,10 @@
   left: 180px;
 }
 
+.contacts__adaptive {
+  display: none;
+}
+
 .contacts__button {
   position: absolute;
   top: 35px;
@@ -1404,6 +1408,27 @@
   margin-right: 30px;
 }
 
+.contacts__information {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+}
+
+.contacts__information:hover {
+  color: #444444;
+}
+
+.contacts__information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
 .scrollUp-button {
   opacity: 0.95;
   position: fixed;
@@ -1416,7 +1441,7 @@
 }
 
 .footer {
-  padding: 18px 0 18px;
+  padding: 18px 20px 18px;
   color: #ffffff;
   text-align: center;
   background-color: #1b191e;
@@ -1437,6 +1462,9 @@
           justify-content: space-between;
   max-width: 508px;
   margin: 0 auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
 }
 
 .slider {
@@ -1828,16 +1856,20 @@
   }
 
   .yandex-map {
-    padding: 0 20px;
-  }
-
-  .yandex-map__script {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    gap: 15px;
   }
 
   .contacts {
     position: static;
     margin: 0 auto 25px;
+    z-index: 0;
   }
 }
 
@@ -2130,6 +2162,12 @@
   }
 }
 
+@media screen and (max-width: 846px) {
+  .contacts {
+    margin: 0 20px;
+  }
+}
+
 @media screen and (max-width: 818px) {
   .people-target__title {
     margin-bottom: 25px;
@@ -2284,6 +2322,10 @@
     font-size: 28px;
     line-height: 32px;
   }
+
+  .contacts {
+    padding: 50px 20px 64px 80px;
+  }
 }
 
 @media screen and (max-width: 690px) {
@@ -2309,6 +2351,11 @@
 
   .program-experts__list {
     gap: 25px;
+  }
+
+  .contacts {
+    padding: 50px 20px 80px;
+    margin: 0 20px;
   }
 }
 
@@ -2515,6 +2562,10 @@
     right: -20px;
     top: 80px;
   }
+
+  .footer__img {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 530px) {
@@ -2621,6 +2672,36 @@
   .slider-dots {
     padding: 0 20px;
   }
+
+  .contacts {
+    padding: 50px 20px 80px;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .contacts__title {
+    font-size: 30px;
+    line-height: normal;
+  }
+
+  .contacts__subtitle {
+    font-size: 26px;
+    line-height: normal;
+  }
+
+  .contacts__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 280px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .contacts__link {
+    margin: 0;
+  }
 }
 
 @media screen and (max-width: 420px) {
@@ -2654,6 +2735,10 @@
   .who-is-tutor__title {
     font-size: 8vw;
   }
+
+  .footer__link {
+    font-size: 18px;
+  }
 }
 
 @media screen and (max-width: 350px) {
@@ -2675,5 +2760,9 @@
 
   .session-dates__header {
     font-size: 34px;
+  }
+
+  .contacts__adaptive {
+    display: block;
   }
 }
