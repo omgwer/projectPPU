@@ -1114,6 +1114,23 @@
       margin: 0;
     }
   }
+
+  .join-form {
+    padding: 68px 0 50px;
+
+    &__container {
+      gap: 0;
+    }
+
+    &__block {
+      border-radius: 0;
+      padding: 25px 10px 30px;
+    }
+
+    &__price-form {
+      border-radius: 0;
+    }
+  }
 }
 
 @media screen and (max-width: 420px) {
@@ -1158,6 +1175,12 @@
 
   .footer {
     &__link {
+      font-size: 18px;
+    }
+  }
+
+  .join-form {
+    &__button {
       font-size: 18px;
     }
   }

@@ -1073,6 +1073,10 @@
   background-color: #1B191E;
 }
 
+.join-form__form {
+  max-width: 420px;
+}
+
 .join-form__container {
   max-width: 1260px;
   margin: 0 auto;
@@ -1133,6 +1137,8 @@
 
 .join-form__block {
   max-width: 634px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 25px 51px 30px 83px;
   background-color: #ffffff;
   border-radius: 0 10px 10px 0;
@@ -1224,10 +1230,11 @@
   color: #ffffff;
   font: 600 22px/34px 'Raleway', sans-serif;
   border: none;
-  display: block;
-  padding: 18px 52px;
-  cursor: pointer;
   width: 100%;
+  padding: 18px 0;
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .join-form__button:hover {
@@ -2833,6 +2840,23 @@
   .contacts__link {
     margin: 0;
   }
+
+  .join-form {
+    padding: 68px 0 50px;
+  }
+
+  .join-form__container {
+    gap: 0;
+  }
+
+  .join-form__block {
+    border-radius: 0;
+    padding: 25px 10px 30px;
+  }
+
+  .join-form__price-form {
+    border-radius: 0;
+  }
 }
 
 @media screen and (max-width: 447px) {
@@ -2883,6 +2907,10 @@
   }
 
   .footer__link {
+    font-size: 18px;
+  }
+
+  .join-form__button {
     font-size: 18px;
   }
 }

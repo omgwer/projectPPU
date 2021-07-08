@@ -713,6 +713,10 @@
   padding: 68px 20px 91px;
   background-color: #1B191E;
 
+  &__form {
+    max-width: 420px;
+  }
+
   &__container {
     max-width: 1260px;
     margin: 0 auto;
@@ -764,6 +768,7 @@
 
   &__block {
     max-width: 634px;
+    box-sizing: border-box;
     padding: 25px 51px 30px 83px;
     background-color: #ffffff;
     border-radius: 0 10px 10px 0;
@@ -818,10 +823,10 @@
     color: #ffffff;
     font: 600 22px/34px 'Raleway', sans-serif;
     border: none;
-    display: block;
-    padding: 18px 52px;
-    cursor: pointer;
     width: 100%;
+    padding: 18px 0;
+    cursor: pointer;
+    box-sizing: border-box;
     &:hover {
       background: #ff4e58;
       box-shadow: 0 0 15px 0 rgba(255, 78, 88, 0.4);
