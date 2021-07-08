@@ -12,15 +12,33 @@
   max-width: 1360px;
   display: flex;
   justify-content: space-between;
-  margin: 30px auto 30px;
+  margin: 0 auto;
+  padding: 30px 20px;
   align-items: center;
-  padding: 0 20px;
   position: relative;
+  background-color: #ffffff;
+
+  &__box {
+    background-color: #ffffff;
+    position: absolute;
+    z-index: 0;
+    width: 450px;
+    height: 108px;
+    right: 0;
+    top: 0;
+    display: none;
+  }
+
+  &__block {
+    display: flex;
+  }
 
   &__logo {
     margin-right: 30px;
     align-self: flex-start;
     box-sizing: content-box;
+    position: relative;
+    z-index: 2;
   }
 
   &__nav-menu {

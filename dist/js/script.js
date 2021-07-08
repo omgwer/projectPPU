@@ -16,11 +16,20 @@ function headerSmoothHide() {
     if (prevScrollpos > currentScrollPos) {
       document.getElementById("js-navigation-bar").style.top = "0";
       prevScrollpos = currentScrollPos;
+      hideHeaderMenu();
     } else {
       document.getElementById("js-navigation-bar").style.top = "-110px";
       prevScrollpos = currentScrollPos;
+      hideHeaderMenu();
     }
   }
+}
+
+function hideHeaderMenu() {
+  const navigationMenu = document.querySelector('.header__nav-menu');
+  const burgerMenu = document.querySelector('.js-menu-burger');
+  navigationMenu.style.top = "-380px";
+  burgerMenu.classList.remove('open');
 }
 
 function initHeaderMenu() {
@@ -29,12 +38,12 @@ function initHeaderMenu() {
 
   burgerMenu.addEventListener('click', () =>{
     if (!burgerMenu.classList.contains('open')) {
-      navigationMenu.style.top = "80px";
+      navigationMenu.style.top = "109px";
       //navigationMenu.classList.remove('js-menu-nav');
       burgerMenu.classList.add('open');
     } else {
       burgerMenu.classList.remove('open');
-      navigationMenu.style.top = "-400px";
+      navigationMenu.style.top = "-380px";
       //navigationMenu.classList.add('js-menu-nav');
     }
 
