@@ -1069,7 +1069,7 @@
 }
 
 .join-form {
-  padding: 68px 0 91px;
+  padding: 68px 20px 91px;
   background-color: #1B191E;
 }
 
@@ -1087,12 +1087,11 @@
 .join-form__price-form {
   color: #ffffff;
   background-color: #686470;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 10px;
   -webkit-box-shadow: 18px 4px 25px 0 rgba(0, 0, 0, 0.15);
           box-shadow: 18px 4px 25px 0 rgba(0, 0, 0, 0.15);
   max-width: 620px;
   padding: 106px 98px 118px 60px;
-  z-index: 1;
 }
 
 .join-form__price-title {
@@ -1134,11 +1133,9 @@
 
 .join-form__block {
   max-width: 634px;
-  padding: 25px 51px 30px 137px;
+  padding: 25px 51px 30px 83px;
   background-color: #ffffff;
-  border-radius: 10px;
-  position: relative;
-  right: 54px;
+  border-radius: 0 10px 10px 0;
 }
 
 .join-form__title {
@@ -1230,6 +1227,7 @@
   display: block;
   padding: 18px 52px;
   cursor: pointer;
+  width: 100%;
 }
 
 .join-form__button:hover {
@@ -1793,6 +1791,16 @@
   }
 }
 
+@media screen and (max-width: 1233px) {
+  .join-form__price-title {
+    font-size: 28px;
+  }
+
+  .join-form__block {
+    padding: 25px 30px 30px 30px;
+  }
+}
+
 @media screen and (max-width: 1220px) {
   .faq__position {
     -ms-flex-wrap: wrap;
@@ -2083,6 +2091,17 @@
   }
 }
 
+@media screen and (max-width: 1030px) {
+  .join-form__price-form {
+    padding: 90px 40px 100px 30px;
+  }
+
+  .join-form__title {
+    font-size: 35px;
+    line-height: normal;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .course-faq {
     padding: 56px 0 61px 93px;
@@ -2135,6 +2154,31 @@
 
   .slider__avatar {
     margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 933px) {
+  .join-form__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 15px;
+  }
+
+  .join-form__price-form {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+
+  .join-form__block {
+    border-radius: 10px;
   }
 }
 

@@ -710,7 +710,7 @@
 }
 
 .join-form {
-  padding: 68px 0 91px;
+  padding: 68px 20px 91px;
   background-color: #1B191E;
 
   &__container {
@@ -723,11 +723,10 @@
   &__price-form {
     color: #ffffff;
     background-color: #686470;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 10px;
     box-shadow: 18px 4px 25px 0 rgba(0,0,0, 0.15);
     max-width: 620px;
     padding: 106px 98px 118px 60px;
-    z-index: 1;
   }
 
   &__price-title {
@@ -765,11 +764,9 @@
 
   &__block {
     max-width: 634px;
-    padding: 25px 51px 30px 137px;
+    padding: 25px 51px 30px 83px;
     background-color: #ffffff;
-    border-radius: 10px;
-    position: relative;
-    right: 54px;
+    border-radius: 0 10px 10px 0;
   }
 
   &__title {
@@ -808,8 +805,6 @@
     }
   }
 
-
-
   &__description {
     text-align: center;
     max-width: 412px;
@@ -826,7 +821,7 @@
     display: block;
     padding: 18px 52px;
     cursor: pointer;
-
+    width: 100%;
     &:hover {
       background: #ff4e58;
       box-shadow: 0 0 15px 0 rgba(255, 78, 88, 0.4);
