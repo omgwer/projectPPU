@@ -11,20 +11,14 @@ window.addEventListener('load', evt => {
 });
 
 function setAnimatedBlockLoaded() {
-  const animatedCourseInfo = document.getElementById('course-information_animated');
-  const animatedHeader = document.querySelector('.header');
   const courseAdvantages = document.querySelector('.course-advantages');
   const animatedCourseAdvantages = document.querySelectorAll('.course-advantages__container');
   const aboutTraining = document.querySelector('.about-training__container');
   const animatedAboutTraining = document.querySelectorAll('.about-training__block');
-
   let reachedSecond = false;
   let reached = false;
   const ANIMATED__COURSE__ADVANTAGES = 300;
   const ANIMATED__ABOUT__TRAINING = 500;
-
-  animatedCourseInfo.classList.add('loaded');
-  animatedHeader.classList.add('loaded');
 
   window.addEventListener('scroll', () => {
     if (window.pageYOffset + window.innerHeight > courseAdvantages.offsetTop + ANIMATED__COURSE__ADVANTAGES) {
