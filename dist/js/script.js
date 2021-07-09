@@ -6,7 +6,35 @@ window.addEventListener('load', evt => {
   customDropList();
   feedbackSlider();
   initHeaderMenu();
+  animateCourseInfo();
   });
+
+function setAnimatedBlockLoaded() {
+  const animatedBlockAdventages = document.getElementById('animatedBlockAdventages');
+  const animatedBlock = document.getElementById('animatedBlock');
+  if (!animatedBlock) {
+    return;
+  }
+  let reachedSecond = false;
+  let reached = false;
+  const ANIMATED_BLOCK_OFFSET = 300;
+  const ANIMATED_BLOCK_SECOND = 150;
+
+  window.addEventListener('scroll', () => {
+    if (window.pageYOffset + window.innerHeight > animatedBlock.offsetTop + ANIMATED_BLOCK_OFFSET) {
+      if (!reached) {
+        animatedBlock.classList.add('scrolled');
+        reached = true;
+      }
+    }
+    if (window.pageYOffset + window.innerHeight > animatedBlockAdventages.offsetTop + ANIMATED_BLOCK_SECOND) {
+      if (!reachedSecond) {
+        animatedBlockAdventages.classList.add('scrolled');
+        reachedSecond = true;
+      }
+    }
+  })
+}
 
 function headerSmoothHide() {
   let prevScrollpos = window.pageYOffset;
@@ -58,8 +86,29 @@ function initHeaderMenu() {
 }
 
 function animateCourseInfo() {
-  const animatedBlock = document.querySelector('.course-information');
-  
+  let animatedBlock = document.querySelector('.course-information');
+  let i = 2;
+  let revers = false;
+  function changeSlide() {
+    if (i === 1) {
+      animatedBlock.style.backgroundPosition = `center`;
+      if (revers === false) {
+        i++;
+      } else {
+        i--;
+      }
+      revers = false;
+    } else if (i === 2) {
+      animatedBlock.style.backgroundPosition = `right`;
+      i--;
+      revers = true;
+    } else if (i === 0) {
+      animatedBlock.style.backgroundPosition = `left`;
+      i++;
+      revers = false;
+    }
+  }
+  setInterval(changeSlide, 5000);
 }
 
 function menuScrollNavigation() {
@@ -159,25 +208,21 @@ function feedbackSlider() {
       currentSlide(dotIndex);
     })
   }
-  /* Индекс слайда по умолчанию */
   let slideIndex = 1;
   showSlides(slideIndex);
 
-  /* Функция увеличивает индекс на 1, показывает следующй слайд*/
   function plusSlide() {
     showSlides(slideIndex += 1);
   }
 
-  /* Функция уменьшяет индекс на 1, показывает предыдущий слайд*/
   function minusSlide() {
     showSlides(slideIndex -= 1);
   }
 
-  /* Устанавливает текущий слайд */
   function currentSlide(n) {
     showSlides(slideIndex = n);
   }
-  /* Основная функция слайдера */
+
   function showSlides(n) {
     let i;
     const slides = document.getElementsByClassName("teachers-feedback__item");
@@ -198,6 +243,7 @@ function feedbackSlider() {
     dots[slideIndex - 1].className += " active";
   }
 }
+
 
 document.addEventListener('DOMContentLoaded', function () {
   const slider = new ChiefSlider('.slider', {
@@ -722,3 +768,4 @@ ChiefSlider.prototype.moveTo = function(index) {
 ChiefSlider.prototype.refresh = function() {
   this._refresh();
 };;
+

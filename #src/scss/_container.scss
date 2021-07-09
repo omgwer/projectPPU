@@ -4,6 +4,7 @@
   height: 756px;
   background-position: center;
   margin-top: 110px;
+  transition: background-position 1s cubic-bezier(0.68,0.12,0.58,1);
 
   &__container {
     max-width: 1160px;
@@ -1020,6 +1021,10 @@
     gap: 10px;
     align-items: center;
     margin-bottom: 10px;
+
+    & img {
+      width: 24px;
+    }
 
     &:hover {
       color: #444444;

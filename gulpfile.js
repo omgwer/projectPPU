@@ -15,7 +15,7 @@ let path = {
     css: [sourse_folder + '/scss/*.scss', '!' + sourse_folder + '/_*.scss'],
     js: sourse_folder + '/js/script.js',
     img: sourse_folder + '/img/**/*.{jpg,png,svg,gif,ico,webp}',
-    fonts: sourse_folder + '/fonts/*.woff',
+    fonts: sourse_folder + '/fonts/*.ttf',
   },
   watch: {
     html: sourse_folder + '/**/*.html',
@@ -140,4 +140,3 @@ exports.html = html;
 exports.build = build;
 exports.watch = watch;
 exports.default = watch;
-
