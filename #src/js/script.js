@@ -7,31 +7,35 @@ window.addEventListener('load', evt => {
   feedbackSlider();
   initHeaderMenu();
   animateCourseInfo();
-  });
+  setAnimatedBlockLoaded();
+});
 
 function setAnimatedBlockLoaded() {
-  const animatedBlockAdventages = document.getElementById('animatedBlockAdventages');
-  const animatedBlock = document.getElementById('animatedBlock');
-  if (!animatedBlock) {
-    return;
-  }
+  const animatedCourseInfo = document.getElementById('course-information_animated');
+  const animatedHeader = document.querySelector('.header');
+  const courseAdvantages = document.querySelector('.course-advantages');
+  const animatedCourseAdvantages = document.querySelectorAll('.course-advantages__container');
+  const aboutTraining = document.querySelector('.about-training__container');
+  const animatedAboutTraining = document.querySelectorAll('.about-training__block');
+
   let reachedSecond = false;
   let reached = false;
-  const ANIMATED_BLOCK_OFFSET = 300;
-  const ANIMATED_BLOCK_SECOND = 150;
+  const ANIMATED__COURSE__ADVANTAGES = 300;
+  const ANIMATED__ABOUT__TRAINING = 500;
+
+  animatedCourseInfo.classList.add('loaded');
+  animatedHeader.classList.add('loaded');
 
   window.addEventListener('scroll', () => {
-    if (window.pageYOffset + window.innerHeight > animatedBlock.offsetTop + ANIMATED_BLOCK_OFFSET) {
-      if (!reached) {
-        animatedBlock.classList.add('scrolled');
-        reached = true;
-      }
+    if (window.pageYOffset + window.innerHeight > courseAdvantages.offsetTop + ANIMATED__COURSE__ADVANTAGES) {
+      animatedCourseAdvantages.forEach(element =>{
+        element.classList.add('loaded');
+      })
     }
-    if (window.pageYOffset + window.innerHeight > animatedBlockAdventages.offsetTop + ANIMATED_BLOCK_SECOND) {
-      if (!reachedSecond) {
-        animatedBlockAdventages.classList.add('scrolled');
-        reachedSecond = true;
-      }
+    if (window.pageYOffset + window.innerHeight > aboutTraining.offsetTop + ANIMATED__ABOUT__TRAINING) {
+      animatedAboutTraining.forEach(element =>{
+        element.classList.add('loaded');
+      })
     }
   })
 }

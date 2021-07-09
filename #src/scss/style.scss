@@ -37,3 +37,8 @@
 @@include('_footer.scss')
 @@include('_chief-slider.scss')
 @@include('_adaptive.scss')
+
+.loaded {
+    opacity: 1 !important;
+    top: 0 !important;
+}
