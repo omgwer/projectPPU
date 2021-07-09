@@ -1752,7 +1752,6 @@
   }
 
   .course-information {
-    background-position: right 35% bottom 45%;
     padding: 0 20px;
   }
 
@@ -2627,10 +2626,6 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
-
-  .course-information {
-    background-position: right 25% bottom 45%;
-  }
 }
 
 @media screen and (max-width: 570px) {
@@ -2947,5 +2942,24 @@
 
   .contacts__adaptive {
     display: block;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-height: 500px) {
+  .header__nav-menu {
+    padding-top: 2px;
+    width: 100vw;
+    max-width: none;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    gap: 5px;
+  }
+
+  .header__link {
+    line-height: normal;
+  }
+
+  .header__box {
+    width: 100%;
   }
 }

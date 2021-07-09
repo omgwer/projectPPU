@@ -56,7 +56,7 @@
   }
 
   .course-information {
-    background-position: right 35% bottom 45%;
+   //background-position: right 35% bottom 45%;
     padding: 0 20px;
   }
 
@@ -885,7 +885,7 @@
   }
 
   .course-information {
-    background-position: right 25% bottom 45%;
+    //background-position: right 25% bottom 45%;
   }
 }
 
@@ -1218,6 +1218,26 @@
   .contacts {
     &__adaptive {
       display: block;
+    }
+  }
+}
+
+@media screen and (orientation: landscape) and (max-height: 500px) {
+  .header {
+    &__nav-menu {
+      padding-top: 2px;
+      width:  100vw;
+      max-width: none;
+      box-sizing: border-box;
+      gap: 5px;
+    }
+
+    &__link {
+      line-height: normal;
+    }
+
+    &__box {
+      width: 100%;
     }
   }
 }
