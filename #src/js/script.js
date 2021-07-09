@@ -57,6 +57,11 @@ function initHeaderMenu() {
   headerArrow.addEventListener('click', hideHeaderMenu);
 }
 
+function animateCourseInfo() {
+  const animatedBlock = document.querySelector('.course-information');
+  
+}
+
 function menuScrollNavigation() {
   const smoothLinks = document.querySelectorAll('.js-menu-item');
   smoothLinks.forEach(smoothLink => {
