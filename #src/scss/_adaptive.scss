@@ -1147,6 +1147,21 @@
     &__container {
       padding: 30px 0 0;
     }
+
+    &__subtitle {
+      margin-bottom: 30px;
+    }
+
+    &__box {
+      gap: 20px;
+    }
+  }
+
+  .about-training {
+    &__heading {
+      font-size: 30px;
+      line-height: normal;
+    }
   }
 
   .about-authors {
@@ -1165,6 +1180,12 @@
     &__title {
       margin: 20px auto 20px;
       line-height: normal;
+    }
+  }
+
+  .session-dates {
+    &__title {
+      font-size: 40px;
     }
   }
 }

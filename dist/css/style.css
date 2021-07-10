@@ -2929,6 +2929,19 @@
     padding: 30px 0 0;
   }
 
+  .course-information__subtitle {
+    margin-bottom: 30px;
+  }
+
+  .course-information__box {
+    gap: 20px;
+  }
+
+  .about-training__heading {
+    font-size: 30px;
+    line-height: normal;
+  }
+
   .about-authors__header {
     font-size: 30px;
     line-height: normal;
@@ -2944,6 +2957,10 @@
   .about-authors__title {
     margin: 20px auto 20px;
     line-height: normal;
+  }
+
+  .session-dates__title {
+    font-size: 40px;
   }
 }
 
