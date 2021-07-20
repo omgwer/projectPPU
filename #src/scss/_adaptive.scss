@@ -140,24 +140,6 @@
     }
   }
 
-  .who-is-tutor {
-    margin: 75px 20px 120px;
-  }
-
-  .about-training {
-    &__heading {
-      margin-bottom: 50px;
-    }
-    &__container {
-      margin: 0 auto;
-      max-width: 1100px;
-    }
-
-    &__block {
-      gap: 50px;
-    }
-  }
-
   .people-target {
     &__title {
       text-align: center;
@@ -520,23 +502,6 @@
     }
   }
 
-  .who-is-tutor {
-    margin-bottom: 50px;
-
-    &__title {
-      font-size: 45px;
-      line-height: 60px;
-    }
-  }
-
-  .about-training {
-
-    &__heading {
-      font-size: 50px;
-      text-align: center;
-    }
-  }
-
   .people-target {
     padding-top: 0;
     &__title {
@@ -671,32 +636,6 @@
     }
   }
 
-  .who-is-tutor {
-    padding: 50px 40px 89px 40px;
-    &__title {
-      font-size: 45px;
-      line-height: 60px;
-      text-align: center;
-      margin-bottom: 20px;
-    }
-  }
-
-  .about-training {
-    &__block {
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
-    }
-
-    &__organization-link {
-      max-width: 75vw;
-    }
-
-    &__quote {
-      max-width: 75vw;
-    }
-  }
-
   .discipline-block {
     margin: 0 auto;
     border-radius: 0;
@@ -788,14 +727,6 @@
 
     &__content {
       max-width: 90vw;
-    }
-  }
-
-  .about-training {
-
-    &__heading {
-      font-size: 40px;
-      text-align: center;
     }
   }
 
@@ -907,19 +838,6 @@
     }
   }
 
-  .who-is-tutor {
-    padding: 50px 20px 70px;
-    margin: 75px 0 100px;
-    border-radius: 0;
-
-    &__title {
-      font-size: 45px;
-      line-height: 60px;
-      text-align: center;
-      margin-bottom: 20px;
-    }
-  }
-
   .session-dates {
     padding: 73px 0 83px;
 
@@ -970,21 +888,6 @@
 }
 
 @media screen and (max-width: 530px) {
-  .who-is-tutor {
-    &__container {
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-    }
-
-    &__title {
-      font-size: 36px;
-    }
-
-    &__tag {
-      text-align: center;
-    }
-  }
 
   .about-authors {
     &__name {
@@ -1157,13 +1060,6 @@
     }
   }
 
-  .about-training {
-    &__heading {
-      font-size: 30px;
-      line-height: normal;
-    }
-  }
-
   .about-authors {
     &__header {
       font-size: 30px;
@@ -1194,12 +1090,6 @@
   .header {
     &__logo {
       width: 80%;
-    }
-  }
-
-  .who-is-tutor {
-    &__title {
-      font-size: 8vw;
     }
   }
 

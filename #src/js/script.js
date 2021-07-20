@@ -6,33 +6,33 @@ window.addEventListener('load', evt => {
   customDropList();
   feedbackSlider();
   initHeaderMenu();
-  animateCourseInfo();
-  setAnimatedBlockLoaded();
+  //animateCourseInfo();
+  //setAnimatedBlockLoaded();
 });
 
-function setAnimatedBlockLoaded() {
-  const courseAdvantages = document.querySelector('.course-advantages');
-  const animatedCourseAdvantages = document.querySelectorAll('.course-advantages__container');
-  const aboutTraining = document.querySelector('.about-training__container');
-  const animatedAboutTraining = document.querySelectorAll('.about-training__block');
-  let reachedSecond = false;
-  let reached = false;
-  const ANIMATED__COURSE__ADVANTAGES = 300;
-  const ANIMATED__ABOUT__TRAINING = 500;
-
-  window.addEventListener('scroll', () => {
-    if (window.pageYOffset + window.innerHeight > courseAdvantages.offsetTop + ANIMATED__COURSE__ADVANTAGES) {
-      animatedCourseAdvantages.forEach(element =>{
-        element.classList.add('loaded');
-      })
-    }
-    if (window.pageYOffset + window.innerHeight > aboutTraining.offsetTop + ANIMATED__ABOUT__TRAINING) {
-      animatedAboutTraining.forEach(element =>{
-        element.classList.add('loaded');
-      })
-    }
-  })
-}
+// function setAnimatedBlockLoaded() {
+//   const courseAdvantages = document.querySelector('.course-advantages');
+//   const animatedCourseAdvantages = document.querySelectorAll('.course-advantages__container');
+//   const aboutTraining = document.querySelector('.about-training__container');
+//   const animatedAboutTraining = document.querySelectorAll('.about-training__block');
+//   let reachedSecond = false;
+//   let reached = false;
+//   const ANIMATED__COURSE__ADVANTAGES = 300;
+//   const ANIMATED__ABOUT__TRAINING = 500;
+//
+//   window.addEventListener('scroll', () => {
+//     if (window.pageYOffset + window.innerHeight > courseAdvantages.offsetTop + ANIMATED__COURSE__ADVANTAGES) {
+//       animatedCourseAdvantages.forEach(element =>{
+//         element.classList.add('loaded');
+//       })
+//     }
+//     if (window.pageYOffset + window.innerHeight > aboutTraining.offsetTop + ANIMATED__ABOUT__TRAINING) {
+//       animatedAboutTraining.forEach(element =>{
+//         element.classList.add('loaded');
+//       })
+//     }
+//   })
+// }
 
 function headerSmoothHide() {
   let prevScrollpos = window.pageYOffset;
@@ -83,31 +83,31 @@ function initHeaderMenu() {
   headerArrow.addEventListener('click', hideHeaderMenu);
 }
 
-function animateCourseInfo() {
-  let animatedBlock = document.querySelector('.course-information');
-  let i = 2;
-  let revers = false;
-  function changeSlide() {
-    if (i === 1) {
-      animatedBlock.style.backgroundPosition = `center`;
-      if (revers === false) {
-        i++;
-      } else {
-        i--;
-      }
-      revers = false;
-    } else if (i === 2) {
-      animatedBlock.style.backgroundPosition = `right`;
-      i--;
-      revers = true;
-    } else if (i === 0) {
-      animatedBlock.style.backgroundPosition = `left`;
-      i++;
-      revers = false;
-    }
-  }
-  setInterval(changeSlide, 5000);
-}
+// function animateCourseInfo() {
+//   let animatedBlock = document.querySelector('.course-information');
+//   let i = 2;
+//   let revers = false;
+//   function changeSlide() {
+//     if (i === 1) {
+//       animatedBlock.style.backgroundPosition = `center`;
+//       if (revers === false) {
+//         i++;
+//       } else {
+//         i--;
+//       }
+//       revers = false;
+//     } else if (i === 2) {
+//       animatedBlock.style.backgroundPosition = `right`;
+//       i--;
+//       revers = true;
+//     } else if (i === 0) {
+//       animatedBlock.style.backgroundPosition = `left`;
+//       i++;
+//       revers = false;
+//     }
+//   }
+//   setInterval(changeSlide, 5000);
+// }
 
 function menuScrollNavigation() {
   const smoothLinks = document.querySelectorAll('.js-menu-item');
@@ -241,7 +241,6 @@ function feedbackSlider() {
     dots[slideIndex - 1].className += " active";
   }
 }
-
 
 @@include('slider.js');
 
