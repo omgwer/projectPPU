@@ -242,5 +242,5 @@ function feedbackSlider() {
   }
 }
 
-@@include('slider.js');
+
 

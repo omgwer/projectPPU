@@ -340,12 +340,6 @@
   }
 }
 
-@media screen and (max-width: 1099px) {
-  .discipline-block {
-    margin: 0 20px;
-  }
-}
-
 @media screen and (max-width: 1070px) {
   .course-faq {
     padding: 56px 20px 61px 35px;
@@ -633,21 +627,6 @@
 
     &__tag br {
       display: none;
-    }
-  }
-
-  .discipline-block {
-    margin: 0 auto;
-    border-radius: 0;
-    padding: 71px 20px 30px;
-
-    &__title {
-      font-size: 50px;
-      text-align: center;
-    }
-
-    &__list-item {
-      height: auto;
     }
   }
 
@@ -946,26 +925,6 @@
 }
 
 @media screen and (max-width: 450px) {
-  .discipline-block {
-    &__title {
-      font-size: 30px;
-      line-height: normal;
-    }
-
-    &__list-item {
-      margin-top: 35px;
-      gap: 5px;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: flex-start;
-      padding: 0;
-    }
-
-    &__heading {
-      font-size: 22px;
-      line-height: normal;
-    }
-  }
 
   .teachers-feedback {
     padding: 0;
