@@ -281,22 +281,6 @@
       padding: 0 20px;
     }
   }
-
-  .session-dates {
-    &__to-proceed {
-      flex-wrap: wrap;
-      gap: 35px;
-      justify-content: center;
-    }
-
-    &__block-text {
-      max-width: 650px;
-    }
-
-    &__text {
-      width: auto;
-    }
-  }
 }
 
 @media screen and (max-width: 1131px) {
@@ -323,579 +307,533 @@
     &__dates {
       display: flex;
     }
+  }
 
-    &__diploma {
-      flex-wrap: wrap;
-      gap: 15px;
-      justify-content: center;
-    }
-
-    &__diploma-title {
-      max-width: none;
-    }
-
-    &__header {
-      margin: 100px auto 65px;
+  @media screen and (max-width: 1070px) {
+    .course-faq {
+      padding: 56px 20px 61px 35px;
     }
   }
-}
 
-@media screen and (max-width: 1070px) {
-  .course-faq {
-    padding: 56px 20px 61px 35px;
-  }
-}
+  @media screen and (max-width: 1030px) {
+    .join-form {
+      &__price-form {
+        padding: 90px 40px 100px 30px;
+      }
 
-@media screen and (max-width: 1030px) {
-  .join-form {
-    &__price-form {
-      padding: 90px 40px 100px 30px;
-    }
-
-    &__title {
-      font-size: 35px;
-      line-height: normal;
-    }
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .course-faq {
-    padding: 56px 0 61px 93px;
-    flex-wrap: wrap;
-    gap: 25px;
-
-    &__container {
-      width: auto;
-      gap: 25px;
-    }
-
-    &__content {
-      max-width: 380px;
-      &:nth-child(2) .course-faq__tag {
-        max-width: 210px;
+      &__title {
+        font-size: 35px;
+        line-height: normal;
       }
     }
   }
 
-  .slider {
-    &__item {
-      flex: 0 0 50%;
-      max-width: 50%;
+  @media screen and (max-width: 1000px) {
+    .course-faq {
+      padding: 56px 0 61px 93px;
       flex-wrap: wrap;
-      align-items: center;
-      justify-content: flex-start;
-      flex-direction: column;
-      gap: 10px;
+      gap: 25px;
+
+      &__container {
+        width: auto;
+        gap: 25px;
+      }
+
+      &__content {
+        max-width: 380px;
+
+        &:nth-child(2) .course-faq__tag {
+          max-width: 210px;
+        }
+      }
     }
 
-    &__name {
+    .slider {
+      &__item {
+        flex: 0 0 50%;
+        max-width: 50%;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      &__name {
         text-align: center;
-    }
+      }
 
-    &__subtitle {
-      margin: 0 auto;
-      max-width: 265px;
-    }
+      &__subtitle {
+        margin: 0 auto;
+        max-width: 265px;
+      }
 
-    &__avatar {
-      margin: 0 auto;
-    }
-  }
-}
-
-@media screen and (max-width: 933px) {
-  .join-form {
-    &__container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 15px;
-    }
-
-    &__price-form {
-      max-width: 100%;
-      border-radius: 10px;
-    }
-
-    &__block {
-      border-radius: 10px;
+      &__avatar {
+        margin: 0 auto;
+      }
     }
   }
 
-}
+  @media screen and (max-width: 933px) {
+    .join-form {
+      &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+      }
 
-@media screen and (max-width: 925px) {
-  .session-dates {
-    &__container {
-      padding-left: 40px;
-    }
+      &__price-form {
+        max-width: 100%;
+        border-radius: 10px;
+      }
 
-    &__title {
-      font-size: 50px;
-    }
-
-    &__list {
-      font-size: 26px;
-    }
-
-    &__items {
-      font-size: 26px;
+      &__block {
+        border-radius: 10px;
+      }
     }
 
   }
-}
 
-@media screen and (max-width: 846px) {
-  .contacts {
-    margin: 0 20px;
+  @media screen and (max-width: 925px) {
+    .session-dates {
+      &__container {
+        padding-left: 40px;
+      }
+
+      &__title {
+        font-size: 50px;
+      }
+
+      &__list {
+        font-size: 26px;
+      }
+
+      &__items {
+        font-size: 26px;
+      }
+
+    }
   }
-}
 
-@media screen and (max-width: 850px) {
-  .course-faq {
-    margin-top: 25px;
-    padding: 56px 20px 61px 50px;
-    flex-wrap: wrap;
-    gap: 25px;
-    transform: none;
-    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.25);
+  @media screen and (max-width: 846px) {
+    .contacts {
+      margin: 0 20px;
+    }
   }
 
-  .course-advantages {
-    &__line {
-      margin: 9px 0 0 0;
-    }
-
-    &__block {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 25px;
-    }
-
-    &__title {
-      font-size: 36px;
-      max-width: 90vw;
-      text-align: center;
-      margin-bottom: 50px;
-    }
-
-    &__container {
+  @media screen and (max-width: 850px) {
+    .course-faq {
+      margin-top: 25px;
+      padding: 56px 20px 61px 50px;
       flex-wrap: wrap;
-      justify-content: center;
       gap: 25px;
-      padding: 0;
+      transform: none;
+      box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.25);
+    }
 
-      &:nth-child(2) {
+    .course-advantages {
+      &__line {
+        margin: 9px 0 0 0;
+      }
+
+      &__block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 25px;
+      }
+
+      &__title {
+        font-size: 36px;
+        max-width: 90vw;
+        text-align: center;
+        margin-bottom: 50px;
+      }
+
+      &__container {
+        flex-wrap: wrap;
         justify-content: center;
-        gap: 50px;
+        gap: 25px;
         padding: 0;
-        margin: auto;
+
+        &:nth-child(2) {
+          justify-content: center;
+          gap: 50px;
+          padding: 0;
+          margin: auto;
+        }
+      }
+    }
+
+    .people-target {
+      padding-top: 0;
+
+      &__title {
+        font-size: 50px;
+        margin-bottom: 50px;
       }
     }
   }
 
-  .people-target {
-    padding-top: 0;
-    &__title {
-      font-size: 50px;
-      margin-bottom: 50px;
-    }
-  }
-}
+  @media screen and (max-width: 818px) {
+    .people-target {
+      &__title {
+        margin-bottom: 25px;
+      }
 
-@media screen and (max-width: 818px) {
-  .people-target {
-    &__title {
-      margin-bottom: 25px;
-    }
+      &__list {
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-bottom: 20px;
+      }
 
-    &__list {
-      flex-wrap: wrap;
-      gap: 20px;
-      margin-bottom: 20px;
+      &__list-item {
+        padding: 20px;
+        max-width: none;
+      }
     }
 
-    &__list-item {
-      padding: 20px;
-      max-width: none;
-    }
-  }
+    .about-authors {
+      &__header {
+        font-size: 40px;
+      }
 
-  .about-authors {
-    &__header {
-      font-size: 40px;
-    }
-
-    &__title {
-      margin: 40px auto 45px;
-      font-size: 30px;
-      max-width: none;
-      text-align: center;
-    }
-  }
-
-  .teachers-feedback {
-    padding: 0 50px;
-    margin: 0 auto 50px;
-
-    &__title {
-      margin: 50px auto;
-      text-align: center;
+      &__title {
+        margin: 40px auto 45px;
+        font-size: 30px;
+        max-width: none;
+        text-align: center;
+      }
     }
 
-    &__slider {
-      padding: 20px 20px 60px;
-      min-height: 480px;
-      height: auto;
-      position: relative;
+    .teachers-feedback {
+      padding: 0 50px;
+      margin: 0 auto 50px;
+
+      &__title {
+        margin: 50px auto;
+        text-align: center;
+      }
+
+      &__slider {
+        padding: 20px 20px 60px;
+        min-height: 480px;
+        height: auto;
+        position: relative;
+      }
+
+      &__author {
+        position: absolute;
+        bottom: 20px;
+        left: 40px;
+      }
     }
 
-    &__author {
-      position: absolute;
-      bottom: 20px;
-      left: 40px;
-    }
-  }
+    .slider {
+      &__control[data-slide='next'] {
+        right: 10px;
+      }
 
-  .slider {
-    &__control[data-slide='next'] {
-      right: 10px;
-    }
-
-    &__control[data-slide='prev'] {
-      left: 10px;
-    }
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .session-dates {
-    &__container {
-      padding-left: 20px;
-    }
-
-    &__list-item {
-      gap: 15px;
-    }
-
-    &__diploma-title {
-      font-size: 26px;
-
-    }
-
-    &__subtitle {
-      font-size: 20px;
-      line-height: 1.6rem;
-    }
-  }
-}
-
-@media screen and (max-width: 758px) {
-  .session-dates {
-    &__list {
-      justify-content: center;
-    }
-
-    &__items {
-      justify-content: center;
-    }
-
-    &__dates {
-      display: block;
+      &__control[data-slide='prev'] {
+        left: 10px;
+      }
     }
   }
 
-  .faq {
-    &__title {
-      font-size: 40px;
-      margin: 100px 0 45px;
+  @media screen and (max-width: 800px) {
+    .session-dates {
+      &__container {
+        padding-left: 20px;
+      }
+
+      &__list-item {
+        gap: 15px;
+      }
+
+      &__diploma-title {
+        font-size: 26px;
+
+      }
+
+      &__subtitle {
+        font-size: 20px;
+        line-height: 1.6rem;
+      }
     }
   }
-}
 
-@media screen and (max-width: 740px) {
-  .course-faq {
-    &__content {
-      max-width: 80vw;
+  @media screen and (max-width: 758px) {
+    .session-dates {
+      &__list {
+        justify-content: center;
+      }
 
-      &:nth-child(2) .course-faq__tag {
+      &__items {
+        justify-content: center;
+      }
+
+      &__dates {
+        display: block;
+      }
+    }
+
+    .faq {
+      &__title {
+        font-size: 40px;
+        margin: 100px 0 45px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 740px) {
+    .course-faq {
+      &__content {
         max-width: 80vw;
+
+        &:nth-child(2) .course-faq__tag {
+          max-width: 80vw;
+        }
+      }
+
+      &__tag br {
+        display: none;
       }
     }
 
-    &__tag br {
-      display: none;
+    .program-experts {
+      &__title {
+        font-size: 28px;
+        line-height: 32px;
+      }
+    }
+
+    .contacts {
+      padding: 50px 20px 64px 80px;
     }
   }
 
-  .program-experts {
-    &__title {
-      font-size: 28px;
-      line-height: 32px;
+  @media screen and (max-width: 690px) {
+    .program-experts {
+      padding: 0 20px 100px;
+
+      &__box {
+        display: block;
+      }
+
+      &__container {
+        gap: 25px;
+      }
+
+      &__link_adaptive {
+        transform: scale(0.7);
+        position: relative;
+        right: 15px;
+      }
+
+      &__list {
+        gap: 25px;
+      }
+    }
+
+    .contacts {
+      padding: 50px 20px 80px;
+      margin: 0 20px;
+
     }
   }
 
-  .contacts {
-    padding: 50px 20px 64px 80px;
-  }
-}
+  @media screen and (max-width: 660px) {
+    .course-information {
+      &__container {
+        padding: 85px 0 179px;
+      }
 
-@media screen and (max-width: 690px) {
-  .program-experts {
-    padding: 0 20px 100px;
+      &__description {
+        text-align: center;
+        margin-bottom: 50px;
+      }
 
-    &__box {
-      display: block;
+      &__title {
+        font-size: 40px;
+      }
+
+      &__subtitle {
+        text-align: left;
+      }
     }
 
-    &__container {
-      gap: 25px;
+    .people-target {
+      &__title {
+        font-size: 40px;
+        line-height: normal;
+      }
     }
 
-    &__link_adaptive {
-      transform: scale(0.7);
-      position: relative;
-      right: 15px;
+    .course-faq {
+      padding: 56px 15px 61px 30px;
+      margin: 0;
+      border-radius: 0;
+
+      &__content {
+        max-width: 90vw;
+      }
     }
 
-    &__list {
-      gap: 25px;
-    }
-  }
+    .slider {
+      margin: 50px auto 50px;
 
-  .contacts {
-    padding: 50px 20px 80px;
-    margin: 0 20px;
-
-  }
-}
-
-@media screen and (max-width: 660px) {
-  .course-information {
-    &__container {
-      padding: 85px 0 179px;
-    }
-
-    &__description {
-      text-align: center;
-      margin-bottom: 50px;
-    }
-
-    &__title {
-      font-size: 40px;
-    }
-
-    &__subtitle {
-      text-align: left;
+      &__item {
+        flex: 0 0 100%;
+        max-width: 100%;
+        flex-direction: row;
+        gap: 0;
+        align-items: flex-start;
+      }
     }
   }
 
-  .people-target {
-    &__title {
-      font-size: 40px;
-      line-height: normal;
+  @media screen and (max-width: 612px) {
+    .course-information {
+      &__box {
+        justify-content: center;
+        gap: 35px;
+      }
+
+      &__start-time {
+        margin: 0 auto;
+      }
+    }
+
+    .course-advantages {
+      margin-top: 55px;
+
+      &__title {
+        margin-bottom: 35px;
+        font-size: 30px;
+        line-height: 38px;
+      }
+    }
+
+    .about-authors {
+      &__header {
+        font-size: 40px;
+      }
+
+      &__title {
+        margin: 40px auto 45px;
+        font-size: 30px;
+        max-width: none;
+        text-align: center;
+      }
+    }
+
+    .faq {
+      padding: 0 10px 100px;
+
+      &__title {
+        font-size: 30px;
+        margin: 40px 0 35px;
+      }
     }
   }
 
-  .course-faq {
-    padding: 56px 15px 61px 30px;
-    margin: 0;
-    border-radius: 0;
+  @media screen and (max-width: 600px) {
+    .session-dates {
 
-    &__content {
-      max-width: 90vw;
+      &__list {
+        justify-content: center;
+        gap: 25px;
+      }
+
+      &__items {
+        justify-content: center;
+      }
+
+      &__dates {
+        display: block;
+        line-height: 40px;
+      }
+
+      &__list-item {
+        gap: 5px;
+        max-width: 296px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
     }
   }
 
-  .slider {
-    margin: 50px auto 50px;
+  @media screen and (max-width: 570px) {
+    .course-information {
+      &__container {
+        padding: 55px 0 179px;
+      }
 
-    &__item {
-      flex: 0 0 100%;
-      max-width: 100%;
-      flex-direction: row;
-      gap: 0;
-      align-items: flex-start;
-    }
-  }
-}
+      &__description {
+        font-size: 7vw;
+        margin-bottom: 50px;
+        line-height: normal;
+      }
 
-@media screen and (max-width: 612px) {
-  .course-information {
-    &__box {
-      justify-content: center;
-      gap: 35px;
+      &__title {
+        font-size: 34px;
+        line-height: normal;
+      }
     }
 
-    &__start-time {
-      margin: 0 auto;
-    }
-  }
-
-  .course-advantages {
-    margin-top: 55px;
-
-    &__title {
-      margin-bottom: 35px;
-      font-size: 30px;
-      line-height: 38px;
-    }
-  }
-
-  .about-authors {
-    &__header {
-      font-size: 40px;
-    }
-
-    &__title {
-      margin: 40px auto 45px;
-      font-size: 30px;
-      max-width: none;
-      text-align: center;
-    }
-  }
-
-  .faq {
-    padding: 0 10px 100px;
-    &__title {
-      font-size: 30px;
-      margin: 40px 0 35px;
-    }
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .session-dates {
-    &__block {
-
-    }
-
-    &__list {
-      justify-content: center;
-      gap: 25px;
-    }
-
-    &__items {
-      justify-content: center;
-    }
-
-    &__dates {
-      display: block;
-      line-height: 40px;
-    }
-
-    &__list-item {
-      gap: 5px;
-      max-width: 296px;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-  }
-
-  .course-information {
-    //background-position: right 25% bottom 45%;
-  }
-}
-
-@media screen and (max-width: 570px) {
-  .course-information {
-    &__container {
-      padding: 55px 0 179px;
-    }
-
-    &__description {
-      font-size: 7vw;
-      margin-bottom: 50px;
-      line-height: normal;
-    }
-
-    &__title {
-      font-size: 34px;
-      line-height: normal;
-    }
-  }
-
-  .session-dates {
-    padding: 73px 0 83px;
-
-    &__container {
+    .session-dates {
       padding: 73px 0 83px;
-      border-radius: 0;
-    }
 
-    &__diploma {
-      margin: 40px 0 40px;
-    }
+      &__container {
+        padding: 73px 0 83px;
+        border-radius: 0;
+      }
 
-    &__diploma-title {
-      text-align: center;
-      margin-bottom: 15px;
+      &__content {
+        padding: 0 20px;
+      }
     }
+  }
 
-    &__content {
+  @media screen and (max-width: 559px) {
+    .slider {
       padding: 0 20px;
-    }
-  }
-}
 
-@media screen and (max-width: 559px) {
-  .slider {
-    padding: 0 20px;
-    &__item {
-      justify-content: center;
+      &__item {
+        justify-content: center;
+      }
+
+      &__control[data-slide='next'] {
+        right: 10px;
+        top: 80px;
+      }
+
+      &__control[data-slide='prev'] {
+        right: 10px;
+        top: 80px;
+      }
     }
 
-    &__control[data-slide='next'] {
-      right: 10px;
-      top: 80px;
+    .footer {
+      &__img {
+        display: none;
+      }
     }
 
-    &__control[data-slide='prev'] {
-      right: 10px;
-      top: 80px;
-    }
-  }
-
-  .footer {
-    &__img {
-      display: none;
-    }
   }
 
-}
+  @media screen and (max-width: 530px) {
 
-@media screen and (max-width: 530px) {
+    .about-authors {
+      &__name {
+        font-size: 22px;
+        line-height: 25px;
+      }
 
-  .about-authors {
-    &__name {
-      font-size: 22px;
-      line-height: 25px;
-    }
-
-    &__list-item {
-      gap: 10px;
-    }
-  }
-
-  .session-dates {
-    &__header {
-      font-size: 40px;
-    }
-
-    &__block-text {
-      border-radius: 0;
-      padding: 0;
-      box-shadow: none;
-    }
-
-    &__text-list:not(:last-child) {
-      margin-bottom: 25px;
-    }
-
-    &__vertical-line {
-      display: none;
+      &__list-item {
+        gap: 10px;
+      }
     }
   }
 
@@ -906,213 +844,214 @@
       margin: 20px 0 25px;
     }
   }
-}
 
-@media screen and (max-width: 447px) {
-  .header {
-    &__nav-menu {
-      padding: 30px 20px 0 30px;
-      max-width: none;
-      position: absolute;
-      width: 100%;
-      box-sizing: border-box;
-    }
 
-    &__arrow {
-      margin-top: 30px;
+  @media screen and (max-width: 447px) {
+    .header {
+      &__nav-menu {
+        padding: 30px 20px 0 30px;
+        max-width: none;
+        position: absolute;
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      &__arrow {
+        margin-top: 30px;
+      }
     }
   }
-}
 
-@media screen and (max-width: 450px) {
+  @media screen and (max-width: 450px) {
 
-  .teachers-feedback {
-    padding: 0;
-
-    &__title {
-      font-size: 40px;
-    }
-
-    &__slider {
-      padding: 20px 30px 60px;
-      border-radius: 0;
-    }
-
-    &__slideText {
+    .teachers-feedback {
       padding: 0;
+
+      &__title {
+        font-size: 40px;
+      }
+
+      &__slider {
+        padding: 20px 30px 60px;
+        border-radius: 0;
+      }
+
+      &__slideText {
+        padding: 0;
+      }
+
+      &__prev {
+        left: 1px;
+      }
+
+      &__next {
+        right: 1px;
+      }
     }
 
-    &__prev {
-      left: 1px;
+    .slider-dots {
+      padding: 0 20px;
     }
 
-    &__next {
-      right: 1px;
-    }
-  }
-
-  .slider-dots {
-    padding: 0 20px;
-  }
-
-  .contacts {
-    padding: 50px 20px 80px;
-    margin: 0;
-    border-radius: 0;
-
-    &__title {
-      font-size: 30px;
-      line-height: normal;
-    }
-
-    &__subtitle {
-      font-size: 26px;
-      line-height: normal;
-    }
-
-    &__links {
-      display: flex;
-      max-width: 280px;
-      justify-content: space-between;
-    }
-
-    &__link {
+    .contacts {
+      padding: 50px 20px 80px;
       margin: 0;
-    }
-  }
-
-  .join-form {
-    padding: 68px 0 50px;
-
-    &__container {
-      gap: 0;
-    }
-
-    &__block {
       border-radius: 0;
-      padding: 25px 10px 30px;
+
+      &__title {
+        font-size: 30px;
+        line-height: normal;
+      }
+
+      &__subtitle {
+        font-size: 26px;
+        line-height: normal;
+      }
+
+      &__links {
+        display: flex;
+        max-width: 280px;
+        justify-content: space-between;
+      }
+
+      &__link {
+        margin: 0;
+      }
     }
 
-    &__price-form {
-      border-radius: 0;
-    }
-  }
+    .join-form {
+      padding: 68px 0 50px;
 
-  .scrollUp-button {
-    right: 20px;
-    bottom: 20px;
-  }
-}
+      &__container {
+        gap: 0;
+      }
 
-@media screen and (max-width: 420px) {
-  .course-information {
-    &__container {
-      padding: 30px 0 0;
-    }
+      &__block {
+        border-radius: 0;
+        padding: 25px 10px 30px;
+      }
 
-    &__subtitle {
-      margin-bottom: 30px;
+      &__price-form {
+        border-radius: 0;
+      }
     }
 
-    &__box {
-      gap: 20px;
-    }
-  }
-
-  .about-authors {
-    &__header {
-      font-size: 30px;
-      line-height: normal;
-    }
-
-    &__title {
-      margin: 40px auto 45px;
-      font-size: 20px;
-      max-width: none;
-      text-align: center;
-    }
-
-    &__title {
-      margin: 20px auto 20px;
-      line-height: normal;
+    .scrollUp-button {
+      right: 20px;
+      bottom: 20px;
     }
   }
 
-  .session-dates {
-    &__title {
-      font-size: 40px;
-    }
-  }
-}
+  @media screen and (max-width: 420px) {
+    .course-information {
+      &__container {
+        padding: 30px 0 0;
+      }
 
-@media screen and (max-width: 370px) {
-  .header {
-    &__logo {
-      width: 80%;
-    }
-  }
+      &__subtitle {
+        margin-bottom: 30px;
+      }
 
-  .footer {
-    &__link {
-      font-size: 18px;
-    }
-  }
-
-  .join-form {
-    &__button {
-      font-size: 18px;
-    }
-  }
-}
-
-@media screen and (max-width: 350px) {
-  .course-information {
-    &__description{
-      margin-bottom: 25px;
+      &__box {
+        gap: 20px;
+      }
     }
 
-    &__title {
-      font-size: 30px;
+    .about-authors {
+      &__header {
+        font-size: 30px;
+        line-height: normal;
+      }
+
+      &__title {
+        margin: 40px auto 45px;
+        font-size: 20px;
+        max-width: none;
+        text-align: center;
+      }
+
+      &__title {
+        margin: 20px auto 20px;
+        line-height: normal;
+      }
     }
 
-    &__subtitle {
-      margin-bottom: 20px;
-    }
-
-    &__box {
-      gap: 20px;
+    .session-dates {
+      &__title {
+        font-size: 40px;
+      }
     }
   }
 
-  .session-dates {
-    &__header {
-      font-size: 34px;
+  @media screen and (max-width: 370px) {
+    .header {
+      &__logo {
+        width: 80%;
+      }
+    }
+
+    .footer {
+      &__link {
+        font-size: 18px;
+      }
+    }
+
+    .join-form {
+      &__button {
+        font-size: 18px;
+      }
     }
   }
 
-  .contacts {
-    &__adaptive {
-      display: block;
+  @media screen and (max-width: 350px) {
+    .course-information {
+      &__description {
+        margin-bottom: 25px;
+      }
+
+      &__title {
+        font-size: 30px;
+      }
+
+      &__subtitle {
+        margin-bottom: 20px;
+      }
+
+      &__box {
+        gap: 20px;
+      }
+    }
+
+    .session-dates {
+      &__header {
+        font-size: 34px;
+      }
+    }
+
+    .contacts {
+      &__adaptive {
+        display: block;
+      }
     }
   }
-}
 
-@media screen and (orientation: landscape) and (max-height: 500px) {
-  .header {
-    &__nav-menu {
-      padding-top: 2px;
-      width:  100vw;
-      max-width: none;
-      box-sizing: border-box;
-      gap: 5px;
-    }
+  @media screen and (orientation: landscape) and (max-height: 500px) {
+    .header {
+      &__nav-menu {
+        padding-top: 2px;
+        width: 100vw;
+        max-width: none;
+        box-sizing: border-box;
+        gap: 5px;
+      }
 
-    &__link {
-      line-height: normal;
-    }
+      &__link {
+        line-height: normal;
+      }
 
-    &__box {
-      width: 100%;
+      &__box {
+        width: 100%;
+      }
     }
   }
 }

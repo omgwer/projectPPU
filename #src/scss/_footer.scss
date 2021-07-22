@@ -2,7 +2,7 @@
     padding: 18px 20px 18px;
     color: #ffffff;
     text-align: center;
-    background-color: #1b191e;
+    background-color: #453A72;
 
     &__link {
         color: #ffffff;
@@ -12,11 +12,11 @@
 
     &__block {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         max-width: 508px;
         margin: 0 auto;
         flex-wrap: wrap;
-        gap: 10px;
+        gap: 30px;
     }
 }
 

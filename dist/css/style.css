@@ -497,12 +497,23 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-left: 51px;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.training-block__line {
-  border-bottom: 2px solid #DADDE2;
+.training-block__box {
   position: relative;
-  top: -2px;
+}
+
+.training-block__box::before {
+  display: block;
+  content: '';
+  width: 100%;
+  height: 2px;
+  border-bottom: 2px solid #DADDE2;
+  position: absolute;
+  bottom: 0;
 }
 
 .training-block__menu-list {
@@ -515,8 +526,7 @@
 
 .training-block__menu-list_active {
   background-color: #D3CCEE;
-  border-bottom: 3px solid #2a285a;
-  z-index: 1;
+  border-bottom: 4px solid #2a285a;
 }
 
 .training-block__block {
@@ -632,7 +642,7 @@
 }
 
 .about-authors {
-  padding-top: 33px;
+  padding: 50px 0 150px;
   max-width: 1160px;
   margin: 0 auto;
 }
@@ -649,7 +659,7 @@
 .about-authors__title {
   font: 600 36px/42px 'Raleway', sans-serif;
   color: #1b1d21;
-  margin: 123px 0 60px;
+  margin: 65px 0 60px;
   max-width: 440px;
 }
 
@@ -765,6 +775,18 @@
 
 .program-experts__organization {
   display: block;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+.program-experts__organization:hover {
+  -webkit-transform: scale(1.12);
+      -ms-transform: scale(1.12);
+          transform: scale(1.12);
 }
 
 .program-experts__subtitle {
@@ -789,6 +811,11 @@
   max-width: 1365px;
 }
 
+.program-experts__image {
+  position: relative;
+  bottom: -5px;
+}
+
 .program-experts__list-item img {
   display: block;
   margin: 0 auto 16px;
@@ -803,7 +830,7 @@
 
 .teachers-feedback__title {
   font: 700 60px/65px 'Raleway', sans-serif;
-  margin: 198px auto 42px;
+  margin: 123px auto 42px;
   max-width: 525px;
 }
 
@@ -910,165 +937,167 @@
 }
 
 .session-dates {
-  padding: 0 20px;
+  max-width: 1156px;
+  margin: 0 auto;
+  border-radius: 20px;
+  background-color: #E6E9EC;
+  padding: 97px 20px 94px;
+  border: 1px solid #453a72;
 }
 
 .session-dates__container {
-  max-width: 1378px;
-  margin: 0 auto;
-  border-radius: 30px;
-  background-color: rgba(100, 100, 100, 0.1);
-  padding: 73px 20px 83px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 931px;
+  margin: 60px auto 0;
 }
 
 .session-dates__block {
-  margin: 0 auto;
-  max-width: 1034px;
-  padding-right: 100px;
+  max-width: 406px;
+}
+
+.session-dates__format {
+  color: #1b1d21;
+  font: 100 28px/54px 'Raleway', sans-serif;
+  text-align: center;
+  margin-bottom: 24px;
 }
 
 .session-dates__title {
-  font: 700 60px/90px 'Raleway', sans-serif;
-  margin-bottom: 45px;
-}
-
-.session-dates__list {
-  font: 500 32px/60px 'Raleway', sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  gap: 40px;
-}
-
-.session-dates__items {
-  font: 500 32px/60px 'Raleway', sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  gap: 164px;
-  margin-top: 62px;
-}
-
-.session-dates__list-item {
-  list-style-type: none;
-}
-
-.session-dates__diploma {
-  margin: 62px auto 68px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  max-width: 1144px;
-}
-
-.session-dates__diploma-title {
-  font: 700 32px/46px 'Raleway', sans-serif;
-  max-width: 335px;
+  color: #1b1d21;
+  font: 600 48px/54px 'Raleway', sans-serif;
+  text-align: center;
 }
 
 .session-dates__subtitle {
-  max-width: 752px;
-  font: 400 22px/34px 'Raleway', sans-serif;
+  color: #1b1d21;
+  font: 600 28px/60px 'Raleway', sans-serif;
 }
 
-.session-dates__header {
-  max-width: 1144px;
-  margin: 217px auto 65px;
-  font: 700 60px/65px 'Raleway', sans-serif;
-}
-
-.session-dates__to-proceed {
-  max-width: 1144px;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.session-dates__block-text {
-  max-width: 420px;
-  border-radius: 10px;
-  background-color: #ffffff;
-  -webkit-box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.15);
-          box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.15);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 20px;
-  padding: 18px 11px 18px 18px;
-}
-
-.session-dates__text {
-  font: 400 22px/34px 'Raleway', sans-serif;
-  width: 309px;
-}
-
-.session-dates__text-info {
-  font: 400 20px/34px 'Raleway', sans-serif;
-}
-
-.session-dates__vertical-line {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  margin-top: 12px;
+.session-dates__session-time {
+  color: #484848;
+  font: 400 22px/28px 'Raleway', sans-serif;
 }
 
 .session-dates__box {
+  max-width: 405px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 34px 42px 43px 52px;
+}
+
+.session-dates__box_remote {
+  margin: 24px 0 242px;
+}
+
+.session-dates__box_full-time {
+  margin: 225px 0 228px;
+}
+
+.session-dates__box_session {
+  margin-bottom: 69px;
+}
+
+.session-dates__image {
+  margin-top: 145px;
+  max-height: 861px;
+}
+
+.to-proceed {
+  max-width: 1160px;
+  margin: 173px auto 0;
+  background: url("../img/container/to-proceed/dotted-line.png") no-repeat;
+  padding: 0 0 50px 50px;
+  position: relative;
+}
+
+.to-proceed::before {
+  position: absolute;
+  content: url("../img/container/to-proceed/airplane.png");
+  width: 149px;
+  height: 84px;
+  right: 220px;
+  top: 60px;
+}
+
+.to-proceed__heading {
+  color: #1b1d21;
+  font: 600 48px/54px 'Raleway', sans-serif;
+  margin-bottom: 155px;
+}
+
+.to-proceed__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  gap: 18px;
+  margin-bottom: 184px;
+  color: #282b33;
+  font: 400 22px/30px 'Raleway', sans-serif;
 }
 
-.session-dates__text-list {
+.to-proceed__block {
+  max-width: 443px;
   list-style-type: none;
-  max-width: 650px;
+  position: relative;
 }
 
-.session-dates__text-list:not(:last-child) {
-  margin-bottom: 90px;
+.to-proceed__block_first::before {
+  position: absolute;
+  content: url("../img/container/to-proceed/number-1.png");
+  width: 54px;
+  height: 55px;
+  top: -110px;
 }
 
-.session-dates__text-list:nth-child(2) {
-  margin-bottom: 90px;
+.to-proceed__block_second {
+  padding-right: 180px;
+}
+
+.to-proceed__block_second::before {
+  position: absolute;
+  content: url("../img/container/to-proceed/number-2.png");
+  width: 54px;
+  height: 55px;
+  top: -110px;
+}
+
+.to-proceed__block_third::before {
+  position: absolute;
+  content: url("../img/container/to-proceed/number-3.png");
+  width: 54px;
+  height: 55px;
+  top: -115px;
+}
+
+.to-proceed__block_fourth {
+  padding-right: 87px;
+}
+
+.to-proceed__block_fourth::before {
+  position: absolute;
+  content: url("../img/container/to-proceed/number-4.png");
+  width: 54px;
+  height: 55px;
+  top: -115px;
 }
 
 .faq {
   max-width: 1262px;
   margin: 0 auto;
-  padding: 0 20px 100px;
+  padding: 0 20px 137px;
 }
 
 .faq__title {
-  margin: 170px 0 65px;
-  font: bold 60px/65px 'Raleway', sans-serif;
+  margin: 10px 0 83px;
+  font: 600 48px/54px 'Raleway', sans-serif;
+  color: #1b1d21;
 }
 
 .faq__container {
@@ -1080,10 +1109,8 @@
 }
 
 .faq__accordion {
-  background-color: #ffffff;
+  background-color: #F0EFF4;
   border-radius: 10px;
-  -webkit-box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
-          box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
 
@@ -1107,9 +1134,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font: 700 22px/34px 'Raleway', sans-serif;
-  background-color: #ffffff;
-  color: #444;
+  font: 500 22px/28px 'Raleway', sans-serif;
   cursor: pointer;
   padding: 23px 20px 23px 30px;
   width: 100%;
@@ -1123,8 +1148,9 @@
 }
 
 .faq__accordion_hide {
-  font: 400 20px/34px 'Raleway', sans-serif;
+  font: 400 18px/24px 'Raleway', sans-serif;
   padding: 0 35px 0 30px;
+  max-width: 464px;
   height: 0;
   opacity: 0;
   overflow: hidden;
@@ -1137,6 +1163,14 @@
   -webkit-transition: all 0.8s ease;
   -o-transition: all 0.8s ease;
   transition: all 0.8s ease;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.faq__image {
+  text-align: center;
 }
 
 .target {
@@ -1152,8 +1186,9 @@
 }
 
 .join-form {
-  padding: 68px 20px 91px;
-  background-color: #1B191E;
+  padding: 128px 20px 91px;
+  background-color: #F4F3FD;
+  position: relative;
 }
 
 .join-form__form {
@@ -1174,33 +1209,53 @@
           justify-content: center;
 }
 
+.join-form__box {
+  position: relative;
+}
+
+.join-form__box::before {
+  position: absolute;
+  display: block;
+  width: 95%;
+  height: 100%;
+  left: -25px;
+  top: 0;
+  content: '';
+  -webkit-transform: rotate(-4.21deg);
+      -ms-transform: rotate(-4.21deg);
+          transform: rotate(-4.21deg);
+  background-color: #C3C0DA;
+  border-radius: 10px;
+}
+
 .join-form__price-form {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   color: #ffffff;
-  background-color: #686470;
-  border-radius: 10px 10px 0 10px;
-  -webkit-box-shadow: 18px 4px 25px 0 rgba(0, 0, 0, 0.15);
-          box-shadow: 18px 4px 25px 0 rgba(0, 0, 0, 0.15);
+  background-color: #453A72;
+  border-radius: 10px;
   max-width: 620px;
-  padding: 106px 98px 118px 60px;
+  padding: 106px 75px 118px 67px;
+  position: relative;
 }
 
 .join-form__price-title {
   margin-bottom: 35px;
-  font: 700 45px/55px 'Raleway', sans-serif;
+  font: 600 48px/55px 'Raleway', sans-serif;
 }
 
 .join-form__price-month {
-  font: 900 60px/70px 'Raleway', sans-serif;
+  font: 500 60px/70px 'Raleway', sans-serif;
   margin-bottom: 15px;
 }
 
 .join-form__price-month span {
-  font: 600 32px/34px 'Raleway', sans-serif;
+  font: 400 32px/34px 'Raleway', sans-serif;
 }
 
 .join-form__price-full {
   margin-bottom: 44px;
-  font: 600 32px/34px 'Raleway', sans-serif;
+  font: 500 32px/44px 'Raleway', sans-serif;
 }
 
 .join-form__check {
@@ -1208,7 +1263,7 @@
 }
 
 .join-form__list-item {
-  font: 400 22px/34px 'Raleway', sans-serif;
+  font: 400 22px/30px 'Raleway', sans-serif;
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1218,7 +1273,7 @@
       -ms-flex-align: start;
           align-items: flex-start;
   margin-bottom: 22px;
-  gap: 12px;
+  gap: 27px;
 }
 
 .join-form__block {
@@ -1231,13 +1286,13 @@
 }
 
 .join-form__title {
-  font: 700 45px/55px 'Raleway', sans-serif;
+  font: 600 48px/55px 'Raleway', sans-serif;
 }
 
 .join-form__subtitle {
   margin: 12px 0 23px;
-  max-width: 420px;
-  font: 400 20px/32px 'Raleway', sans-serif;
+  max-width: 455px;
+  font: 400 22px/30px 'Raleway', sans-serif;
 }
 
 .join-form__input {
@@ -1255,28 +1310,28 @@
 }
 
 .join-form__input::-webkit-input-placeholder {
-  font: 400 22px/24px 'Raleway', sans-serif;
-  color: #000000;
+  font: 400 18px/30px 'Raleway', sans-serif;
+  color: #93989D;
 }
 
 .join-form__input::-moz-placeholder {
-  font: 400 22px/24px 'Raleway', sans-serif;
-  color: #000000;
+  font: 400 18px/30px 'Raleway', sans-serif;
+  color: #93989D;
 }
 
 .join-form__input:-ms-input-placeholder {
-  font: 400 22px/24px 'Raleway', sans-serif;
-  color: #000000;
+  font: 400 18px/30px 'Raleway', sans-serif;
+  color: #93989D;
 }
 
 .join-form__input::-ms-input-placeholder {
-  font: 400 22px/24px 'Raleway', sans-serif;
-  color: #000000;
+  font: 400 18px/30px 'Raleway', sans-serif;
+  color: #93989D;
 }
 
 .join-form__input::placeholder {
-  font: 400 22px/24px 'Raleway', sans-serif;
-  color: #000000;
+  font: 400 18px/30px 'Raleway', sans-serif;
+  color: #93989D;
 }
 
 .join-form__input:focus-visible {
@@ -1311,7 +1366,7 @@
 }
 
 .join-form__button {
-  background-color: #f85a69;
+  background-color: #E25A28;
   border-radius: 30px;
   color: #ffffff;
   font: 600 22px/34px 'Raleway', sans-serif;
@@ -1324,9 +1379,9 @@
 }
 
 .join-form__button:hover {
-  background: #ff4e58;
-  -webkit-box-shadow: 0 0 15px 0 rgba(255, 78, 88, 0.4);
-          box-shadow: 0 0 15px 0 rgba(255, 78, 88, 0.4);
+  background: #E25A28;
+  -webkit-box-shadow: 0 0 15px 0 #E25A28;
+          box-shadow: 0 0 15px 0 #E25A28;
 }
 
 .feedback-form__container {
@@ -1335,24 +1390,6 @@
   grid-template-columns: 1fr;
   place-items: center;
   max-width: 420px;
-}
-
-.top-text-wrapper {
-  margin: 20px 0 30px 0;
-}
-
-.top-text-wrapper code {
-  font-size: .85em;
-  background: -webkit-gradient(linear, left top, right top, from(#fce3ec), to(#ffe8cc));
-  background: -o-linear-gradient(left, #fce3ec, #ffe8cc);
-  background: linear-gradient(90deg, #fce3ec, #ffe8cc);
-  color: #ff2200;
-  padding: .1rem .3rem .2rem;
-  border-radius: .2rem;
-}
-
-.tab-section-wrapper {
-  padding: 30px 0;
 }
 
 .select-box {
@@ -1424,9 +1461,14 @@
           transform: translateY(-50%);
 }
 
-.selected span,
+.selected span {
+  font: 400 18px/24px 'Raleway', sans-serif;
+  color: #93989D;
+}
+
 .select-box label span {
-  font: 400 22px/24px 'Raleway', sans-serif;
+  color: #1b1d21;
+  font: 400 20px/24px 'Raleway', sans-serif;
 }
 
 .select-box .options-container.active {
@@ -1442,12 +1484,12 @@
 
 .select-box .options-container::-webkit-scrollbar {
   width: 8px;
-  background: #f85a69;
+  background: #E25A28;
   border-radius: 0 5px 5px 0;
 }
 
 .select-box .options-container::-webkit-scrollbar-thumb {
-  background: #f85a69;
+  background: #E25A28;
   border-radius: 0 5px 5px 0;
 }
 
@@ -1476,6 +1518,7 @@
 
 .contacts {
   border-radius: 20px;
+  border: 2px solid #CCC9C9;
   -webkit-box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.15);
           box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.15);
   padding: 67px 195px 64px 98px;
@@ -1512,12 +1555,12 @@
 }
 
 .contacts__title {
-  font: 700 40px/44px 'Raleway', sans-serif;
+  font: 600 48px/48px 'Raleway', sans-serif;
 }
 
 .contacts__subtitle {
   margin: 42px 0 45px;
-  font: 700 32px/32px 'Raleway', sans-serif;
+  font: 600 28px/30px 'Raleway', sans-serif;
 }
 
 .contacts__description {
@@ -1567,7 +1610,7 @@
   padding: 18px 20px 18px;
   color: #ffffff;
   text-align: center;
-  background-color: #1b191e;
+  background-color: #453A72;
 }
 
 .footer__link {
@@ -1580,14 +1623,14 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   max-width: 508px;
   margin: 0 auto;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 10px;
+  gap: 30px;
 }
 
 .loaded {
@@ -1904,23 +1947,6 @@
   .teachers-feedback__slideText {
     padding: 0 20px;
   }
-
-  .session-dates__to-proceed {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    gap: 35px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-
-  .session-dates__block-text {
-    max-width: 650px;
-  }
-
-  .session-dates__text {
-    width: auto;
-  }
 }
 
 @media screen and (max-width: 1131px) {
@@ -1959,31 +1985,20 @@
     display: flex;
   }
 
-  .session-dates__diploma {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    gap: 15px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-
-  .session-dates__diploma-title {
-    max-width: none;
-  }
-
-  .session-dates__header {
-    margin: 100px auto 65px;
+  .faq__title {
+    font-size: 24px;
+    line-height: normal;
+    margin: 20px 0 25px;
   }
 }
 
-@media screen and (max-width: 1070px) {
+@media screen and (max-width: 1131px) and (max-width: 1070px) {
   .course-faq {
     padding: 56px 20px 61px 35px;
   }
 }
 
-@media screen and (max-width: 1030px) {
+@media screen and (max-width: 1131px) and (max-width: 1030px) {
   .join-form__price-form {
     padding: 90px 40px 100px 30px;
   }
@@ -1994,7 +2009,7 @@
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1131px) and (max-width: 1000px) {
   .course-faq {
     padding: 56px 0 61px 93px;
     -ms-flex-wrap: wrap;
@@ -2049,7 +2064,7 @@
   }
 }
 
-@media screen and (max-width: 933px) {
+@media screen and (max-width: 1131px) and (max-width: 933px) {
   .join-form__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2074,7 +2089,7 @@
   }
 }
 
-@media screen and (max-width: 925px) {
+@media screen and (max-width: 1131px) and (max-width: 925px) {
   .session-dates__container {
     padding-left: 40px;
   }
@@ -2092,7 +2107,13 @@
   }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1131px) and (max-width: 846px) {
+  .contacts {
+    margin: 0 20px;
+  }
+}
+
+@media screen and (max-width: 1131px) and (max-width: 850px) {
   .course-faq {
     margin-top: 25px;
     padding: 56px 20px 61px 50px;
@@ -2159,13 +2180,7 @@
   }
 }
 
-@media screen and (max-width: 846px) {
-  .contacts {
-    margin: 0 20px;
-  }
-}
-
-@media screen and (max-width: 818px) {
+@media screen and (max-width: 1131px) and (max-width: 818px) {
   .people-target__title {
     margin-bottom: 25px;
   }
@@ -2225,7 +2240,7 @@
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1131px) and (max-width: 800px) {
   .session-dates__container {
     padding-left: 20px;
   }
@@ -2244,7 +2259,7 @@
   }
 }
 
-@media screen and (max-width: 758px) {
+@media screen and (max-width: 1131px) and (max-width: 758px) {
   .session-dates__list {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -2267,7 +2282,7 @@
   }
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 1131px) and (max-width: 740px) {
   .course-faq__content {
     max-width: 80vw;
   }
@@ -2290,7 +2305,7 @@
   }
 }
 
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 1131px) and (max-width: 690px) {
   .program-experts {
     padding: 0 20px 100px;
   }
@@ -2321,7 +2336,7 @@
   }
 }
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 1131px) and (max-width: 660px) {
   .course-information__container {
     padding: 85px 0 179px;
   }
@@ -2374,7 +2389,7 @@
   }
 }
 
-@media screen and (max-width: 612px) {
+@media screen and (max-width: 1131px) and (max-width: 612px) {
   .course-information__box {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -2417,7 +2432,7 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1131px) and (max-width: 600px) {
   .session-dates__list {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -2447,7 +2462,7 @@
   }
 }
 
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 1131px) and (max-width: 570px) {
   .course-information__container {
     padding: 55px 0 179px;
   }
@@ -2472,21 +2487,12 @@
     border-radius: 0;
   }
 
-  .session-dates__diploma {
-    margin: 40px 0 40px;
-  }
-
-  .session-dates__diploma-title {
-    text-align: center;
-    margin-bottom: 15px;
-  }
-
   .session-dates__content {
     padding: 0 20px;
   }
 }
 
-@media screen and (max-width: 559px) {
+@media screen and (max-width: 1131px) and (max-width: 559px) {
   .slider {
     padding: 0 20px;
   }
@@ -2512,7 +2518,7 @@
   }
 }
 
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 1131px) and (max-width: 530px) {
   .about-authors__name {
     font-size: 22px;
     line-height: 25px;
@@ -2521,34 +2527,24 @@
   .about-authors__list-item {
     gap: 10px;
   }
+}
 
-  .session-dates__header {
-    font-size: 40px;
+@media screen and (max-width: 1131px) and (max-width: 447px) {
+  .header__nav-menu {
+    padding: 30px 20px 0 30px;
+    max-width: none;
+    position: absolute;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
 
-  .session-dates__block-text {
-    border-radius: 0;
-    padding: 0;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-  }
-
-  .session-dates__text-list:not(:last-child) {
-    margin-bottom: 25px;
-  }
-
-  .session-dates__vertical-line {
-    display: none;
-  }
-
-  .faq__title {
-    font-size: 24px;
-    line-height: normal;
-    margin: 20px 0 25px;
+  .header__arrow {
+    margin-top: 30px;
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 1131px) and (max-width: 450px) {
   .teachers-feedback {
     padding: 0;
   }
@@ -2631,22 +2627,7 @@
   }
 }
 
-@media screen and (max-width: 447px) {
-  .header__nav-menu {
-    padding: 30px 20px 0 30px;
-    max-width: none;
-    position: absolute;
-    width: 100%;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-  }
-
-  .header__arrow {
-    margin-top: 30px;
-  }
-}
-
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 1131px) and (max-width: 420px) {
   .course-information__container {
     padding: 30px 0 0;
   }
@@ -2681,7 +2662,7 @@
   }
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 1131px) and (max-width: 370px) {
   .header__logo {
     width: 80%;
   }
@@ -2695,7 +2676,7 @@
   }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 1131px) and (max-width: 350px) {
   .course-information__description {
     margin-bottom: 25px;
   }
@@ -2721,7 +2702,7 @@
   }
 }
 
-@media screen and (orientation: landscape) and (max-height: 500px) {
+@media screen and (max-width: 1131px) and (orientation: landscape) and (max-height: 500px) {
   .header__nav-menu {
     padding-top: 2px;
     width: 100vw;
