@@ -6,33 +6,7 @@ window.addEventListener('load', evt => {
   customDropList();
   feedbackSlider();
   initHeaderMenu();
-  //animateCourseInfo();
-  //setAnimatedBlockLoaded();
 });
-
-// function setAnimatedBlockLoaded() {
-//   const courseAdvantages = document.querySelector('.course-advantages');
-//   const animatedCourseAdvantages = document.querySelectorAll('.course-advantages__container');
-//   const aboutTraining = document.querySelector('.about-training__container');
-//   const animatedAboutTraining = document.querySelectorAll('.about-training__block');
-//   let reachedSecond = false;
-//   let reached = false;
-//   const ANIMATED__COURSE__ADVANTAGES = 300;
-//   const ANIMATED__ABOUT__TRAINING = 500;
-//
-//   window.addEventListener('scroll', () => {
-//     if (window.pageYOffset + window.innerHeight > courseAdvantages.offsetTop + ANIMATED__COURSE__ADVANTAGES) {
-//       animatedCourseAdvantages.forEach(element =>{
-//         element.classList.add('loaded');
-//       })
-//     }
-//     if (window.pageYOffset + window.innerHeight > aboutTraining.offsetTop + ANIMATED__ABOUT__TRAINING) {
-//       animatedAboutTraining.forEach(element =>{
-//         element.classList.add('loaded');
-//       })
-//     }
-//   })
-// }
 
 function headerSmoothHide() {
   let prevScrollpos = window.pageYOffset;
@@ -83,32 +57,6 @@ function initHeaderMenu() {
   headerArrow.addEventListener('click', hideHeaderMenu);
 }
 
-// function animateCourseInfo() {
-//   let animatedBlock = document.querySelector('.course-information');
-//   let i = 2;
-//   let revers = false;
-//   function changeSlide() {
-//     if (i === 1) {
-//       animatedBlock.style.backgroundPosition = `center`;
-//       if (revers === false) {
-//         i++;
-//       } else {
-//         i--;
-//       }
-//       revers = false;
-//     } else if (i === 2) {
-//       animatedBlock.style.backgroundPosition = `right`;
-//       i--;
-//       revers = true;
-//     } else if (i === 0) {
-//       animatedBlock.style.backgroundPosition = `left`;
-//       i++;
-//       revers = false;
-//     }
-//   }
-//   setInterval(changeSlide, 5000);
-// }
-
 function menuScrollNavigation() {
   const smoothLinks = document.querySelectorAll('.js-menu-item');
   smoothLinks.forEach(smoothLink => {
@@ -130,29 +78,29 @@ function accordionList() {
     element.addEventListener('click', evt => {
       const accordionTrigger = element.querySelector('.faq__accordion_hide');
       const animatedArrow = element.querySelector('.faq__arrow');
-      if (accordionTrigger.classList.contains('target')) {
+      if (accordionTrigger.classList.contains('faq__target')) {
         accordionTrigger.style.height = getComputedStyle(accordionTrigger).height;
-        accordionTrigger.classList.remove('target');
+        accordionTrigger.classList.remove('faq__target');
         getComputedStyle(accordionTrigger).height; // reflow
         accordionTrigger.style.height = '';
-        animatedArrow.classList.remove('rotate');
+        animatedArrow.classList.remove('faq__rotate');
       } else {
-        accordionTrigger.classList.add('target');
+        accordionTrigger.classList.add('faq__target');
         let h = getComputedStyle(accordionTrigger).height;
         accordionTrigger.style.height = '0';
         getComputedStyle(accordionTrigger).height; // reflow
         accordionTrigger.style.height = h;
         setTimeout(function () { accordionTrigger.style.height = '' }, 1000);
-        animatedArrow.classList.add('rotate');
+        animatedArrow.classList.add('faq__rotate');
       }
     })
   });
 }
 
 function customDropList() {
-  const selected = document.querySelector(".selected");
-  const optionsContainer = document.querySelector(".options-container");
-  const optionsList = document.querySelectorAll(".option");
+  const selected = document.querySelector(".join-form__selected");
+  const optionsContainer = document.querySelector(".join-form__options-container");
+  const optionsList = document.querySelectorAll(".join-form__option");
 
   selected.addEventListener("click", () => {
     optionsContainer.classList.toggle("active");
@@ -189,7 +137,6 @@ function scrollToStartPage() {
 }
 
 function feedbackSlider() {
-
   const prevs = document.querySelector('.teachers-feedback__prev');
   prevs.addEventListener('click', evt=> {
     minusSlide();
@@ -199,7 +146,7 @@ function feedbackSlider() {
     plusSlide();
   });
 
-  const allDots = document.querySelectorAll('.slider-dots_item');
+  const allDots = document.querySelectorAll('.teachers-feedback__dots-item');
   for (let i = 0; i < allDots.length ; i++) {
     allDots[i].addEventListener('click', evt => {
       let dotIndex = i + 1;
@@ -224,7 +171,7 @@ function feedbackSlider() {
   function showSlides(n) {
     let i;
     const slides = document.getElementsByClassName("teachers-feedback__item");
-    const dots = document.getElementsByClassName("slider-dots_item");
+    const dots = document.getElementsByClassName("teachers-feedback__dots-item");
     if (n > slides.length) {
       slideIndex = 1
     }
@@ -235,12 +182,9 @@ function feedbackSlider() {
       slides[i].style.display = "none";
     }
     for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
+      dots[i].className = dots[i].className.replace("teachers-feedback__active", "");
     }
     slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
+    dots[slideIndex - 1].className += " teachers-feedback__active";
   }
 }
-
-
-
