@@ -1,6 +1,7 @@
 .course-information {
   background-image: url("../img/container/course-information/course-information__background.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   height: 804px;
   background-position: center;
   margin-top: 110px;
@@ -15,7 +16,7 @@
   }
 
   &__description {
-    font: 500 28px/34px 'Raleway', sans-serif;
+    font: 100 28px/34px 'Raleway', sans-serif;
     margin-bottom: 51px;
     max-width: 442px;
   }
@@ -27,7 +28,7 @@
   }
 
   &__subtitle {
-    font: 500 20px/30px 'Raleway', sans-serif;
+    font: 400 22px/30px 'Raleway', sans-serif;
     max-width: 593px;
     margin-bottom: 48px;
   }
@@ -38,21 +39,19 @@
     border-radius: 30px;
     background-color: #E25A28;
     font: 600 22px/34px 'Raleway', sans-serif;
-    padding: 18px 71px;
-    transition: all 0.3s ease-in-out;
+    padding: 18px 46px;
+    transition: all 0.4s ease;
     text-decoration: none;
     position: relative;
     box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
 
     &:hover {
-      background: #e2693e;
-      box-shadow: 0 15px 20px rgba(220, 101, 61, 0.15);
-      color: white;
+      background: #FE6127;
     }
   }
 
   &__start-time {
-    font: 400 22px/34px 'Raleway', sans-serif;
+    font: 100 22px/34px 'Raleway', sans-serif;
   }
 
   &__box {
@@ -92,12 +91,14 @@
   }
 
   &__tags {
-    font: 700 28px/34px 'Raleway', sans-serif;
+    font: 600 28px/34px 'Raleway', sans-serif;
     margin-bottom: 10px;
+    color: #1b1d21;
   }
 
   &__tag {
-    font: 500 18px/26px 'Raleway', sans-serif;
+    font: 400 18px/26px 'Raleway', sans-serif;
+    color: #282b33;
   }
 }
 
@@ -109,6 +110,7 @@
   &__title {
     margin-bottom: 62px;
     font: 600 48px/90px 'Raleway', sans-serif;
+    color: #1b1d21;
   }
 
   &__list {
@@ -130,11 +132,13 @@
   &__heading {
     font: 600 28px/34px 'Raleway', sans-serif;
     margin-bottom: 12px;
+    color: #1b1d21;
   }
 
   &__subtitle {
     font: 400 18px/26px 'Raleway', sans-serif;
     max-width: 294px;
+    color: #282B33;
   }
 }
 
@@ -147,7 +151,7 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 46px;
-    gap: 51px;
+    gap: 61px;
   }
 
   &__block {
@@ -172,6 +176,10 @@
   &__subtitle {
     font: 400 18px/26px 'Raleway', sans-serif;
     max-width: 295px;
+
+    &_narrow {
+      max-width: 233px;
+    }
   }
 
   &__image {

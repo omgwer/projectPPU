@@ -4,7 +4,7 @@
   width: 100%;
   top: 0;
   transition: top 0.5s ease-out;
-  box-shadow: 0 0 2px 0 #000000;
+  //box-shadow: 0 0 2px 0 #000000;
   z-index: 1;
 }
 
@@ -50,7 +50,7 @@
   &__link {
     font: 600 22px/48px 'Raleway', sans-serif;
     text-decoration: none;
-    color: #000000;
+    color: #484848;
     position: relative;
     transition: all .5s ease;
 
@@ -69,7 +69,6 @@
     }
 
     &:hover {
-      color: #555555;
       &::after {
         width: 100%;
       }
@@ -165,19 +164,18 @@
       left: 50%;
     }
   }
-}
 
-.button_red {
-  font: 600 22px/48px 'Raleway', sans-serif;
-  text-decoration: none;
-  color: #ffffff;
-  border-radius: 30px;
-  padding: 1px 51px;
-  background-color: #E25A28;
-  transition: 0.2s linear;
+  &__button {
+    font: 600 22px/48px 'Raleway', sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 30px;
+    padding: 1px 51px;
+    background-color: #E25A28;
+    transition: 0.4s ease;
 
-  &:hover {
-    background: #de6943;
-    box-shadow: 0 0 15px rgba(220, 110, 65, 0.15);
+    &:hover {
+      background: #FE6127;
+    }
   }
 }

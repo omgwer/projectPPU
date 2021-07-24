@@ -21,8 +21,6 @@
   -webkit-transition: top 0.5s ease-out;
   -o-transition: top 0.5s ease-out;
   transition: top 0.5s ease-out;
-  -webkit-box-shadow: 0 0 2px 0 #000000;
-          box-shadow: 0 0 2px 0 #000000;
   z-index: 1;
 }
 
@@ -83,7 +81,7 @@
 .header__link {
   font: 600 22px/48px 'Raleway', sans-serif;
   text-decoration: none;
-  color: #000000;
+  color: #484848;
   position: relative;
   -webkit-transition: all .5s ease;
   -o-transition: all .5s ease;
@@ -104,10 +102,6 @@
   -webkit-transition: all .5s;
   -o-transition: all .5s;
   transition: all .5s;
-}
-
-.header__link:hover {
-  color: #555555;
 }
 
 .header__link:hover::after {
@@ -201,27 +195,26 @@
   left: 50%;
 }
 
-.button_red {
+.header__button {
   font: 600 22px/48px 'Raleway', sans-serif;
   text-decoration: none;
   color: #ffffff;
   border-radius: 30px;
   padding: 1px 51px;
   background-color: #E25A28;
-  -webkit-transition: 0.2s linear;
-  -o-transition: 0.2s linear;
-  transition: 0.2s linear;
+  -webkit-transition: 0.4s ease;
+  -o-transition: 0.4s ease;
+  transition: 0.4s ease;
 }
 
-.button_red:hover {
-  background: #de6943;
-  -webkit-box-shadow: 0 0 15px rgba(220, 110, 65, 0.15);
-          box-shadow: 0 0 15px rgba(220, 110, 65, 0.15);
+.header__button:hover {
+  background: #FE6127;
 }
 
 .course-information {
   background-image: url("../img/container/course-information/course-information__background.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   height: 804px;
   background-position: center;
   margin-top: 110px;
@@ -240,7 +233,7 @@
 }
 
 .course-information__description {
-  font: 500 28px/34px 'Raleway', sans-serif;
+  font: 100 28px/34px 'Raleway', sans-serif;
   margin-bottom: 51px;
   max-width: 442px;
 }
@@ -252,7 +245,7 @@
 }
 
 .course-information__subtitle {
-  font: 500 20px/30px 'Raleway', sans-serif;
+  font: 400 22px/30px 'Raleway', sans-serif;
   max-width: 593px;
   margin-bottom: 48px;
 }
@@ -263,10 +256,10 @@
   border-radius: 30px;
   background-color: #E25A28;
   font: 600 22px/34px 'Raleway', sans-serif;
-  padding: 18px 71px;
-  -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  padding: 18px 46px;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
   text-decoration: none;
   position: relative;
   -webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
@@ -274,14 +267,11 @@
 }
 
 .course-information__button:hover {
-  background: #e2693e;
-  -webkit-box-shadow: 0 15px 20px rgba(220, 101, 61, 0.15);
-          box-shadow: 0 15px 20px rgba(220, 101, 61, 0.15);
-  color: white;
+  background: #FE6127;
 }
 
 .course-information__start-time {
-  font: 400 22px/34px 'Raleway', sans-serif;
+  font: 100 22px/34px 'Raleway', sans-serif;
 }
 
 .course-information__box {
@@ -341,12 +331,14 @@
 }
 
 .course-faq__tags {
-  font: 700 28px/34px 'Raleway', sans-serif;
+  font: 600 28px/34px 'Raleway', sans-serif;
   margin-bottom: 10px;
+  color: #1b1d21;
 }
 
 .course-faq__tag {
-  font: 500 18px/26px 'Raleway', sans-serif;
+  font: 400 18px/26px 'Raleway', sans-serif;
+  color: #282b33;
 }
 
 .people-target {
@@ -358,6 +350,7 @@
 .people-target__title {
   margin-bottom: 62px;
   font: 600 48px/90px 'Raleway', sans-serif;
+  color: #1b1d21;
 }
 
 .people-target__list {
@@ -384,11 +377,13 @@
 .people-target__heading {
   font: 600 28px/34px 'Raleway', sans-serif;
   margin-bottom: 12px;
+  color: #1b1d21;
 }
 
 .people-target__subtitle {
   font: 400 18px/26px 'Raleway', sans-serif;
   max-width: 294px;
+  color: #282B33;
 }
 
 .course-advantages {
@@ -405,7 +400,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 46px;
-  gap: 51px;
+  gap: 61px;
 }
 
 .course-advantages__block {
@@ -436,6 +431,10 @@
 .course-advantages__subtitle {
   font: 400 18px/26px 'Raleway', sans-serif;
   max-width: 295px;
+}
+
+.course-advantages__subtitle_narrow {
+  max-width: 233px;
 }
 
 .course-advantages__image {
@@ -1681,7 +1680,7 @@
     margin: 2px 0;
   }
 
-  .button_red {
+  .header__button {
     max-width: 200px;
     text-align: center;
   }
