@@ -233,7 +233,7 @@
 }
 
 .course-information__description {
-  font: 200 28px/34px 'Raleway', sans-serif;
+  font: 500 28px/34px 'Raleway', sans-serif;
   margin-bottom: 51px;
   max-width: 442px;
 }
@@ -271,7 +271,7 @@
 }
 
 .course-information__start-time {
-  font: 200 22px/34px 'Raleway', sans-serif;
+  font: 500 22px/34px 'Raleway', sans-serif;
 }
 
 .course-information__box {
@@ -479,6 +479,7 @@
   border-radius: 23px;
   border: 1px solid #17144D;
   background-color: #F0EFF4;
+  min-height: 700px;
 }
 
 .training-block__menu {
@@ -492,6 +493,7 @@
   position: relative;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  max-width: 1065px;
 }
 
 .training-block__box {
@@ -515,6 +517,12 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   gap: 160px;
+  cursor: pointer;
+}
+
+.training-block__menu-list:hover:not(.training-block__menu-list_active) {
+  background-color: rgba(211, 204, 238, 0.5);
+  border-bottom: 4px solid rgba(42, 40, 90, 0.35);
 }
 
 .training-block__menu-list_active {
@@ -524,9 +532,14 @@
 
 .training-block__block {
   max-width: 1059px;
-  margin: 77px auto;
+  margin: 77px auto 50px;
   font: 400 22px/28px 'Raleway', sans-serif;
   color: #282b33;
+  display: none;
+}
+
+.training-block__block_active {
+  display: block;
 }
 
 .training-block__title {
@@ -535,8 +548,16 @@
 }
 
 .training-block__subtitle {
-  margin: 30px 0;
+  margin: 25px 0 20px;
   max-width: 800px;
+}
+
+.training-block__subtitle_wide {
+  max-width: 817px;
+}
+
+.training-block__subtitle_narrow {
+  max-width: 796px;
 }
 
 .training-block__list-item {
@@ -1036,7 +1057,7 @@
 
 .session-dates__format {
   color: #1b1d21;
-  font: 100 28px/54px 'Raleway', sans-serif;
+  font: 400 28px/54px 'Raleway', sans-serif;
   text-align: center;
   margin-bottom: 24px;
 }
