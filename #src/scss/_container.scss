@@ -518,15 +518,20 @@
 }
 
 .teachers-feedback {
-  max-width: 1030px;
-  position: relative;
-  margin: 0 auto 85px;
-  padding: 41px 0;
+  background-color: #F7F9FD;
+  padding-bottom: 55px;
+
+  &__main-content {
+    max-width: 1030px;
+    position: relative;
+    margin: 0 auto;
+    padding: 41px 0;
+  }
 
   &__title {
     color: #1b1d21;
     font: 600 48px/54px 'Raleway', sans-serif;
-    margin: 123px auto 42px;
+    margin: 75px auto 82px;
     max-width: 180px;
   }
 
@@ -548,7 +553,7 @@
     position: relative;
     border-radius: 20px;
     border: 1px solid #1B1D21;
-    margin-bottom: 35px;
+    margin-bottom: 76px;
     padding: 76px 0 134px;
     height: 448px;
     box-sizing: border-box;
@@ -602,7 +607,8 @@
     font: 600 22px/34px 'Raleway', sans-serif;
     color: #1B1D21;
     margin-top: 24px;
-    position: relative;
+    position: absolute;
+    bottom: 80px;
   }
 
   &__dots {
@@ -610,22 +616,30 @@
     justify-content: space-between;
     margin: 0 auto;
     text-align: center;
-    max-width: 305px;
     align-items: center;
+
+    &::before {
+      content: '';
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      border-bottom: 2px solid #c6c6c6;
+      z-index: 0;
+    }
   }
 
   &__dots-item {
     display: block;
     cursor: pointer;
-    height: 12px;
-    width: 12px;
-    background-color: #ddd;
-    border-radius: 50%;
     transition: background-color 0.6s ease;
-  }
+    z-index: 1;
+    height: 3px;
+    width: 16.6%;
 
-  &__dots-item:hover {
-    background-color: #aaa;
+    &:hover {
+      background-color: #93989D;
+      transition: none;
+    }
   }
 
   &__item {
@@ -636,14 +650,16 @@
   }
 
   &__active {
-    border: 4px solid #087C96;
-    background-color: #aaa;
+    background-color: #1B1D21;
+    border-radius: 15%;
+    position: relative;
+    top: 0;
   }
 }
 
 .session-dates {
   max-width: 1156px;
-  margin: 0 auto;
+  margin: 115px auto 0;
   border-radius: 20px;
   background-color: #E6E9EC;
   padding: 97px 20px 94px;
@@ -793,6 +809,7 @@
   max-width: 1262px;
   margin: 0 auto;
   padding: 0 20px 137px;
+  color: #282B33;
 
   &__title {
     margin: 10px 0 83px;
@@ -804,18 +821,18 @@
     display: grid;
     grid-template-rows: repeat(4, minmax(80px, max-content));
     grid-template-columns: repeat(1, minmax(80px, 620px));
-    grid-gap: 20px;
+    grid-gap: 18.75px;
   }
 
   &__accordion {
     background-color: #F0EFF4;
     border-radius: 10px;
     cursor: pointer;
+    position: relative;
   }
 
   &__accordion_hide {
     font: 400 18px/24px 'Raleway', sans-serif;
-    color: #282b33;
     padding: 0 35px 0 30px;
     max-width: 464px;
     height: 0;
@@ -823,6 +840,33 @@
     overflow: hidden;
     transition: height 0.3s ease-out,
     opacity 0.5s ease-in-out;
+    position: relative;
+  }
+
+  &__close-button {
+    position: absolute;
+    right: 27px;
+    opacity: 1;
+    bottom: 20px;
+    transition: all 0.5s ease,
+                opacity 0.4s ease;
+  }
+
+  &__open-button {
+    transition: all 0.5s ease,
+                opacity 0.4s ease;
+    position: absolute;
+    right: 27px;
+    bottom: 20px;
+    opacity: 1;
+  }
+
+  &__rotate {
+    transform: rotateX(180deg);
+  }
+
+  &__button-hide {
+    opacity: 0;
   }
 
   &__position {
@@ -832,12 +876,13 @@
   }
 
   &__button {
+    color: inherit;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font: 500 22px/28px 'Raleway', sans-serif;
     cursor: pointer;
-    padding: 23px 20px 23px 30px;
+    padding: 31px 20px 31px 30px;
     width: 100%;
     text-align: left;
     border: none;
@@ -846,27 +891,11 @@
     border-radius: 10px;
   }
 
-  &__arrow {
-    transition: all 0.8s ease;
-    width: 54px;
-    height: 54px;
-    border-radius: 50%;
-    background-color: #ffffff;
-  }
-
-  &__image {
-    text-align: center;
-  }
-
   &__target {
     height: auto;
     overflow: visible;
     padding-bottom: 16px;
     opacity: 1;
-  }
-
-  &__rotate {
-    transform: rotateX(-180deg);
   }
 }
 

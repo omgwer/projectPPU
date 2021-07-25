@@ -77,13 +77,17 @@ function accordionList() {
   accordionsList.forEach(element => {
     element.addEventListener('click', evt => {
       const accordionTrigger = element.querySelector('.faq__accordion_hide');
-      const animatedArrow = element.querySelector('.faq__arrow');
+      const animatedArrow = element.querySelector('.faq__open-button');
+      const closedButton = element.querySelector('.faq__close-button');
       if (accordionTrigger.classList.contains('faq__target')) {
         accordionTrigger.style.height = getComputedStyle(accordionTrigger).height;
         accordionTrigger.classList.remove('faq__target');
         getComputedStyle(accordionTrigger).height; // reflow
         accordionTrigger.style.height = '';
-        animatedArrow.classList.remove('faq__rotate');
+        animatedArrow.classList.add('faq__rotate');
+        animatedArrow.classList.remove('faq__button-hide');
+        closedButton.classList.remove('faq__rotate');
+        closedButton.classList.add('faq__button-hide');
       } else {
         accordionTrigger.classList.add('faq__target');
         let h = getComputedStyle(accordionTrigger).height;
@@ -91,7 +95,10 @@ function accordionList() {
         getComputedStyle(accordionTrigger).height; // reflow
         accordionTrigger.style.height = h;
         setTimeout(function () { accordionTrigger.style.height = '' }, 1000);
-        animatedArrow.classList.add('faq__rotate');
+        animatedArrow.classList.remove('faq__rotate');
+        animatedArrow.classList.add('faq__button-hide');
+        closedButton.classList.add('faq__rotate');
+        closedButton.classList.remove('faq__button-hide');
       }
     })
   });
@@ -138,22 +145,26 @@ function scrollToStartPage() {
 
 function feedbackSlider() {
   const prevs = document.querySelector('.teachers-feedback__prev');
+  const allDots = document.querySelectorAll('.teachers-feedback__dots-item');
+  const nexts = document.querySelector('.teachers-feedback__next');
+  const navNumber = document.querySelector('.js-feedback-number');
+  let slideIndex = 1;
+
   prevs.addEventListener('click', evt=> {
     minusSlide();
   });
-  const nexts = document.querySelector('.teachers-feedback__next');
+
   nexts.addEventListener('click', evt=> {
     plusSlide();
   });
 
-  const allDots = document.querySelectorAll('.teachers-feedback__dots-item');
   for (let i = 0; i < allDots.length ; i++) {
     allDots[i].addEventListener('click', evt => {
       let dotIndex = i + 1;
       currentSlide(dotIndex);
     })
   }
-  let slideIndex = 1;
+
   showSlides(slideIndex);
 
   function plusSlide() {
@@ -186,5 +197,6 @@ function feedbackSlider() {
     }
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " teachers-feedback__active";
+    navNumber.textContent = `${slideIndex}/6`;
   }
 }
