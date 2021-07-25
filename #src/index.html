@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.min.css">
     </head>
     <body>
@@ -20,7 +20,7 @@
                     <a href=".about-authors" class="header__link js-menu-item">Авторы</a>
                     <a href=".discipline-block" class="header__link js-menu-item">Программа</a>
                     <a href=".session-dates__header" class="header__link js-menu-item">Как поступить</a>
-                    <a href=".yandex-map" class="header__link js-menu-item">Контакты</a>
+                    <a href=".map-container" class="header__link js-menu-item">Контакты</a>
                     <a href=".join-form" class="header__button js-menu-item">Записаться</a>
                     <div class="header__arrow">
                         <img src="img/header/arrow.svg" alt="arrow">
@@ -562,9 +562,10 @@
 
             <section class="teachers-feedback">
                 <h2 class="teachers-feedback__title">
-                    Отзывы учителей
+                    Отзывы
                 </h2>
-                <div class="teachers-feedback__slider">
+                <div class="teachers-feedback__container">
+                    <div class="teachers-feedback__slider">
                     <div class="teachers-feedback__item">
                         <div class="teachers-feedback__slideText">
                             Мне очень нравится учиться здесь, я получаю искреннее удовольствие. И верю в то,
@@ -627,8 +628,18 @@
                             <div class="teachers-feedback__author">Екатерина Крит, мама троих детей</div>
                         </div>
                     </div>
-                    <a class="teachers-feedback__prev">&#10094;</a>
-                    <a class="teachers-feedback__next">&#10095;</a>
+                    <div class="teachers-feedback__slider-navigation">
+                        <img src="img/container/teachers-feedback/arrow.png"
+                             alt="Нажмите чтобы пролистнуть вправо"
+                             class="teachers-feedback__prev">
+                        <p class="teachers-feedback__number js-nav-number">
+                            1/6
+                        </p>
+                        <img src="img/container/teachers-feedback/arrow.png"
+                             alt="Нажмите чтобы пролистнуть вправо"
+                             class="teachers-feedback__next">
+                    </div>
+                </div>
                 </div>
                 <div class="teachers-feedback__dots">
                     <span class="teachers-feedback__dots-item"></span>
@@ -706,7 +717,7 @@
                 <ul class="to-proceed__container">
                     <li class="to-proceed__block to-proceed__block_first">
                         Пройти входное тестирование на платформe iSpring Learn по
-                        профильному предмету (математика, физика, информатика).
+                        профильному предмету (математика, физика, информатика).<br>
                         Для специализации «начальная школа» - русский язык и математика.
                     </li>
                     <li class="to-proceed__block to-proceed__block_second">
@@ -721,7 +732,6 @@
                         Поступление на курсы переподготовки
                     </li>
                 </ul>
-
             </section>
 
             <section class="faq">
@@ -733,11 +743,11 @@
                         <div class="faq__accordion">
                             <button class="faq__button">
                                 <span>Как будет проходить обучение?</span>
-                                <img class="faq__arrow rotate" src="img/container/faq/open-button.png" alt="Кнопка открывания">
+                                <img class="faq__arrow faq__rotate" src="img/container/faq/open-button.png" alt="Кнопка открывания">
                             </button>
                             <div class="faq__accordion_hide faq__target">
                                 <p>Дистанционные занятия будут организованы с помощью видеосвязи
-                                    Zoom. 5 очных сессий в г.Йошкар-Ола на базе лицея “Инфотех”.
+                                    Zoom. 5 очных сессий в г.Йошкар-Ола на базе лицея &#171;Инфотех&#187;.
                                 </p>
                             </div>
                         </div>
@@ -814,7 +824,7 @@
                         </div>
                         <div class="faq__accordion">
                             <button class="faq__button">
-                                <span>Что означает “тьюторская компетентность”?</span>
+                                <span>Что означает &#171;тьюторская компетентность&#187;?</span>
                                 <img class="faq__arrow" src="img/container/faq/open-button.png" alt="Кнопка открывания">
                             </button>
                             <div class="faq__accordion_hide">
@@ -840,7 +850,7 @@
                                 Стоимость обучения
                             </p>
                             <p class="join-form__price-month">
-                                9 700 <span>/месяц</span>
+                                9 700 ₽/<span> месяц</span>
                             </p>
                             <p class="join-form__price-full">
                                 80 000 ₽ за весь курс
@@ -848,7 +858,7 @@
                             <ul class="join-form__list">
                                 <li class="join-form__list-item">
                                     <img class="join-form__check" src="img/container/join-form/check.png" alt="Галочка">
-                                    <p class="join-form__text">
+                                    <p>
                                         720 академических часов
                                     </p>
                                 </li>
@@ -861,14 +871,14 @@
                                 </li>
                                 <li class="join-form__list-item">
                                     <img class="join-form__check" src="img/container/join-form/check.png" alt="Галочка">
-                                    <p class="join-form__text">
-                                        выпускной проект
+                                    <p>
+                                        Выпускной проект
                                     </p>
                                 </li>
                                 <li class="join-form__list-item">
                                     <img class="join-form__check" src="img/container/join-form/check.png" alt="Галочка">
-                                    <p class="join-form__text">
-                                        диплом государственного образца
+                                    <p>
+                                        Диплом государственного образца
                                     </p>
                                 </li>
                             </ul>
@@ -964,71 +974,81 @@
                                        required
                                 />
                             </label>
-                            <input class="join-form__button"
-                                   type="submit"
-                                   value="Оставить заявку на обучение"
-                            />
                             <p class="join-form__description">
                                 Отправляя форму, вы соглашаетесь на обработку
                                 персональных данных.
                             </p>
+                            <input class="join-form__button"
+                                   type="submit"
+                                   value="Оставить заявку на обучение"
+                            />
                         </form>
                     </div>
                 </div>
             </section>
 
-            <section class="yandex-map">
+            <section class="map-container">
                 <h2 class="visually-hidden">Карта проезда к учебному заведению</h2>
-                <div class="contacts">
-                    <p class="contacts__title">
+                <div class="map-container__contacts">
+                    <p class="map-container__title">
                         Контакты
                     </p>
-                    <div class="contacts__content_hide">
-                        <p class="contacts__subtitle">
+                    <div class="map-container__content_hide">
+                        <p class="map-container__subtitle">
                             Институт программных систем
                         </p>
-                        <div class="contacts__description">
-                            <a class="contacts__information"
+                        <div class="map-container__description">
+                            <a class="map-container__information"
                                href="https://yandex.ru/maps/-/CCUeZYHg2D"
                                target="_blank">
-                                <img src="img/container/contacts/navigation-point.svg"
-                                     alt="navigation point">
-                                <span>424000, г. Йошкар-Ола
-                                ул. Вознесенская, 110, 1 этаж</span>
+                                <p>424000, г. Йошкар-Ола</p>
+                                <p>ул. Вознесенская, 110, 1 этаж</p>
                             </a>
-                            <a class="contacts__information"
+                            <a class="map-container__information"
                                href="tel:+79379309097"
                                target="_blank">
-                                <img src="img/container/contacts/icon-telephone.svg"
-                                     alt="icon telephone">
-                                <span>Телефон: <br class="contacts__adaptive">+7 937 930 90 97</span>
+                                <p>Телефон: +7 937 930 90 97</p>
                             </a>
-                            <a class="contacts__information"
+                            <a class="map-container__information"
                                href="mailto:info@pedcourse.ru"
                                target="_blank">
-                                <img src="img/container/contacts/icon-mail.svg"
-                                     alt="mail">
-                                <span>Электронная почта: info@pedcourse.ru</span>
+                                <p>Электронная почта: info@pedcourse.ru</p>
                             </a>
                         </div>
-                        <div class="contacts__links">
-                            <a href="https://www.instagram.com/teacher.xxi/" class="contacts__link" target="_blank">
-                                <img class="contacts__img" src="img/container/contacts/instagram.png" alt="Instagram">
+                        <div class="map-container__links">
+                            <a href="https://www.instagram.com/teacher.xxi/"
+                               class="map-container__link"
+                               target="_blank">
+                                <img class="contacts__img"
+                                     src="img/container/contacts/instagram.png"
+                                     alt="Instagram">
                             </a>
-                            <a href="https://vk.com/tutor.school" target="_blank" class="contacts__link">
-                                <img class="contacts__img" src="img/container/contacts/vk.png" alt="Вконтакте">
+                            <a href="https://vk.com/tutor.school"
+                               target="_blank"
+                               class="map-container__link">
+                                <img class="contacts__img"
+                                     src="img/container/contacts/vk.png"
+                                     alt="Вконтакте">
                             </a>
-                            <a href="https://www.youtube.com/channel/UCDwKyQ6FV4FqXHc9ccjynrg" class="contacts__link" target="_blank">
-                                <img class="contacts__img" src="img/container/contacts/youtube.png" alt="Youtube">
+                            <a href="https://www.youtube.com/channel/UCDwKyQ6FV4FqXHc9ccjynrg"
+                               class="map-container__link"
+                               target="_blank">
+                                <img class="contacts__img"
+                                     src="img/container/contacts/youtube.png"
+                                     alt="Youtube">
                             </a>
-                            <a href="https://vk.com/tutor.school" class="contacts__link" target="_blank">
-                                <img class="contacts__img" src="img/container/contacts/telegram.png" alt="Telegram">
+                            <a href="https://vk.com/tutor.school"
+                               class="map-container__link"
+                               target="_blank">
+                                <img class="contacts__img"
+                                     src="img/container/contacts/telegram.png"
+                                     alt="Telegram">
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="yandex-map__script">
-                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4453160b8e9df04f32df697b4e0c5cde4875a4e22abd5ce74185b844f59e5925&amp;width=100%25&amp;height=720&amp;lang=ru_RU&amp;scroll=true"></script>
+                <div class="map-container__script">
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4453160b8e9df04f32df697b4e0c5cde4875a4e22abd5ce74185b844f59e5925&amp;width=100%25&amp;height=700&amp;lang=ru_RU&amp;scroll=true"></script>
                 </div>
             </section>
 
@@ -1038,7 +1058,9 @@
         </main>
         <footer class="footer">
             <div>
-                <a href="https://isphera.ru/" target="_blank" class="footer__link">
+                <a href="https://isphera.ru/"
+                   target="_blank"
+                   class="footer__link">
                     Научно-методический центр «Инфосфера»
                 </a>
             </div>
