@@ -748,6 +748,10 @@
   max-width: 299px;
 }
 
+.about-authors__box {
+  width: 330px;
+}
+
 .program-experts {
   background-color: #453A72;
 }
@@ -970,6 +974,13 @@
   bottom: 80px;
 }
 
+.teachers-feedback__author-job {
+  position: absolute;
+  font: 600 22px/34px 'Raleway', sans-serif;
+  color: #1B1D21;
+  bottom: 52px;
+}
+
 .teachers-feedback__dots {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -994,21 +1005,25 @@
 }
 
 .teachers-feedback__dots-item {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   display: block;
   cursor: pointer;
-  -webkit-transition: background-color 0.6s ease;
-  -o-transition: background-color 0.6s ease;
-  transition: background-color 0.6s ease;
+  -webkit-transition: background-color 0.2s ease;
+  -o-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
   z-index: 1;
   height: 3px;
   width: 16.6%;
 }
 
-.teachers-feedback__dots-item:hover {
+.teachers-feedback__dots-item:hover:not(.teachers-feedback__active) {
   background-color: #93989D;
   -webkit-transition: none;
   -o-transition: none;
   transition: none;
+  height: 10px;
+  border-radius: 5px;
 }
 
 .teachers-feedback__item {
@@ -1019,10 +1034,11 @@
 }
 
 .teachers-feedback__active {
-  background-color: #1B1D21;
-  border-radius: 15%;
+  background-color: #453A72;
   position: relative;
   top: 0;
+  height: 10px;
+  border-radius: 5px;
 }
 
 .session-dates {
@@ -1281,6 +1297,7 @@
   -o-transition: 0.4s ease;
   transition: 0.4s ease;
   border-radius: 10px;
+  background-color: #F0EFF4;
 }
 
 .faq__target {
@@ -1637,13 +1654,13 @@
   border: 2px solid #CCC9C9;
   -webkit-box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.15);
           box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.15);
-  padding: 64px 232px 52px 98px;
+  padding: 64px 120px 52px 98px;
   max-width: 760px;
   position: absolute;
   z-index: 1;
   background-color: #ffffff;
   top: 68px;
-  left: 280px;
+  left: 383px;
 }
 
 .map-container__adaptive {
@@ -1672,6 +1689,7 @@
 
 .map-container__title {
   font: 600 48px/48px 'Raleway', sans-serif;
+  color: #1b1d21;
 }
 
 .map-container__subtitle {
