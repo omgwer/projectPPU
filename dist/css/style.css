@@ -579,6 +579,7 @@
 .tutor-teachers {
   max-width: 1247px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .tutor-teachers__header {
@@ -586,7 +587,7 @@
   font: 600 48px/54px "Raleway", sans-serif;
   max-width: 682px;
   margin-bottom: 84px;
-  padding-left: 50px;
+  padding-left: 30px;
 }
 
 .tutor-teachers__container {
@@ -600,7 +601,7 @@
 }
 
 .tutor-teachers__title {
-  padding: 15px 0 0 50px;
+  padding: 15px 0 0 30px;
   font: 600 36px/42px "Raleway", sans-serif;
   max-width: 246px;
   margin-bottom: 224px;
@@ -1822,6 +1823,10 @@
   .join-form__block {
     padding: 25px 30px 30px 30px;
   }
+
+  .tutor-teachers__container {
+    gap: 10px;
+  }
 }
 
 @media screen and (max-width: 1220px) {
@@ -2067,6 +2072,14 @@
     display: -ms-flexbox;
     display: flex;
   }
+
+  .tutor-teachers__container {
+    gap: 25px;
+  }
+
+  .tutor-teachers__image {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1110px) {
@@ -2140,6 +2153,30 @@
   .join-form__title {
     font-size: 35px;
     line-height: normal;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .tutor-teachers__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .tutor-teachers__title {
+    max-width: none;
+    margin-bottom: 25px;
+  }
+
+  .tutor-teachers__list {
+    max-width: 800px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+
+  .tutor-teachers__list-item {
+    width: 335px;
   }
 }
 

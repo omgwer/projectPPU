@@ -61,6 +61,12 @@
       padding: 25px 30px 30px 30px;
     }
   }
+
+  .tutor-teachers {
+    &__container {
+      gap: 10px;
+    }
+  }
 }
 
 @media screen and (max-width: 1220px) {
@@ -287,6 +293,18 @@
       display: flex;
     }
   }
+
+  .tutor-teachers {
+
+    &__container {
+      gap: 25px;
+    }
+
+    &__image {
+      display: none;
+    }
+  }
+
 }
 
 @media screen and (max-width: 1110px) {
@@ -348,6 +366,28 @@
     &__title {
       font-size: 35px;
       line-height: normal;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .tutor-teachers {
+    &__container {
+      flex-direction: column;
+    }
+
+    &__title {
+      max-width: none;
+      margin-bottom: 25px;
+    }
+
+    &__list {
+      max-width: 800px;
+      justify-content: space-around;
+    }
+
+    &__list-item {
+      width: 335px;
     }
   }
 }

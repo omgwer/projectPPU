@@ -336,13 +336,14 @@
 .tutor-teachers {
   max-width: 1247px;
   margin: 0 auto;
+  padding: 0 20px;
 
   &__header {
     color: #1b1d21;
     font: 600 48px/54px 'Raleway', sans-serif;
     max-width: 682px;
     margin-bottom: 84px;
-    padding-left: 50px;
+    padding-left: 30px;
   }
 
   &__container {
@@ -352,7 +353,7 @@
   }
 
   &__title {
-    padding: 15px 0 0 50px;
+    padding: 15px 0 0 30px;
     font: 600 36px/42px 'Raleway', sans-serif;
     max-width: 246px;
     margin-bottom: 224px;
