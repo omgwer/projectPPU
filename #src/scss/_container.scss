@@ -143,7 +143,7 @@
 .course-advantages {
   max-width: 1160px;
   margin: 116px auto 125px;
-  padding: 0 20px;
+  padding: 0 30px;
 
   &__container {
     display: flex;
@@ -193,6 +193,7 @@
     display: flex;
     justify-content: flex-start;
     gap: 147px;
+    margin: 0 15px 0 30px;
   }
 
   &__title {
@@ -264,11 +265,12 @@
   }
 
   &__block {
-    max-width: 1059px;
-    margin: 77px auto 50px;
+    max-width: 1079px;
+    margin: 77px 0 50px;
     font: 400 22px/28px 'Raleway', sans-serif;
     color: #282b33;
     display: none;
+    padding: 0 20px 0 113px;
 
     &_active {
       display: block;

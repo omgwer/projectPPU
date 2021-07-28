@@ -363,7 +363,7 @@
 .course-advantages {
   max-width: 1160px;
   margin: 116px auto 125px;
-  padding: 0 20px;
+  padding: 0 30px;
 }
 
 .course-advantages__container {
@@ -428,6 +428,7 @@
       -ms-flex-pack: start;
           justify-content: flex-start;
   gap: 147px;
+  margin: 0 15px 0 30px;
 }
 
 .course-program__title {
@@ -505,11 +506,12 @@
 }
 
 .training-block__block {
-  max-width: 1059px;
-  margin: 77px auto 50px;
+  max-width: 1079px;
+  margin: 77px 0 50px;
   font: 400 22px/28px "Raleway", sans-serif;
   color: #282b33;
   display: none;
+  padding: 0 20px 0 113px;
 }
 
 .training-block__block_active {
@@ -1960,8 +1962,6 @@
     margin: 0 auto;
     border-radius: 0 0 10px 10px;
     padding: 33px 0 62px 55px;
-    -webkit-box-shadow: -5px 15px 10px 0 rgba(0, 0, 0, 0.1);
-            box-shadow: -5px 15px 10px 0 rgba(0, 0, 0, 0.1);
     -webkit-transition: top 1s ease-out;
     -o-transition: top 1s ease-out;
     transition: top 1s ease-out;
@@ -1991,40 +1991,30 @@
     text-align: center;
   }
 
-  .slider__item {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 33.3333333333%;
-            flex: 0 0 33.3333333333%;
-    max-width: 33.3333333333%;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 10px;
+  .course-advantages {
+    margin-bottom: 100px;
   }
 
-  .slider__avatar {
-    margin-left: 50px;
+  .course-program__title {
+    max-width: none;
+    margin-bottom: 25px;
   }
 
-  .slider__name {
-    margin: 5px auto;
+  .course-program__subtitle {
+    max-width: none;
   }
 
-  .slider__subtitle {
-    margin: 0 auto;
+  .course-program__container {
+    display: block;
   }
 
-  .slider__control[data-slide=next] {
-    right: 25px;
+  .training-block__menu {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+
+  .training-block__block {
+    padding-left: 70px;
   }
 
   .teachers-feedback {
@@ -2153,38 +2143,9 @@
   }
 }
 
-@media screen and (max-width: 1000px) {
-  .slider__item {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 50%;
-            flex: 0 0 50%;
-    max-width: 50%;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 10px;
-  }
-
-  .slider__name {
-    text-align: center;
-  }
-
-  .slider__subtitle {
-    margin: 0 auto;
-    max-width: 265px;
-  }
-
-  .slider__avatar {
-    margin: 0 auto;
+@media screen and (max-width: 970px) {
+  .training-block__menu {
+    padding-left: 0;
   }
 }
 
@@ -2211,6 +2172,13 @@
   .join-form__block {
     border-radius: 10px;
   }
+
+  .training-block__menu {
+    padding-left: 15px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
 }
 
 @media screen and (max-width: 925px) {
@@ -2232,6 +2200,14 @@
 }
 
 @media screen and (max-width: 850px) {
+  .training-block__box::before {
+    display: none;
+  }
+
+  .training-block__menu {
+    display: none;
+  }
+
   .course-faq {
     padding: 56px 40px 61px 40px;
     -ms-flex-wrap: wrap;
@@ -2247,23 +2223,30 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    gap: 25px;
+  }
+
+  .course-advantages__box {
+    width: 300px;
   }
 
   .course-advantages__title {
     font-size: 36px;
-    max-width: 90vw;
-    text-align: center;
+    line-height: 40px;
     margin-bottom: 50px;
+    max-width: none;
+  }
+
+  .course-advantages__title_br {
+    display: block;
   }
 
   .course-advantages__container {
+    display: block;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: center;
@@ -2332,14 +2315,6 @@
     bottom: 20px;
     left: 40px;
   }
-
-  .slider__control[data-slide=next] {
-    right: 10px;
-  }
-
-  .slider__control[data-slide=prev] {
-    left: 10px;
-  }
 }
 
 @media screen and (max-width: 811px) {
@@ -2355,7 +2330,7 @@
     border: 1px solid #453A72;
     position: absolute;
     left: -38px;
-    top: 8px;
+    top: 10px;
   }
 }
 
@@ -2451,6 +2426,39 @@
   }
 }
 
+@media screen and (max-width: 676px) {
+  .course-advantages__block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .course-advantages__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .course-advantages__image {
+    margin-right: 15px;
+  }
+
+  .course-advantages__subtitle {
+    max-width: 350px;
+  }
+
+  .course-advantages__subtitle_narrow {
+    max-width: none;
+  }
+}
+
 @media screen and (max-width: 660px) {
   .course-information {
     background-image: url("../img/container/course-information/course-information__background_mobile.jpg");
@@ -2507,25 +2515,6 @@
     font-size: 40px;
     line-height: normal;
   }
-
-  .slider {
-    margin: 50px auto 50px;
-  }
-
-  .slider__item {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 100%;
-            flex: 0 0 100%;
-    max-width: 100%;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    gap: 0;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
 }
 
 @media screen and (max-width: 612px) {
@@ -2535,8 +2524,6 @@
 
   .course-advantages__title {
     margin-bottom: 35px;
-    font-size: 30px;
-    line-height: 38px;
   }
 
   .about-authors__header {
@@ -2628,24 +2615,9 @@
 }
 
 @media screen and (max-width: 559px) {
-  .slider {
-    padding: 0 20px;
-  }
-
-  .slider__item {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-
-  .slider__control[data-slide=next] {
-    right: 10px;
-    top: 80px;
-  }
-
-  .slider__control[data-slide=prev] {
-    right: 10px;
-    top: 80px;
+  .course-advantages__title {
+    max-width: 305px;
+    padding: 0;
   }
 
   .footer__img {
@@ -2686,6 +2658,10 @@
 
   .people-target__list-item {
     display: block;
+  }
+
+  .course-program__title {
+    font-size: 36px;
   }
 }
 
@@ -2779,6 +2755,14 @@
 }
 
 @media screen and (max-width: 440px) {
+  .course-advantages {
+    padding: 0 15px 0 30px;
+  }
+
+  .course-advantages__image {
+    margin-right: 8px;
+  }
+
   .course-faq {
     padding-left: 40px;
   }
@@ -2843,6 +2827,10 @@
 }
 
 @media screen and (max-width: 350px) {
+  .course-advantages__title {
+    font-size: 30px;
+  }
+
   .session-dates__header {
     font-size: 34px;
   }
