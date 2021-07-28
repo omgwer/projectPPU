@@ -34,7 +34,7 @@ function hideHeaderMenu(command) {
   const burgerMenu = document.querySelector('.js-menu-burger');
 
   if (command === 'open') {
-    navigationMenu.style.top = "109px";
+    navigationMenu.style.top = "97px";
     burgerMenu.classList.add('open');
   } else {
     navigationMenu.style.top = "-390px";
@@ -44,8 +44,6 @@ function hideHeaderMenu(command) {
 
 function initHeaderMenu() {
   const burgerMenu = document.querySelector('.js-menu-burger');
-  const navigationMenu = document.querySelector('.header__nav-menu');
-  const headerArrow = document.querySelector('.header__arrow');
 
   burgerMenu.addEventListener('click', () =>{
     if (!burgerMenu.classList.contains('open')) {
@@ -54,8 +52,6 @@ function initHeaderMenu() {
       hideHeaderMenu('close');
     }
   });
-
-  headerArrow.addEventListener('click', hideHeaderMenu);
 }
 
 function menuScrollNavigation() {

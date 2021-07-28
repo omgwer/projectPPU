@@ -2,10 +2,8 @@
   background-image: url("../img/container/course-information/course-information__background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 804px;
   background-position: center;
-  margin-top: 110px;
-  transition: background-position 1s cubic-bezier(0.68,0.12,0.58,1);
+  margin-top: 100px;
 
   &__container {
     max-width: 1160px;
@@ -85,7 +83,7 @@
 
   &__content {
     max-width: 210px;
-    &:nth-child(2) .course-faq__tag {
+    &_wide {
       max-width: 190px;
     }
   }
@@ -249,7 +247,7 @@
   &__menu-list {
     color: #1b1d21;
     font: 600 28px/42px 'Raleway', sans-serif;
-    padding: 53px 80px 30px 53px;
+    padding: 53px 51px 30px;
     box-sizing: border-box;
     gap: 160px;
     cursor: pointer;
@@ -698,7 +696,7 @@
   margin: 115px auto 0;
   border-radius: 20px;
   background-color: #E6E9EC;
-  padding: 97px 20px 94px;
+  padding: 97px 0 94px;
   border: 1px solid #453a72;
 
   &__container {
@@ -761,18 +759,24 @@
 }
 
 .to-proceed {
-  max-width: 1160px;
+  max-width: 1260px;
   margin: 173px auto 0;
-  background: url("../img/container/to-proceed/dotted-line.png") no-repeat;
   padding: 0 0 50px 50px;
+  background: url("../img/container/to-proceed/dotted-line.png") no-repeat;
+  background-position-x: 15px;
   position: relative;
+
+  &__main {
+    max-width: 1160px;
+    padding-left: 25px;
+  }
 
   &::before {
     position: absolute;
     content: url("../img/container/to-proceed/airplane.png");
     width: 149px;
     height: 84px;
-    right: 220px;
+    right: 300px;
     top: 60px;
   }
 
@@ -844,13 +848,19 @@
 .faq {
   max-width: 1262px;
   margin: 0 auto;
-  padding: 0 20px 137px;
+  padding: 0 20px 137px 116px;
   color: #282B33;
 
   &__title {
     margin: 10px 0 83px;
     font: 600 48px/54px 'Raleway', sans-serif;
     color: #1b1d21;
+  }
+
+  &__position {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
   }
 
   &__container {
@@ -905,12 +915,6 @@
     opacity: 0;
   }
 
-  &__position {
-    display: flex;
-    gap: 20px;
-    justify-content: space-between;
-  }
-
   &__button {
     color: inherit;
     display: flex;
@@ -950,12 +954,13 @@
     margin: 0 auto;
     display: flex;
     align-items: flex-end;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    position: relative;
   }
 
   &__box {
     position: relative;
-    z-index: 1;
 
     &::before {
     position: absolute;
@@ -977,12 +982,12 @@
     background-color: #453A72;
     border-radius: 10px;
     max-width: 620px;
-    padding: 106px 66px 118px 67px;
+    padding: 82px 66px 0 67px;
     position: relative;
   }
 
   &__price-title {
-    margin-bottom: 35px;
+    margin-bottom: 55px;
     font: 600 48px/55px 'Raleway', sans-serif;
     max-width: 487px;
   }
@@ -997,12 +1002,16 @@
   }
 
   &__price-full {
-    margin-bottom: 44px;
+    margin-bottom: 65px;
     font: 500 32px/44px 'Raleway', sans-serif;
   }
 
   &__check {
     padding-top: 10px;
+  }
+
+  &__list {
+    margin-bottom: 45px;
   }
 
   &__list-item {
@@ -1011,8 +1020,14 @@
     display: flex;
     max-width: 420px;
     align-items: flex-start;
-    margin-bottom: 22px;
+    margin-bottom: 26px;
     gap: 27px;
+  }
+
+  &__image {
+    position: relative;
+    bottom: -2px;
+    padding-left: 136px;
   }
 
   &__text {
@@ -1022,13 +1037,12 @@
   &__block {
     max-width: 634px;
     box-sizing: border-box;
-    padding: 25px 38px 61px 95px;
+    padding: 50px 38px 61px 95px;
     background-color: #ffffff;
     border-radius: 10px 10px 10px 0;
     border: 1px solid #17144D;
     position: relative;
     left: -15px;
-    z-index: 0;
   }
 
   &__title {
@@ -1212,8 +1226,8 @@
     position: absolute;
     z-index: 1;
     background-color: #ffffff;
-    top: 68px;
-    left: 383px;
+    bottom: -686px;
+    left: 45px;
   }
 
   &__adaptive {

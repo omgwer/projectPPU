@@ -45,8 +45,8 @@
   background-color: #ffffff;
   position: absolute;
   z-index: 0;
-  width: 450px;
-  height: 108px;
+  width: 570px;
+  height: 95px;
   right: 0;
   top: 0;
   display: none;
@@ -60,11 +60,6 @@
 
 .header__logo {
   margin-right: 30px;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-  position: relative;
   z-index: 2;
 }
 
@@ -79,13 +74,13 @@
 }
 
 .header__link {
-  font: 400 22px/48px 'Raleway', sans-serif;
+  font: 400 22px/48px "Raleway", sans-serif;
   text-decoration: none;
   color: #484848;
   position: relative;
-  -webkit-transition: all .5s ease;
-  -o-transition: all .5s ease;
-  transition: all .5s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .header__link::after {
@@ -95,67 +90,50 @@
   right: 0;
   margin: auto;
   width: 0;
-  content: '.';
+  content: ".";
   color: transparent;
   background: #000000;
   height: 1px;
-  -webkit-transition: all .5s;
-  -o-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .header__link:hover::after {
   width: 100%;
 }
 
-.header__arrow {
-  display: none;
-  cursor: pointer;
-  padding: 15px 35px 5px 40px;
-  background-color: #E25A28;
-  border-radius: 5px 5px 0 0;
-  -webkit-transition: background-color 0.8s ease;
-  -o-transition: background-color 0.8s ease;
-  transition: background-color 0.8s ease;
-}
-
-.header__arrow:hover {
-  background-color: #e0663c;
-  -webkit-box-shadow: 0 -1px 10px 2px rgba(0, 0, 0, 0.15);
-          box-shadow: 0 -1px 10px 2px rgba(0, 0, 0, 0.15);
-}
-
 .header__burger-menu {
   z-index: 0;
   display: none;
-  width: 60px;
-  height: 45px;
+  width: 42px;
+  height: 30px;
   position: relative;
   margin: 0 auto;
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
       transform: rotate(0deg);
-  -webkit-transition: .5s ease-in-out;
-  -o-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
   cursor: pointer;
 }
 
 .header__burger-menu span {
   display: block;
   position: absolute;
-  height: 9px;
+  height: 6px;
   width: 100%;
-  background: #E25A28;
-  border-radius: 9px;
+  background: #2A285A;
+  border-radius: 6px;
   opacity: 1;
   left: 0;
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
       transform: rotate(0deg);
-  -webkit-transition: .25s ease-in-out;
-  -o-transition: .25s ease-in-out;
-  transition: .25s ease-in-out;
+  -webkit-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
 
 .header__burger-menu span:nth-child(1) {
@@ -164,15 +142,15 @@
 
 .header__burger-menu span:nth-child(2),
 .header__burger-menu span:nth-child(3) {
-  top: 18px;
+  top: 15px;
 }
 
 .header__burger-menu span:nth-child(4) {
-  top: 36px;
+  top: 30px;
 }
 
 .header__burger-menu.open span:nth-child(1) {
-  top: 18px;
+  top: 15px;
   width: 0;
   left: 50%;
 }
@@ -196,7 +174,7 @@
 }
 
 .header__button {
-  font: 600 22px/48px 'Raleway', sans-serif;
+  font: 600 22px/48px "Raleway", sans-serif;
   text-decoration: none;
   color: #ffffff;
   border-radius: 30px;
@@ -215,12 +193,8 @@
   background-image: url("../img/container/course-information/course-information__background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 804px;
   background-position: center;
-  margin-top: 110px;
-  -webkit-transition: background-position 1s cubic-bezier(0.68, 0.12, 0.58, 1);
-  -o-transition: background-position 1s cubic-bezier(0.68, 0.12, 0.58, 1);
-  transition: background-position 1s cubic-bezier(0.68, 0.12, 0.58, 1);
+  margin-top: 100px;
 }
 
 .course-information__container {
@@ -233,19 +207,19 @@
 }
 
 .course-information__description {
-  font: 500 28px/34px 'Raleway', sans-serif;
+  font: 500 28px/34px "Raleway", sans-serif;
   margin-bottom: 51px;
   max-width: 442px;
 }
 
 .course-information__title {
-  font: 600 76px/60px 'Raleway', sans-serif;
+  font: 600 76px/60px "Raleway", sans-serif;
   max-width: 615px;
   margin-bottom: 21px;
 }
 
 .course-information__subtitle {
-  font: 400 22px/30px 'Raleway', sans-serif;
+  font: 400 22px/30px "Raleway", sans-serif;
   max-width: 593px;
   margin-bottom: 48px;
 }
@@ -255,7 +229,7 @@
   display: inline-block;
   border-radius: 80px;
   background-color: #E25A28;
-  font: 600 22px/34px 'Raleway', sans-serif;
+  font: 600 22px/34px "Raleway", sans-serif;
   padding: 18px 46px;
   -webkit-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
@@ -271,7 +245,7 @@
 }
 
 .course-information__start-time {
-  font: 500 22px/34px 'Raleway', sans-serif;
+  font: 500 22px/34px "Raleway", sans-serif;
 }
 
 .course-information__box {
@@ -326,18 +300,18 @@
   max-width: 210px;
 }
 
-.course-faq__content:nth-child(2) .course-faq__tag {
+.course-faq__content_wide {
   max-width: 190px;
 }
 
 .course-faq__tags {
-  font: 600 28px/34px 'Raleway', sans-serif;
+  font: 600 28px/34px "Raleway", sans-serif;
   margin-bottom: 10px;
   color: #1b1d21;
 }
 
 .course-faq__tag {
-  font: 400 18px/26px 'Raleway', sans-serif;
+  font: 400 18px/26px "Raleway", sans-serif;
   color: #282b33;
 }
 
@@ -349,7 +323,7 @@
 
 .people-target__title {
   margin-bottom: 62px;
-  font: 600 48px/90px 'Raleway', sans-serif;
+  font: 600 48px/90px "Raleway", sans-serif;
   color: #1b1d21;
 }
 
@@ -375,13 +349,13 @@
 }
 
 .people-target__heading {
-  font: 600 28px/34px 'Raleway', sans-serif;
+  font: 600 28px/34px "Raleway", sans-serif;
   margin-bottom: 12px;
   color: #1b1d21;
 }
 
 .people-target__subtitle {
-  font: 400 18px/26px 'Raleway', sans-serif;
+  font: 400 18px/26px "Raleway", sans-serif;
   max-width: 294px;
   color: #282B33;
 }
@@ -420,7 +394,7 @@
 }
 
 .course-advantages__title {
-  font: 600 48px/54px 'Raleway', sans-serif;
+  font: 600 48px/54px "Raleway", sans-serif;
   max-width: 382px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -429,7 +403,7 @@
 }
 
 .course-advantages__subtitle {
-  font: 400 18px/26px 'Raleway', sans-serif;
+  font: 400 18px/26px "Raleway", sans-serif;
   max-width: 295px;
 }
 
@@ -457,13 +431,13 @@
 }
 
 .course-program__title {
-  font: 600 48px/54px 'Raleway', sans-serif;
+  font: 600 48px/54px "Raleway", sans-serif;
   color: #1b1d21;
   max-width: 285px;
 }
 
 .course-program__subtitle {
-  font: 400 22px/30px 'Raleway', sans-serif;
+  font: 400 22px/30px "Raleway", sans-serif;
   color: #282b33;
   max-width: 651px;
 }
@@ -502,7 +476,7 @@
 
 .training-block__box::before {
   display: block;
-  content: '';
+  content: "";
   width: 100%;
   height: 2px;
   border-bottom: 2px solid #DADDE2;
@@ -512,8 +486,8 @@
 
 .training-block__menu-list {
   color: #1b1d21;
-  font: 600 28px/42px 'Raleway', sans-serif;
-  padding: 53px 80px 30px 53px;
+  font: 600 28px/42px "Raleway", sans-serif;
+  padding: 53px 51px 30px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   gap: 160px;
@@ -533,7 +507,7 @@
 .training-block__block {
   max-width: 1059px;
   margin: 77px auto 50px;
-  font: 400 22px/28px 'Raleway', sans-serif;
+  font: 400 22px/28px "Raleway", sans-serif;
   color: #282b33;
   display: none;
 }
@@ -589,7 +563,7 @@
   max-width: 320px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font: 600 22px/34px 'Raleway', sans-serif;
+  font: 600 22px/34px "Raleway", sans-serif;
   text-align: center;
   -webkit-transition: background-color 0.4s ease;
   -o-transition: background-color 0.4s ease;
@@ -607,7 +581,7 @@
 
 .tutor-teachers__header {
   color: #1b1d21;
-  font: 600 48px/54px 'Raleway', sans-serif;
+  font: 600 48px/54px "Raleway", sans-serif;
   max-width: 682px;
   margin-bottom: 84px;
   padding-left: 50px;
@@ -625,7 +599,7 @@
 
 .tutor-teachers__title {
   padding: 15px 0 0 50px;
-  font: 600 36px/42px 'Raleway', sans-serif;
+  font: 600 36px/42px "Raleway", sans-serif;
   max-width: 246px;
   margin-bottom: 224px;
   color: #1b1d21;
@@ -650,13 +624,13 @@
 
 .tutor-teachers__name {
   color: #1b1d21;
-  font: 600 28px/34px 'Raleway', sans-serif;
+  font: 600 28px/34px "Raleway", sans-serif;
   margin: 40px 0 13px;
 }
 
 .tutor-teachers__subtitle {
   color: #282b33;
-  font: 400 18px/26px 'Raleway', sans-serif;
+  font: 400 18px/26px "Raleway", sans-serif;
 }
 
 .tutor-teachers__subtitle_narrow {
@@ -678,12 +652,12 @@
 }
 
 .about-authors__header {
-  font: 600 48px/54px 'Raleway', sans-serif;
+  font: 600 48px/54px "Raleway", sans-serif;
   max-width: 696px;
 }
 
 .about-authors__title {
-  font: 600 36px/42px 'Raleway', sans-serif;
+  font: 600 36px/42px "Raleway", sans-serif;
   color: #1b1d21;
   margin: 65px 0 60px;
   max-width: 440px;
@@ -725,13 +699,13 @@
 }
 
 .about-authors__name {
-  font: 600 28px/34px 'Raleway', sans-serif;
+  font: 600 28px/34px "Raleway", sans-serif;
   color: #1b1d21;
   margin-bottom: 17px;
 }
 
 .about-authors__subtitle {
-  font: 400 18px/26px 'Raleway', sans-serif;
+  font: 400 18px/26px "Raleway", sans-serif;
   color: #282b33;
   max-width: 320px;
 }
@@ -768,7 +742,7 @@
 }
 
 .program-experts__title {
-  font: 600 48px/54px 'Raleway', sans-serif;
+  font: 600 48px/54px "Raleway", sans-serif;
   max-width: 463px;
   padding-left: 18px;
   color: #ffffff;
@@ -834,7 +808,7 @@
 }
 
 .program-experts__subtitle {
-  font: 400 20px/30px 'Raleway', sans-serif;
+  font: 400 20px/30px "Raleway", sans-serif;
   max-width: 220px;
   text-align: center;
   position: relative;
@@ -879,7 +853,7 @@
 
 .teachers-feedback__title {
   color: #1b1d21;
-  font: 600 48px/54px 'Raleway', sans-serif;
+  font: 600 48px/54px "Raleway", sans-serif;
   margin: 75px auto 82px;
   max-width: 180px;
 }
@@ -889,7 +863,7 @@
 }
 
 .teachers-feedback__container::before {
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   position: absolute;
@@ -914,7 +888,7 @@
 }
 
 .teachers-feedback__slider-navigation {
-  font: 500 22px/30px 'Raleway', sans-serif;
+  font: 500 22px/30px "Raleway", sans-serif;
   color: #1B1D21;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -961,13 +935,13 @@
 
 .teachers-feedback__slideText {
   color: #282b33;
-  font: 400 18px/28px 'Raleway', sans-serif;
+  font: 400 18px/28px "Raleway", sans-serif;
   max-width: 756px;
   margin: 0 auto;
 }
 
 .teachers-feedback__author {
-  font: 600 22px/34px 'Raleway', sans-serif;
+  font: 600 22px/34px "Raleway", sans-serif;
   color: #1B1D21;
   margin-top: 24px;
   position: absolute;
@@ -976,7 +950,7 @@
 
 .teachers-feedback__author-job {
   position: absolute;
-  font: 600 22px/34px 'Raleway', sans-serif;
+  font: 600 22px/34px "Raleway", sans-serif;
   color: #1B1D21;
   bottom: 52px;
 }
@@ -996,7 +970,7 @@
 }
 
 .teachers-feedback__dots::before {
-  content: '';
+  content: "";
   position: absolute;
   height: 1px;
   width: 100%;
@@ -1046,7 +1020,7 @@
   margin: 115px auto 0;
   border-radius: 20px;
   background-color: #E6E9EC;
-  padding: 97px 20px 94px;
+  padding: 97px 0 94px;
   border: 1px solid #453a72;
 }
 
@@ -1067,25 +1041,25 @@
 
 .session-dates__title {
   color: #1b1d21;
-  font: 600 48px/54px 'Raleway', sans-serif;
+  font: 600 48px/54px "Raleway", sans-serif;
   text-align: center;
 }
 
 .session-dates__format {
   color: #1b1d21;
-  font: 400 28px/54px 'Raleway', sans-serif;
+  font: 400 28px/54px "Raleway", sans-serif;
   text-align: center;
   margin-bottom: 24px;
 }
 
 .session-dates__subtitle {
   color: #1b1d21;
-  font: 600 28px/60px 'Raleway', sans-serif;
+  font: 600 28px/60px "Raleway", sans-serif;
 }
 
 .session-dates__session-time {
   color: #484848;
-  font: 400 22px/28px 'Raleway', sans-serif;
+  font: 400 22px/28px "Raleway", sans-serif;
 }
 
 .session-dates__box {
@@ -1113,11 +1087,17 @@
 }
 
 .to-proceed {
-  max-width: 1160px;
+  max-width: 1260px;
   margin: 173px auto 0;
-  background: url("../img/container/to-proceed/dotted-line.png") no-repeat;
   padding: 0 0 50px 50px;
+  background: url("../img/container/to-proceed/dotted-line.png") no-repeat;
+  background-position-x: 15px;
   position: relative;
+}
+
+.to-proceed__main {
+  max-width: 1160px;
+  padding-left: 25px;
 }
 
 .to-proceed::before {
@@ -1125,13 +1105,13 @@
   content: url("../img/container/to-proceed/airplane.png");
   width: 149px;
   height: 84px;
-  right: 220px;
+  right: 300px;
   top: 60px;
 }
 
 .to-proceed__heading {
   color: #1b1d21;
-  font: 600 48px/54px 'Raleway', sans-serif;
+  font: 600 48px/54px "Raleway", sans-serif;
   margin-bottom: 155px;
 }
 
@@ -1144,11 +1124,11 @@
           justify-content: space-between;
   margin-bottom: 184px;
   color: #282b33;
-  font: 400 22px/30px 'Raleway', sans-serif;
+  font: 400 22px/30px "Raleway", sans-serif;
 }
 
 .to-proceed__block {
-  font: 400 22px/30px 'Raleway', sans-serif;
+  font: 400 22px/30px "Raleway", sans-serif;
   color: #282b33;
   max-width: 443px;
   list-style-type: none;
@@ -1198,14 +1178,24 @@
 .faq {
   max-width: 1262px;
   margin: 0 auto;
-  padding: 0 20px 137px;
+  padding: 0 20px 137px 116px;
   color: #282B33;
 }
 
 .faq__title {
   margin: 10px 0 83px;
-  font: 600 48px/54px 'Raleway', sans-serif;
+  font: 600 48px/54px "Raleway", sans-serif;
   color: #1b1d21;
+}
+
+.faq__position {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .faq__container {
@@ -1224,15 +1214,15 @@
 }
 
 .faq__accordion_hide {
-  font: 400 18px/24px 'Raleway', sans-serif;
+  font: 400 18px/24px "Raleway", sans-serif;
   padding: 0 35px 0 30px;
   max-width: 464px;
   height: 0;
   opacity: 0;
   overflow: hidden;
-  -webkit-transition: height 0.3s ease-out, opacity 0.5s ease-in-out;
-  -o-transition: height 0.3s ease-out, opacity 0.5s ease-in-out;
-  transition: height 0.3s ease-out, opacity 0.5s ease-in-out;
+  -webkit-transition: height 0.3s ease-out, opacity 0.5s ease-in-out;
+  -o-transition: height 0.3s ease-out, opacity 0.5s ease-in-out;
+  transition: height 0.3s ease-out, opacity 0.5s ease-in-out;
   position: relative;
 }
 
@@ -1241,15 +1231,15 @@
   right: 27px;
   opacity: 1;
   bottom: 20px;
-  -webkit-transition: all 0.5s ease, opacity 0.4s ease;
-  -o-transition: all 0.5s ease, opacity 0.4s ease;
-  transition: all 0.5s ease, opacity 0.4s ease;
+  -webkit-transition: all 0.5s ease, opacity 0.4s ease;
+  -o-transition: all 0.5s ease, opacity 0.4s ease;
+  transition: all 0.5s ease, opacity 0.4s ease;
 }
 
 .faq__open-button {
-  -webkit-transition: all 0.5s ease, opacity 0.4s ease;
-  -o-transition: all 0.5s ease, opacity 0.4s ease;
-  transition: all 0.5s ease, opacity 0.4s ease;
+  -webkit-transition: all 0.5s ease, opacity 0.4s ease;
+  -o-transition: all 0.5s ease, opacity 0.4s ease;
+  transition: all 0.5s ease, opacity 0.4s ease;
   position: absolute;
   right: 27px;
   bottom: 20px;
@@ -1265,16 +1255,6 @@
   opacity: 0;
 }
 
-.faq__position {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 20px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 .faq__button {
   color: inherit;
   display: -webkit-box;
@@ -1286,7 +1266,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font: 500 22px/28px 'Raleway', sans-serif;
+  font: 500 22px/28px "Raleway", sans-serif;
   cursor: pointer;
   padding: 31px 20px 31px 30px;
   width: 100%;
@@ -1326,14 +1306,18 @@
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  position: relative;
 }
 
 .join-form__box {
   position: relative;
-  z-index: 1;
 }
 
 .join-form__box::before {
@@ -1343,7 +1327,7 @@
   height: 100%;
   left: -7px;
   top: 0;
-  content: '';
+  content: "";
   -webkit-transform: rotate(-4.21deg);
       -ms-transform: rotate(-4.21deg);
           transform: rotate(-4.21deg);
@@ -1358,36 +1342,40 @@
   background-color: #453A72;
   border-radius: 10px;
   max-width: 620px;
-  padding: 106px 66px 118px 67px;
+  padding: 82px 66px 0 67px;
   position: relative;
 }
 
 .join-form__price-title {
-  margin-bottom: 35px;
-  font: 600 48px/55px 'Raleway', sans-serif;
+  margin-bottom: 55px;
+  font: 600 48px/55px "Raleway", sans-serif;
   max-width: 487px;
 }
 
 .join-form__price-month {
-  font: 500 60px/70px 'Raleway', sans-serif;
+  font: 500 60px/70px "Raleway", sans-serif;
   margin-bottom: 5px;
 }
 
 .join-form__price-month span {
-  font: 400 32px/34px 'Raleway', sans-serif;
+  font: 400 32px/34px "Raleway", sans-serif;
 }
 
 .join-form__price-full {
-  margin-bottom: 44px;
-  font: 500 32px/44px 'Raleway', sans-serif;
+  margin-bottom: 65px;
+  font: 500 32px/44px "Raleway", sans-serif;
 }
 
 .join-form__check {
   padding-top: 10px;
 }
 
+.join-form__list {
+  margin-bottom: 45px;
+}
+
 .join-form__list-item {
-  font: 400 22px/30px 'Raleway', sans-serif;
+  font: 400 22px/30px "Raleway", sans-serif;
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1396,8 +1384,14 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin-bottom: 22px;
+  margin-bottom: 26px;
   gap: 27px;
+}
+
+.join-form__image {
+  position: relative;
+  bottom: -2px;
+  padding-left: 136px;
 }
 
 .join-form__text {
@@ -1408,17 +1402,16 @@
   max-width: 634px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 25px 38px 61px 95px;
+  padding: 50px 38px 61px 95px;
   background-color: #ffffff;
   border-radius: 10px 10px 10px 0;
   border: 1px solid #17144D;
   position: relative;
   left: -15px;
-  z-index: 0;
 }
 
 .join-form__title {
-  font: 600 48px/55px 'Raleway', sans-serif;
+  font: 600 48px/55px "Raleway", sans-serif;
   color: #1B1D21;
 }
 
@@ -1426,7 +1419,7 @@
   margin-bottom: 23px;
   color: #484848;
   max-width: 455px;
-  font: 400 22px/30px 'Raleway', sans-serif;
+  font: 400 22px/30px "Raleway", sans-serif;
 }
 
 .join-form__input {
@@ -1439,32 +1432,32 @@
   border-radius: 10px;
   border: 1px solid #484848;
   padding: 17px 23px 13px;
-  font: 400 18px/30px 'Raleway', sans-serif;
+  font: 400 18px/30px "Raleway", sans-serif;
   color: #93989D;
 }
 
 .join-form__input::-webkit-input-placeholder {
-  font: 400 18px/30px 'Raleway', sans-serif;
+  font: 400 18px/30px "Raleway", sans-serif;
   color: #93989D;
 }
 
 .join-form__input::-moz-placeholder {
-  font: 400 18px/30px 'Raleway', sans-serif;
+  font: 400 18px/30px "Raleway", sans-serif;
   color: #93989D;
 }
 
 .join-form__input:-ms-input-placeholder {
-  font: 400 18px/30px 'Raleway', sans-serif;
+  font: 400 18px/30px "Raleway", sans-serif;
   color: #93989D;
 }
 
 .join-form__input::-ms-input-placeholder {
-  font: 400 18px/30px 'Raleway', sans-serif;
+  font: 400 18px/30px "Raleway", sans-serif;
   color: #93989D;
 }
 
 .join-form__input::placeholder {
-  font: 400 18px/30px 'Raleway', sans-serif;
+  font: 400 18px/30px "Raleway", sans-serif;
   color: #93989D;
 }
 
@@ -1495,7 +1488,7 @@
 .join-form__description {
   text-align: center;
   max-width: 327px;
-  font: 400 18px/26px 'Raleway', sans-serif;
+  font: 400 18px/26px "Raleway", sans-serif;
   margin: 0 auto 45px;
   color: #484848;
 }
@@ -1504,7 +1497,7 @@
   background-color: #E25A28;
   border-radius: 80px;
   color: #ffffff;
-  font: 600 22px/34px 'Raleway', sans-serif;
+  font: 600 22px/34px "Raleway", sans-serif;
   border: none;
   width: 100%;
   padding: 18px 0;
@@ -1584,24 +1577,24 @@
   position: absolute;
   right: 15px;
   top: 50%;
-  -webkit-transition: -webkit-transform .5s;
-  transition: -webkit-transform .5s;
-  -o-transition: transform .5s;
-  transition: transform .5s;
-  transition: transform .5s, -webkit-transform .5s;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  -o-transition: transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
 }
 
 .join-form__selected span {
-  font: 400 18px/30px 'Raleway', sans-serif;
+  font: 400 18px/30px "Raleway", sans-serif;
   color: #93989D;
 }
 
 .join-form__select-box label span {
   color: #93989D;
-  font: 400 18px/30px 'Raleway', sans-serif;
+  font: 400 18px/30px "Raleway", sans-serif;
 }
 
 .join-form__select-box .join-form__options-container.active {
@@ -1659,8 +1652,8 @@
   position: absolute;
   z-index: 1;
   background-color: #ffffff;
-  top: 68px;
-  left: 383px;
+  bottom: -686px;
+  left: 45px;
 }
 
 .map-container__adaptive {
@@ -1688,18 +1681,18 @@
 }
 
 .map-container__title {
-  font: 600 48px/48px 'Raleway', sans-serif;
+  font: 600 48px/48px "Raleway", sans-serif;
   color: #1b1d21;
 }
 
 .map-container__subtitle {
   margin: 42px 0 45px;
-  font: 600 28px/30px 'Raleway', sans-serif;
+  font: 600 28px/30px "Raleway", sans-serif;
   color: #1B1D21;
 }
 
 .map-container__description {
-  font: 400 22px/34px 'Raleway', sans-serif;
+  font: 400 22px/34px "Raleway", sans-serif;
   color: #282B33;
   max-width: 466px;
   margin-bottom: 50px;
@@ -1740,7 +1733,7 @@
 .footer__link {
   color: #ffffff;
   text-decoration: none;
-  font: 400 22px/48px 'Raleway', sans-serif;
+  font: 400 22px/48px "Raleway", sans-serif;
 }
 
 .footer__block {
@@ -1757,7 +1750,7 @@
 }
 
 .footer__img {
-  margin: 0 30px  0 20px;
+  margin: 0 30px 0 20px;
   max-height: 36px;
   padding-top: 8px;
 }
@@ -1770,68 +1763,9 @@
 }
 
 @media screen and (max-width: 1250px) {
-  .header__nav-menu {
-    position: absolute;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    background-color: #ffffff;
-    top: -380px;
-    right: 0;
-    max-width: 360px;
-    gap: 12px;
-    margin: 0 auto;
-    border-radius: 0 0 10px 10px;
-    padding: 30px 35px 0;
-    -webkit-box-shadow: -5px 15px 10px 0 rgba(0, 0, 0, 0.1);
-            box-shadow: -5px 15px 10px 0 rgba(0, 0, 0, 0.1);
-    -webkit-transition: top 1s ease-out;
-    -o-transition: top 1s ease-out;
-    transition: top 1s ease-out;
-  }
-
-  .header__box {
-    display: block;
-  }
-
-  .header__arrow {
-    display: block;
-    width: 24px;
-    margin: 45px auto 0;
-  }
-
-  .header__link {
-    padding-left: 15px;
-  }
-
-  .header__link:after {
-    display: none;
-  }
-
-  .header__burger-menu {
-    display: block;
-    margin: 2px 0;
-  }
-
-  .header__button {
-    max-width: 200px;
-    text-align: center;
-  }
-
   .course-information {
+    background-position: right 35% bottom 45%;
     padding: 0 20px;
-  }
-
-  .slider__control[data-slide='prev'] {
-    left: 0;
-  }
-
-  .slider__control[data-slide='next'] {
-    right: 15px;
   }
 
   .program-experts__container {
@@ -1874,6 +1808,11 @@
 }
 
 @media screen and (max-width: 1233px) {
+  .course-faq {
+    margin: 0 30px;
+    padding: 56px 30px 61px 50px;
+  }
+
   .join-form__price-title {
     font-size: 28px;
   }
@@ -1890,11 +1829,6 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-
-  .course-faq {
-    margin: 0 20px;
-    padding: 56px 30px 61px 50px;
   }
 
   .course-advantages {
@@ -2022,6 +1956,54 @@
 }
 
 @media screen and (max-width: 1180px) {
+  .header__nav-menu {
+    position: absolute;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    background-color: #ffffff;
+    top: -370px;
+    right: 0;
+    max-width: 487px;
+    gap: 12px;
+    margin: 0 auto;
+    border-radius: 0 0 10px 10px;
+    padding: 33px 0 62px 55px;
+    -webkit-box-shadow: -5px 15px 10px 0 rgba(0, 0, 0, 0.1);
+            box-shadow: -5px 15px 10px 0 rgba(0, 0, 0, 0.1);
+    -webkit-transition: top 1s ease-out;
+    -o-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+
+  .header__box {
+    display: block;
+  }
+
+  .header__link {
+    padding-left: 15px;
+  }
+
+  .header__link:after {
+    display: none;
+  }
+
+  .header__burger-menu {
+    display: block;
+    margin-top: 4px;
+  }
+
+  .header__button {
+    max-width: 200px;
+    text-align: center;
+  }
+
   .slider__item {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 33.3333333333%;
@@ -2054,7 +2036,7 @@
     margin: 0 auto;
   }
 
-  .slider__control[data-slide='next'] {
+  .slider__control[data-slide=next] {
     right: 25px;
   }
 
@@ -2108,21 +2090,40 @@
     display: -ms-flexbox;
     display: flex;
   }
+}
 
-  .faq__title {
-    font-size: 24px;
-    line-height: normal;
-    margin: 20px 0 25px;
+@media screen and (max-width: 1110px) {
+  .course-faq {
+    padding: 56px 40px 61px 40px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 25px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .course-faq__container {
+    width: auto;
+    gap: 25px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+
+  .course-faq__content {
+    width: 314px;
+    max-width: none;
   }
 }
 
-@media screen and (max-width: 1131px) and (max-width: 1070px) {
+@media screen and (max-width: 1070px) {
   .course-faq {
     padding: 56px 20px 61px 35px;
   }
 }
 
-@media screen and (max-width: 1131px) and (max-width: 1030px) {
+@media screen and (max-width: 1030px) {
   .join-form__price-form {
     padding: 90px 40px 100px 30px;
   }
@@ -2133,27 +2134,7 @@
   }
 }
 
-@media screen and (max-width: 1131px) and (max-width: 1000px) {
-  .course-faq {
-    padding: 56px 0 61px 93px;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    gap: 25px;
-  }
-
-  .course-faq__container {
-    width: auto;
-    gap: 25px;
-  }
-
-  .course-faq__content {
-    max-width: 380px;
-  }
-
-  .course-faq__content:nth-child(2) .course-faq__tag {
-    max-width: 210px;
-  }
-
+@media screen and (max-width: 1000px) {
   .slider__item {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 50%;
@@ -2188,7 +2169,7 @@
   }
 }
 
-@media screen and (max-width: 1131px) and (max-width: 933px) {
+@media screen and (max-width: 933px) {
   .join-form__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2213,7 +2194,7 @@
   }
 }
 
-@media screen and (max-width: 1131px) and (max-width: 925px) {
+@media screen and (max-width: 925px) {
   .session-dates__container {
     padding-left: 40px;
   }
@@ -2231,22 +2212,12 @@
   }
 }
 
-@media screen and (max-width: 1131px) and (max-width: 846px) {
-  .contacts {
-    margin: 0 20px;
-  }
-}
-
-@media screen and (max-width: 1131px) and (max-width: 850px) {
+@media screen and (max-width: 850px) {
   .course-faq {
-    margin-top: 25px;
-    padding: 56px 20px 61px 50px;
+    padding: 56px 40px 61px 40px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     gap: 25px;
-    -webkit-transform: none;
-        -ms-transform: none;
-            transform: none;
     -webkit-box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.25);
             box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.25);
   }
@@ -2304,7 +2275,13 @@
   }
 }
 
-@media screen and (max-width: 1131px) and (max-width: 818px) {
+@media screen and (max-width: 846px) {
+  .contacts {
+    margin: 0 20px;
+  }
+}
+
+@media screen and (max-width: 818px) {
   .people-target__title {
     margin-bottom: 25px;
   }
@@ -2355,16 +2332,37 @@
     left: 40px;
   }
 
-  .slider__control[data-slide='next'] {
+  .slider__control[data-slide=next] {
     right: 10px;
   }
 
-  .slider__control[data-slide='prev'] {
+  .slider__control[data-slide=prev] {
     left: 10px;
   }
 }
 
-@media screen and (max-width: 1131px) and (max-width: 800px) {
+@media screen and (max-width: 811px) {
+  .course-faq__tags {
+    position: relative;
+  }
+
+  .course-faq__tags::before {
+    content: "";
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    border: 1px solid #453A72;
+    position: absolute;
+    left: -38px;
+    top: 8px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .course-information {
+    background-position: right 35% bottom 45%;
+  }
+
   .session-dates__container {
     padding-left: 20px;
   }
@@ -2383,7 +2381,7 @@
   }
 }
 
-@media screen and (max-width: 1131px) and (max-width: 758px) {
+@media screen and (max-width: 758px) {
   .session-dates__list {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -2406,17 +2404,9 @@
   }
 }
 
-@media screen and (max-width: 1131px) and (max-width: 740px) {
-  .course-faq__content {
-    max-width: 80vw;
-  }
-
-  .course-faq__content:nth-child(2) .course-faq__tag {
-    max-width: 80vw;
-  }
-
-  .course-faq__tag br {
-    display: none;
+@media screen and (max-width: 740px) {
+  .course-faq {
+    padding: 56px 20px 61px 70px;
   }
 
   .program-experts__title {
@@ -2429,7 +2419,7 @@
   }
 }
 
-@media screen and (max-width: 1131px) and (max-width: 690px) {
+@media screen and (max-width: 690px) {
   .program-experts {
     padding: 0 20px 100px;
   }
@@ -2460,37 +2450,61 @@
   }
 }
 
-@media screen and (max-width: 1131px) and (max-width: 660px) {
+@media screen and (max-width: 660px) {
+  .course-information {
+    background-image: url("../img/container/course-information/course-information__background_mobile.jpg");
+    background-position: right 10%;
+    padding: 0;
+  }
+
   .course-information__container {
-    padding: 85px 0 179px;
+    padding: 22px 20px 92px 20px;
   }
 
   .course-information__description {
-    text-align: center;
-    margin-bottom: 50px;
+    font-size: 22px;
+    margin-bottom: 31px;
+    max-width: 100%;
   }
 
   .course-information__title {
-    font-size: 40px;
+    font-size: 50px;
   }
 
   .course-information__subtitle {
     text-align: left;
+    font-size: 18px;
+    max-width: 496px;
+  }
+
+  .course-information__box {
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .course-faq {
+    -webkit-transform: translateY(-25px);
+        -ms-transform: translateY(-25px);
+            transform: translateY(-25px);
+  }
+
+  .course-faq__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-item-align: center;
+        align-self: center;
   }
 
   .people-target__title {
     font-size: 40px;
     line-height: normal;
-  }
-
-  .course-faq {
-    padding: 56px 15px 61px 30px;
-    margin: 0;
-    border-radius: 0;
-  }
-
-  .course-faq__content {
-    max-width: 90vw;
   }
 
   .slider {
@@ -2513,18 +2527,7 @@
   }
 }
 
-@media screen and (max-width: 1131px) and (max-width: 612px) {
-  .course-information__box {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    gap: 35px;
-  }
-
-  .course-information__start-time {
-    margin: 0 auto;
-  }
-
+@media screen and (max-width: 612px) {
   .course-advantages {
     margin-top: 55px;
   }
@@ -2556,26 +2559,44 @@
   }
 }
 
-@media screen and (max-width: 1131px) and (max-width: 600px) {
-  .session-dates__list {
+@media screen and (max-width: 600px) {
+  .course-information__description {
+    font-size: 18px;
+  }
+
+  .course-information__subtitle {
+    margin-bottom: 30px;
+    font-size: 16px;
+    max-width: 450px;
+  }
+
+  .course-information__box {
+    row-gap: 123px;
+  }
+
+  .course-information__button {
+    border: 1px solid #2A285A;
+  }
+
+  .course-information .session-dates__list {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     gap: 25px;
   }
 
-  .session-dates__items {
+  .course-information .session-dates__items {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
 
-  .session-dates__dates {
+  .course-information .session-dates__dates {
     display: block;
     line-height: 40px;
   }
 
-  .session-dates__list-item {
+  .course-information .session-dates__list-item {
     gap: 5px;
     max-width: 296px;
     -ms-flex-wrap: wrap;
@@ -2586,20 +2607,9 @@
   }
 }
 
-@media screen and (max-width: 1131px) and (max-width: 570px) {
-  .course-information__container {
-    padding: 55px 0 179px;
-  }
-
+@media screen and (max-width: 570px) {
   .course-information__description {
-    font-size: 7vw;
-    margin-bottom: 50px;
-    line-height: normal;
-  }
-
-  .course-information__title {
-    font-size: 34px;
-    line-height: normal;
+    font-size: 18px;
   }
 
   .session-dates {
@@ -2616,7 +2626,7 @@
   }
 }
 
-@media screen and (max-width: 1131px) and (max-width: 559px) {
+@media screen and (max-width: 559px) {
   .slider {
     padding: 0 20px;
   }
@@ -2627,12 +2637,12 @@
             justify-content: center;
   }
 
-  .slider__control[data-slide='next'] {
+  .slider__control[data-slide=next] {
     right: 10px;
     top: 80px;
   }
 
-  .slider__control[data-slide='prev'] {
+  .slider__control[data-slide=prev] {
     right: 10px;
     top: 80px;
   }
@@ -2642,7 +2652,17 @@
   }
 }
 
-@media screen and (max-width: 1131px) and (max-width: 530px) {
+@media screen and (max-width: 530px) {
+  .course-information__subtitle {
+    font-size: 16px;
+  }
+
+  .faq__title {
+    font-size: 24px;
+    line-height: normal;
+    margin: 20px 0 25px;
+  }
+
   .about-authors__name {
     font-size: 22px;
     line-height: 25px;
@@ -2653,22 +2673,28 @@
   }
 }
 
-@media screen and (max-width: 1131px) and (max-width: 447px) {
+@media screen and (max-width: 502px) {
   .header__nav-menu {
-    padding: 30px 20px 0 30px;
+    padding: 30px 20px 30px 30px;
     max-width: none;
     position: absolute;
     width: 100%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
+}
 
-  .header__arrow {
-    margin-top: 30px;
+@media screen and (max-width: 480px) {
+  .course-faq__content {
+    width: auto;
   }
 }
 
-@media screen and (max-width: 1131px) and (max-width: 450px) {
+@media screen and (max-width: 450px) {
+  .course-information__title {
+    font-size: 30px;
+  }
+
   .teachers-feedback {
     padding: 0;
   }
@@ -2692,10 +2718,6 @@
 
   .teachers-feedback__next {
     right: 1px;
-  }
-
-  .slider-dots {
-    padding: 0 20px;
   }
 
   .contacts {
@@ -2751,19 +2773,17 @@
   }
 }
 
-@media screen and (max-width: 1131px) and (max-width: 420px) {
-  .course-information__container {
-    padding: 30px 0 0;
+@media screen and (max-width: 440px) {
+  .course-faq {
+    padding-left: 40px;
   }
 
-  .course-information__subtitle {
-    margin-bottom: 30px;
+  .course-faq__tags::before {
+    left: -22px;
   }
+}
 
-  .course-information__box {
-    gap: 20px;
-  }
-
+@media screen and (max-width: 420px) {
   .about-authors__header {
     font-size: 30px;
     line-height: normal;
@@ -2786,7 +2806,17 @@
   }
 }
 
-@media screen and (max-width: 1131px) and (max-width: 370px) {
+@media screen and (max-width: 400px) {
+  .course-faq {
+    margin: 0 20px;
+  }
+
+  .course-faq__tags {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 370px) {
   .header__logo {
     width: 80%;
   }
@@ -2800,23 +2830,14 @@
   }
 }
 
-@media screen and (max-width: 1131px) and (max-width: 350px) {
-  .course-information__description {
-    margin-bottom: 25px;
+@media screen and (max-width: 360px) {
+  .course-information__button {
+    font-size: 18px;
+    padding: 18px 41px;
   }
+}
 
-  .course-information__title {
-    font-size: 30px;
-  }
-
-  .course-information__subtitle {
-    margin-bottom: 20px;
-  }
-
-  .course-information__box {
-    gap: 20px;
-  }
-
+@media screen and (max-width: 350px) {
   .session-dates__header {
     font-size: 34px;
   }
@@ -2826,7 +2847,13 @@
   }
 }
 
-@media screen and (max-width: 1131px) and (orientation: landscape) and (max-height: 500px) {
+@media screen and (max-width: 330px) {
+  .course-information__description {
+    font-size: 16px;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-height: 500px) {
   .header__nav-menu {
     padding-top: 2px;
     width: 100vw;

@@ -22,8 +22,8 @@
     background-color: #ffffff;
     position: absolute;
     z-index: 0;
-    width: 450px;
-    height: 108px;
+    width: 570px;
+    height: 95px;
     right: 0;
     top: 0;
     display: none;
@@ -35,9 +35,6 @@
 
   &__logo {
     margin-right: 30px;
-    align-self: flex-start;
-    box-sizing: content-box;
-    position: relative;
     z-index: 2;
   }
 
@@ -75,25 +72,11 @@
     }
   }
 
-  &__arrow {
-    display: none;
-    cursor: pointer;
-    padding: 15px 35px 5px 40px;
-    background-color: #E25A28;
-    border-radius: 5px 5px 0 0;
-    transition: background-color 0.8s ease;
-
-    &:hover {
-      background-color: #e0663c;
-      box-shadow: 0 -1px 10px 2px rgba(0, 0, 0, 0.15);
-    }
-  }
-
   &__burger-menu {
     z-index: 0;
     display: none;
-    width: 60px;
-    height: 45px;
+    width: 42px;
+    height: 30px;
     position: relative;
     margin: 0 auto;
     -webkit-transform: rotate(0deg);
@@ -109,10 +92,10 @@
     & span {
       display: block;
       position: absolute;
-      height: 9px;
+      height: 6px;
       width: 100%;
-      background: #E25A28;
-      border-radius: 9px;
+      background: #2A285A;
+      border-radius: 6px;
       opacity: 1;
       left: 0;
       -webkit-transform: rotate(0deg);
@@ -131,15 +114,15 @@
 
     & span:nth-child(2),
     & span:nth-child(3) {
-      top: 18px;
+      top: 15px;
     }
 
     & span:nth-child(4) {
-      top: 36px;
+      top: 30px;
     }
 
     &.open span:nth-child(1) {
-      top: 18px;
+      top: 15px;
       width: 0;
       left: 50%;
     }
