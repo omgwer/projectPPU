@@ -781,6 +781,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  row-gap: 44px;
 }
 
 .program-experts__container {
@@ -794,7 +795,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 40px;
+  padding-top: 70px;
   row-gap: 44px;
 }
 
@@ -812,6 +813,10 @@
   -webkit-transform: scale(1.12);
       -ms-transform: scale(1.12);
           transform: scale(1.12);
+}
+
+.program-experts__organization_mobile {
+  display: none;
 }
 
 .program-experts__subtitle {
@@ -888,7 +893,7 @@
   border: 1px solid #1B1D21;
   margin-bottom: 76px;
   padding: 76px 0 134px;
-  height: 448px;
+  min-height: 450px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #ffffff;
@@ -945,6 +950,16 @@
   font: 400 18px/28px "Raleway", sans-serif;
   max-width: 756px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .teachers-feedback__author {
@@ -1027,7 +1042,7 @@
   margin: 115px auto 0;
   border-radius: 20px;
   background-color: #E6E9EC;
-  padding: 97px 0 94px;
+  padding: 97px 20px 94px;
   border: 1px solid #453a72;
 }
 
@@ -1871,16 +1886,6 @@
     margin: 100px auto 50px;
     text-align: center;
   }
-
-  .program-experts {
-    padding: 0 20px 201px;
-  }
-
-  .program-experts__title {
-    font-size: 35px;
-    text-align: center;
-    margin: 0 auto 65px;
-  }
 }
 
 @media screen and (max-width: 1216px) {
@@ -1928,10 +1933,6 @@
     max-width: none;
   }
 
-  .program-experts {
-    padding: 0 20px 100px;
-  }
-
   .yandex-map {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1947,6 +1948,16 @@
     position: static;
     margin: 0 auto 25px;
     z-index: 0;
+  }
+
+  .program-experts__block {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 1215px) {
+  .session-dates {
+    margin: 115px 20px 0;
   }
 }
 
@@ -2024,17 +2035,17 @@
   }
 
   .teachers-feedback {
-    padding: 0 50px;
+    padding: 50px;
     margin: 0 auto 50px;
+  }
+
+  .teachers-feedback__slider {
+    padding: 40px 30px 50px;
   }
 
   .teachers-feedback__title {
     font-size: 50px;
     margin-top: 80px;
-  }
-
-  .teachers-feedback__slideText {
-    padding: 0 20px;
   }
 }
 
@@ -2080,6 +2091,15 @@
 
   .tutor-teachers__image {
     display: none;
+  }
+
+  .program-experts__title {
+    font-size: 40px;
+    line-height: 46px;
+  }
+
+  .program-experts__block {
+    gap: 25px;
   }
 }
 
@@ -2138,6 +2158,14 @@
     max-width: none;
     margin-bottom: 25px;
   }
+
+  .teachers-feedback__main-content {
+    padding-top: 0;
+  }
+
+  .teachers-feedback__title {
+    margin: 40px auto 60px;
+  }
 }
 
 @media screen and (max-width: 1070px) {
@@ -2187,11 +2215,109 @@
   .tutor-teachers__list-item {
     width: 335px;
   }
+
+  .teachers-feedback__slider-navigation {
+    right: 25px;
+  }
 }
 
 @media screen and (max-width: 970px) {
   .training-block__menu {
     padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .program-experts__block {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-top: 56px;
+  }
+
+  .program-experts__container {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+
+  .program-experts__organization_hide {
+    display: none;
+  }
+
+  .program-experts__organization_mobile {
+    display: block;
+  }
+
+  .program-experts__title {
+    max-width: 90vw;
+    margin-bottom: 50px;
+  }
+
+  .teachers-feedback__slider {
+    height: 495px;
+  }
+
+  .session-dates__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+  }
+
+  .session-dates__block {
+    margin: 0 auto;
+  }
+
+  .session-dates__image {
+    display: none;
+  }
+
+  .session-dates__format {
+    margin: 63px 0 22px;
+  }
+
+  .session-dates__box {
+    position: relative;
+    width: 410px;
+    max-width: none;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+
+  .session-dates__box::before {
+    position: absolute;
+    content: url("../img/container/session-dates/circle_orange.png");
+    top: 65px;
+    left: -20px;
+  }
+
+  .session-dates__box_remote {
+    margin: 24px 0 24px;
+    position: relative;
+  }
+
+  .session-dates__box_remote::after {
+    position: absolute;
+    content: url("../img/container/session-dates/vertical-line__mobile_short.png");
+    bottom: -225px;
+    left: -6px;
+  }
+
+  .session-dates__box_full-time {
+    margin: 24px 0 24px;
+  }
+
+  .session-dates__box_session {
+    margin: 24px 0 24px;
+    position: relative;
+  }
+
+  .session-dates__box_session::after {
+    position: absolute;
+    content: url("../img/container/session-dates/vertical-line__mobile_long.png");
+    bottom: -120px;
+    left: -6px;
   }
 }
 
@@ -2228,10 +2354,6 @@
 }
 
 @media screen and (max-width: 925px) {
-  .session-dates__container {
-    padding-left: 40px;
-  }
-
   .session-dates__title {
     font-size: 50px;
   }
@@ -2256,6 +2378,7 @@
 
   .training-block__container-mobile {
     display: block;
+    font: 400 22px/28px "Raleway", sans-serif;
   }
 
   .training-block__block-mobile {
@@ -2263,6 +2386,8 @@
     border: 1px solid #17144D;
     background-color: #F0EFF4;
     margin: 0 auto;
+    padding: 50px 30px 43px;
+    margin-bottom: 31px;
   }
 
   .training-block__link {
@@ -2416,29 +2541,6 @@
     width: auto;
     max-width: 330px;
   }
-
-  .teachers-feedback {
-    padding: 0 50px;
-    margin: 0 auto 50px;
-  }
-
-  .teachers-feedback__title {
-    margin: 50px auto;
-    text-align: center;
-  }
-
-  .teachers-feedback__slider {
-    padding: 20px 20px 60px;
-    min-height: 480px;
-    height: auto;
-    position: relative;
-  }
-
-  .teachers-feedback__author {
-    position: absolute;
-    bottom: 20px;
-    left: 40px;
-  }
 }
 
 @media screen and (max-width: 811px) {
@@ -2463,21 +2565,25 @@
     background-position: right 35% bottom 45%;
   }
 
-  .session-dates__container {
-    padding-left: 20px;
+  .teachers-feedback__slider {
+    padding-bottom: 180px;
+    min-height: 621px;
+    height: auto;
   }
 
-  .session-dates__list-item {
-    gap: 15px;
+  .teachers-feedback__container::before {
+    -webkit-transform: rotate(-4deg);
+        -ms-transform: rotate(-4deg);
+            transform: rotate(-4deg);
+    width: 97%;
   }
 
-  .session-dates__diploma-title {
-    font-size: 26px;
+  .teachers-feedback__author {
+    bottom: 140px;
   }
 
-  .session-dates__subtitle {
-    font-size: 20px;
-    line-height: 1.6rem;
+  .teachers-feedback__author-job {
+    bottom: 110px;
   }
 }
 
@@ -2510,8 +2616,8 @@
   }
 
   .program-experts__title {
-    font-size: 28px;
-    line-height: 32px;
+    font-size: 36px;
+    line-height: 40px;
   }
 
   .contacts {
@@ -2527,30 +2633,6 @@
 }
 
 @media screen and (max-width: 690px) {
-  .program-experts {
-    padding: 0 20px 100px;
-  }
-
-  .program-experts__box {
-    display: block;
-  }
-
-  .program-experts__container {
-    gap: 25px;
-  }
-
-  .program-experts__link_adaptive {
-    -webkit-transform: scale(0.7);
-        -ms-transform: scale(0.7);
-            transform: scale(0.7);
-    position: relative;
-    right: 15px;
-  }
-
-  .program-experts__list {
-    gap: 25px;
-  }
-
   .contacts {
     padding: 50px 20px 80px;
     margin: 0 20px;
@@ -2670,6 +2752,44 @@
 
   .tutor-teachers__list {
     row-gap: 30px;
+  }
+
+  .teachers-feedback {
+    padding: 50px 50px 0;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .program-experts__block {
+    padding-right: 20px;
+  }
+
+  .program-experts__box {
+    gap: 1px;
+  }
+
+  .program-experts__organization img {
+    width: 29vw;
+  }
+
+  .teachers-feedback {
+    padding: 25px 45px;
+  }
+
+  .teachers-feedback__author {
+    bottom: 120px;
+    max-width: 250px;
+  }
+
+  .teachers-feedback__author-job {
+    padding-right: 20px;
+    line-height: normal;
+    bottom: 72px;
+    max-width: 350px;
+  }
+
+  .teachers-feedback__container::before {
+    right: 20px;
   }
 }
 
@@ -2824,11 +2944,11 @@
   }
 
   .session-dates {
-    padding: 73px 0 83px;
+    padding: 73px 20px 83px;
   }
 
   .session-dates__container {
-    padding: 73px 0 83px;
+    padding: 0 0 83px;
     border-radius: 0;
   }
 
@@ -2845,6 +2965,18 @@
 
   .footer__img {
     display: none;
+  }
+
+  .teachers-feedback__slider {
+    padding-bottom: 220px;
+  }
+
+  .teachers-feedback__author {
+    bottom: 150px;
+  }
+
+  .teachers-feedback__author-job {
+    bottom: 100px;
   }
 }
 
@@ -2917,6 +3049,10 @@
             justify-content: flex-start;
   }
 
+  .teachers-feedback__dots {
+    display: none;
+  }
+
   .about-authors {
     padding-left: 30px;
   }
@@ -2938,34 +3074,27 @@
   }
 }
 
+@media screen and (max-width: 463px) {
+  .course-program__title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .course-program__subtitle {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .training-block__container-mobile {
+    font-size: 18px;
+    line-height: 22px;
+    padding: 0;
+  }
+}
+
 @media screen and (max-width: 450px) {
   .course-information__title {
     font-size: 30px;
-  }
-
-  .teachers-feedback {
-    padding: 0;
-  }
-
-  .teachers-feedback__title {
-    font-size: 40px;
-  }
-
-  .teachers-feedback__slider {
-    padding: 20px 30px 60px;
-    border-radius: 0;
-  }
-
-  .teachers-feedback__slideText {
-    padding: 0;
-  }
-
-  .teachers-feedback__prev {
-    left: 1px;
-  }
-
-  .teachers-feedback__next {
-    right: 1px;
   }
 
   .contacts {
@@ -3043,6 +3172,16 @@
   .session-dates__title {
     font-size: 40px;
   }
+
+  .teachers-feedback {
+    padding: 25px 20px 0;
+  }
+
+  .teachers-feedback__author,
+  .teachers-feedback__author-job {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -3057,6 +3196,11 @@
 
 @media screen and (max-width: 374px) {
   .about-authors {
+    padding-right: 10px;
+  }
+
+  .training-block__block-mobile {
+    padding-left: 20px;
     padding-right: 10px;
   }
 
@@ -3107,9 +3251,13 @@
   }
 }
 
-@media screen and (max-width: 330px) {
+@media screen and (max-width: 329px) {
   .course-information__description {
     font-size: 16px;
+  }
+
+  .teachers-feedback__author {
+    bottom: 171px;
   }
 }
 

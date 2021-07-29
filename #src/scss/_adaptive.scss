@@ -111,15 +111,6 @@
       text-align: center;
     }
   }
-
-  .program-experts {
-    padding: 0 20px 201px;
-    &__title {
-      font-size: 35px;
-      text-align: center;
-      margin: 0 auto 65px;
-    }
-  }
 }
 
 @media screen and (max-width: 1216px) {
@@ -160,10 +151,6 @@
     }
   }
 
-  .program-experts {
-    padding: 0 20px 100px;
-  }
-
   .yandex-map {
     display: flex;
     flex-direction: column-reverse;
@@ -177,6 +164,18 @@
     z-index: 0;
   }
 
+  .program-experts {
+    &__block {
+      padding: 0 20px;
+    }
+  }
+
+}
+
+@media screen and (max-width: 1215px) {
+  .session-dates {
+    margin: 115px 20px 0;
+  }
 }
 
 @media screen and (max-width: 1180px) {
@@ -249,20 +248,20 @@
     }
   }
 
-
   .teachers-feedback {
-    padding: 0 50px;
+    padding: 50px;
     margin: 0 auto 50px;
+
+    &__slider {
+      padding: 40px 30px 50px;
+    }
 
     &__title {
       font-size: 50px;
       margin-top: 80px;
     }
 
-    &__slideText {
-      padding: 0 20px;
     }
-  }
 }
 
 @media screen and (max-width: 1131px) {
@@ -299,6 +298,17 @@
 
     &__image {
       display: none;
+    }
+  }
+
+  .program-experts {
+    &__title {
+      font-size: 40px;
+      line-height: 46px;
+    }
+
+    &__block {
+      gap: 25px;
     }
   }
 
@@ -344,6 +354,16 @@
     &__list-item {
       max-width: none;
       margin-bottom: 25px;
+    }
+  }
+
+  .teachers-feedback {
+    &__main-content {
+      padding-top: 0;
+    }
+
+    &__title {
+      margin: 40px auto 60px;
     }
   }
 }
@@ -392,6 +412,12 @@
       width: 335px;
     }
   }
+
+  .teachers-feedback {
+    &__slider-navigation {
+      right: 25px;
+    }
+  }
 }
 
 @media screen and (max-width: 970px) {
@@ -400,6 +426,100 @@
         padding-left: 0;
       }
     }
+}
+
+@media screen and (max-width: 950px) {
+  .program-experts {
+    &__block {
+      flex-wrap: wrap;
+      padding-top: 56px;
+    }
+
+    &__container {
+      justify-content: flex-end;
+    }
+
+    &__organization_hide {
+      display: none;
+    }
+
+    &__organization_mobile {
+      display: block;
+    }
+
+    &__title {
+      max-width: 90vw;
+      margin-bottom: 50px;
+    }
+  }
+
+  .teachers-feedback {
+    &__slider {
+      height: 495px;
+    }
+  }
+
+  .session-dates {
+    &__container {
+      flex-direction: column;
+      margin: 0;
+    }
+
+    &__block {
+      margin: 0 auto;
+    }
+
+    &__image {
+      display: none;
+    }
+
+    &__format {
+      margin: 63px 0 22px;
+    }
+
+    &__box {
+      position: relative;
+      width: 410px;
+      max-width: none;
+      box-sizing: border-box;
+
+      &::before {
+        position: absolute;
+        content: url("../img/container/session-dates/circle_orange.png");
+        top: 65px;
+        left: -20px;
+
+      }
+
+      &_remote {
+        margin: 24px 0 24px;
+        position: relative;
+
+        &::after {
+          position: absolute;
+          content: url("../img/container/session-dates/vertical-line__mobile_short.png");
+          bottom: -225px;
+          left: -6px;
+        }
+      }
+
+      &_full-time {
+        margin: 24px 0 24px;
+      }
+
+      &_session {
+        margin: 24px 0 24px;
+        position: relative;
+
+        &::after {
+          position: absolute;
+          content: url("../img/container/session-dates/vertical-line__mobile_long.png");
+          bottom: -120px;
+          left: -6px;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 933px) {
@@ -431,9 +551,6 @@
 
 @media screen and (max-width: 925px) {
   .session-dates {
-    &__container {
-      padding-left: 40px;
-    }
 
     &__title {
       font-size: 50px;
@@ -465,6 +582,7 @@
 
     &__container-mobile {
       display: block;
+      font: 400 22px/28px 'Raleway', sans-serif;
     }
 
     &__block-mobile {
@@ -472,6 +590,8 @@
       border: 1px solid #17144D;
       background-color: #F0EFF4;
       margin: 0 auto;
+      padding: 50px 30px 43px;
+      margin-bottom: 31px;
     }
 
     &__link {
@@ -592,7 +712,6 @@
 }
 
 @media screen and (max-width: 818px) {
-
   .about-authors {
     &__header {
       font-size: 40px;
@@ -613,30 +732,6 @@
       max-width: 330px;
     }
   }
-
-  .teachers-feedback {
-    padding: 0 50px;
-    margin: 0 auto 50px;
-
-    &__title {
-      margin: 50px auto;
-      text-align: center;
-    }
-
-    &__slider {
-      padding: 20px 20px 60px;
-      min-height: 480px;
-      height: auto;
-      position: relative;
-    }
-
-    &__author {
-      position: absolute;
-      bottom: 20px;
-      left: 40px;
-    }
-  }
-
 }
 
 @media screen and (max-width: 811px) {
@@ -663,23 +758,26 @@
     background-position: right 35% bottom 45%;
   }
 
-  .session-dates {
+  .teachers-feedback {
+    &__slider {
+      padding-bottom: 180px;
+      min-height: 621px;
+      height: auto;
+    }
+
     &__container {
-      padding-left: 20px;
+      &::before {
+        transform: rotate(-4deg);
+        width: 97%;
+      }
     }
 
-    &__list-item {
-      gap: 15px;
+    &__author {
+      bottom: 140px;
     }
 
-    &__diploma-title {
-      font-size: 26px;
-
-    }
-
-    &__subtitle {
-      font-size: 20px;
-      line-height: 1.6rem;
+    &__author-job {
+      bottom: 110px;
     }
   }
 }
@@ -714,8 +812,8 @@
 
   .program-experts {
     &__title {
-      font-size: 28px;
-      line-height: 32px;
+      font-size: 36px;
+      line-height: 40px;
     }
   }
 
@@ -732,28 +830,6 @@
 }
 
 @media screen and (max-width: 690px) {
-  .program-experts {
-    padding: 0 20px 100px;
-
-    &__box {
-      display: block;
-    }
-
-    &__container {
-      gap: 25px;
-    }
-
-    &__link_adaptive {
-      transform: scale(0.7);
-      position: relative;
-      right: 15px;
-    }
-
-    &__list {
-      gap: 25px;
-    }
-  }
-
   .contacts {
     padding: 50px 20px 80px;
     margin: 0 20px;
@@ -861,6 +937,49 @@
     }
   }
 
+  .teachers-feedback {
+    padding: 50px 50px 0;
+  }
+
+}
+
+@media screen and (max-width: 640px) {
+  .program-experts {
+
+    &__block {
+      padding-right: 20px;
+    }
+
+    &__box {
+      gap: 1px;
+    }
+
+    &__organization img{
+      width: 29vw;
+    }
+  }
+
+  .teachers-feedback {
+    padding: 25px 45px;
+
+    &__author {
+      bottom: 120px;
+      max-width: 250px;
+    }
+
+    &__author-job {
+      padding-right: 20px;
+      line-height: normal;
+      bottom: 72px;
+      max-width: 350px;
+    }
+
+    &__container {
+      &::before {
+        right: 20px;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 612px) {
@@ -1014,10 +1133,10 @@
   }
 
   .session-dates {
-    padding: 73px 0 83px;
+    padding: 73px 20px 83px;
 
     &__container {
-      padding: 73px 0 83px;
+      padding: 0 0 83px;
       border-radius: 0;
     }
 
@@ -1038,6 +1157,19 @@
   .footer {
     &__img {
       display: none;
+    }
+  }
+
+  .teachers-feedback {
+    &__slider {
+      padding-bottom: 220px;
+    }
+
+    &__author {
+      bottom: 150px;
+    }
+    &__author-job {
+      bottom: 100px;
     }
   }
 
@@ -1129,6 +1261,12 @@
     }
   }
 
+  .teachers-feedback {
+    &__dots {
+      display: none;
+    }
+  }
+
   .about-authors {
     padding-left: 30px;
 
@@ -1145,37 +1283,35 @@
       justify-content: flex-start;
     }
   }
+
+}
+
+@media screen and (max-width: 463px) {
+  .course-program {
+    &__title {
+      font-size: 30px;
+      line-height: 36px;
+    }
+
+    &__subtitle {
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+
+  .training-block {
+    &__container-mobile {
+      font-size: 18px;
+      line-height: 22px;
+      padding: 0;
+    }
+  }
 }
 
 @media screen and (max-width: 450px) {
   .course-information {
     &__title {
       font-size: 30px;
-    }
-  }
-
-  .teachers-feedback {
-    padding: 0;
-
-    &__title {
-      font-size: 40px;
-    }
-
-    &__slider {
-      padding: 20px 30px 60px;
-      border-radius: 0;
-    }
-
-    &__slideText {
-      padding: 0;
-    }
-
-    &__prev {
-      left: 1px;
-    }
-
-    &__next {
-      right: 1px;
     }
   }
 
@@ -1255,6 +1391,16 @@
       font-size: 40px;
     }
   }
+
+  .teachers-feedback {
+    padding: 25px 20px 0;
+
+    &__author,
+    &__author-job {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -1273,6 +1419,11 @@
   }
 
   .training-block {
+    &__block-mobile {
+      padding-left: 20px;
+      padding-right: 10px;
+    }
+
     &__link {
       font-size: 20px;
       padding: 18px 23px;
@@ -1337,10 +1488,16 @@
   }
 }
 
-@media screen and (max-width: 330px) {
+@media screen and (max-width: 329px) {
   .course-information {
     &__description {
       font-size: 16px;
+    }
+  }
+
+  .teachers-feedback {
+    &__author {
+      bottom: 171px;
     }
   }
 }
@@ -1364,4 +1521,3 @@
     }
   }
 }
-
