@@ -457,6 +457,10 @@
   min-height: 700px;
 }
 
+.training-block__container-mobile {
+  display: none;
+}
+
 .training-block__menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1881,8 +1885,8 @@
 
 @media screen and (max-width: 1216px) {
   .about-authors {
-    padding: 0;
-    margin: 0 20px;
+    padding: 0 20px;
+    margin: 0;
   }
 
   .about-authors__container {
@@ -1890,22 +1894,19 @@
   }
 
   .about-authors__title {
-    margin: 70px auto 65px;
+    margin: 70px 0 65px 30px;
   }
 
   .about-authors__header {
     font-size: 50px;
-    text-align: center;
     max-width: none;
   }
 
   .about-authors__box {
-    text-align: center;
     padding: 0 10px;
   }
 
   .about-authors__subtitle {
-    text-align: center;
     max-width: 550px;
   }
 
@@ -2074,7 +2075,7 @@
   }
 
   .tutor-teachers__container {
-    gap: 25px;
+    gap: 50px;
   }
 
   .tutor-teachers__image {
@@ -2162,11 +2163,19 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   .tutor-teachers__title {
     max-width: none;
     margin-bottom: 25px;
+  }
+
+  .tutor-teachers__block {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
 
   .tutor-teachers__list {
@@ -2241,8 +2250,77 @@
     display: none;
   }
 
-  .training-block__menu {
+  .training-block__container {
     display: none;
+  }
+
+  .training-block__container-mobile {
+    display: block;
+  }
+
+  .training-block__block-mobile {
+    border-radius: 23px;
+    border: 1px solid #17144D;
+    background-color: #F0EFF4;
+    margin: 0 auto;
+  }
+
+  .training-block__link {
+    margin: 60px auto 80px;
+  }
+
+  .course-program__title {
+    font-size: 36px;
+  }
+
+  .tutor-teachers__header {
+    font-size: 36px;
+    margin-bottom: 40px;
+    line-height: 40px;
+  }
+
+  .tutor-teachers__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .tutor-teachers__box {
+    max-width: 330px;
+    padding: 0 10px;
+  }
+
+  .tutor-teachers__name {
+    margin: 0 0 17px;
+  }
+
+  .tutor-teachers__list-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 700px;
+    width: auto;
+    -webkit-column-gap: 40px;
+       -moz-column-gap: 40px;
+            column-gap: 40px;
+  }
+
+  .tutor-teachers__title {
+    font-size: 28px;
+  }
+
+  .tutor-teachers__subtitle,
+  .tutor-teachers__subtitle_narrow,
+  .tutor-teachers__subtitle_small {
+    max-width: 550px;
+    width: auto;
   }
 
   .course-faq {
@@ -2325,9 +2403,18 @@
 
   .about-authors__title {
     margin: 40px auto 45px;
-    font-size: 30px;
+    font-size: 28px;
     max-width: none;
-    text-align: center;
+  }
+
+  .about-authors__list-item {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+
+  .about-authors__box {
+    width: auto;
+    max-width: 330px;
   }
 
   .teachers-feedback {
@@ -2429,6 +2516,13 @@
 
   .contacts {
     padding: 50px 20px 64px 80px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .about-authors {
+    padding: 0 20px;
+    margin: 0;
   }
 }
 
@@ -2552,6 +2646,31 @@
     font-size: 40px;
     line-height: normal;
   }
+
+  .about-authors {
+    padding-bottom: 80px;
+  }
+
+  .about-authors__list-item {
+    -webkit-column-gap: 25px;
+       -moz-column-gap: 25px;
+            column-gap: 25px;
+    margin: 0;
+  }
+
+  .about-authors__list {
+    row-gap: 30px;
+  }
+
+  .tutor-teachers__list-item {
+    -webkit-column-gap: 25px;
+       -moz-column-gap: 25px;
+            column-gap: 25px;
+  }
+
+  .tutor-teachers__list {
+    row-gap: 30px;
+  }
 }
 
 @media screen and (max-width: 612px) {
@@ -2563,15 +2682,20 @@
     margin-bottom: 35px;
   }
 
+  .tutor-teachers__title {
+    font-size: 26px;
+    line-height: 32px;
+  }
+
   .about-authors__header {
     font-size: 40px;
   }
 
   .about-authors__title {
     margin: 40px auto 45px;
-    font-size: 30px;
+    font-size: 26px;
+    line-height: 32px;
     max-width: none;
-    text-align: center;
   }
 
   .faq {
@@ -2629,6 +2753,68 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media screen and (max-width: 592px) {
+  .tutor-teachers {
+    padding-right: 0;
+  }
+
+  .tutor-teachers__list-item {
+    -webkit-column-gap: 10px;
+       -moz-column-gap: 10px;
+            column-gap: 10px;
+  }
+
+  .tutor-teachers__box {
+    padding: 0;
+  }
+
+  .tutor-teachers__avatar {
+    -webkit-transform: scale(0.94);
+        -ms-transform: scale(0.94);
+            transform: scale(0.94);
+  }
+
+  .tutor-teachers__name {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .tutor-teachers__subtitle {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .about-authors {
+    padding-right: 0;
+  }
+
+  .about-authors__list-item {
+    -webkit-column-gap: 10px;
+       -moz-column-gap: 10px;
+            column-gap: 10px;
+  }
+
+  .about-authors__box {
+    padding: 0;
+  }
+
+  .about-authors__avatar {
+    -webkit-transform: scale(0.94);
+        -ms-transform: scale(0.94);
+            transform: scale(0.94);
+  }
+
+  .about-authors__name {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .about-authors__subtitle {
+    font-size: 16px;
+    line-height: 22px;
   }
 }
 
@@ -2705,6 +2891,50 @@
 @media screen and (max-width: 480px) {
   .course-faq__content {
     width: auto;
+  }
+
+  .tutor-teachers {
+    padding-left: 30px;
+  }
+
+  .tutor-teachers__container {
+    gap: 15px;
+  }
+
+  .tutor-teachers__header {
+    padding: 0;
+  }
+
+  .tutor-teachers__title {
+    padding: 0;
+  }
+
+  .tutor-teachers__list-item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+
+  .about-authors {
+    padding-left: 30px;
+  }
+
+  .about-authors__header {
+    padding: 0;
+  }
+
+  .about-authors__title {
+    padding: 0;
+  }
+
+  .about-authors__list-item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 
@@ -2810,23 +3040,6 @@
 }
 
 @media screen and (max-width: 420px) {
-  .about-authors__header {
-    font-size: 30px;
-    line-height: normal;
-  }
-
-  .about-authors__title {
-    margin: 40px auto 45px;
-    font-size: 20px;
-    max-width: none;
-    text-align: center;
-  }
-
-  .about-authors__title {
-    margin: 20px auto 20px;
-    line-height: normal;
-  }
-
   .session-dates__title {
     font-size: 40px;
   }
@@ -2839,6 +3052,23 @@
 
   .course-faq__tags {
     font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .about-authors {
+    padding-right: 10px;
+  }
+
+  .training-block__link {
+    font-size: 20px;
+    padding: 18px 23px;
+    margin: 60px 20px 80px;
+  }
+
+  .tutor-teachers__header {
+    font-size: 32px;
+    line-height: 36px;
   }
 }
 

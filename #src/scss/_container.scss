@@ -222,6 +222,10 @@
     min-height: 700px;
   }
 
+  &__container-mobile {
+    display: none;
+  }
+
   &__menu {
     display: flex;
     justify-content: space-between;
