@@ -2485,15 +2485,15 @@
     border-radius: 10px;
   }
 
+  .map-container__contacts {
+    display: none;
+  }
+
   .training-block__menu {
     padding-left: 15px;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-  }
-
-  .map-container__contacts {
-    display: none;
   }
 }
 
@@ -2897,8 +2897,9 @@
   }
 
   .people-target__title {
-    font-size: 40px;
+    font-size: 36px;
     line-height: normal;
+    margin-top: 50px;
   }
 
   .about-authors {
@@ -2973,11 +2974,20 @@
 
 @media screen and (max-width: 612px) {
   .course-advantages {
-    margin-top: 55px;
+    margin-top: 35px;
+    margin-bottom: 30px;
   }
 
   .course-advantages__title {
     margin-bottom: 35px;
+  }
+
+  .training-block {
+    margin-top: 38px;
+  }
+
+  .session-dates {
+    margin-top: 20px;
   }
 
   .tutor-teachers__title {
@@ -2997,7 +3007,7 @@
   }
 
   .faq {
-    padding: 0 10px 100px;
+    padding: 0 10px 59px;
   }
 
   .faq__title {
@@ -3212,10 +3222,6 @@
   .course-advantages__title {
     max-width: 305px;
     padding: 0;
-  }
-
-  .footer__img {
-    display: none;
   }
 
   .teachers-feedback__slider {
@@ -3737,7 +3743,7 @@
 
   .session-dates {
     padding-right: 5px;
-    margin: 115px 15px 0;
+    margin: 20px 15px 0;
   }
 
   .session-dates__header {
