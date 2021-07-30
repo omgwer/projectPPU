@@ -939,6 +939,7 @@
     cursor: pointer;
     padding: 31px 20px 31px 30px;
     width: 100%;
+    min-width: 608px;
     text-align: left;
     border: none;
     outline: none;
@@ -982,7 +983,7 @@
     display: block;
     width: 97%;
     height: 100%;
-    left: -7px;
+    left: -9px;
     top: 0;
     content: '';
     transform: rotate(-4.21deg);

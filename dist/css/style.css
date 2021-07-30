@@ -1292,6 +1292,7 @@
   cursor: pointer;
   padding: 31px 20px 31px 30px;
   width: 100%;
+  min-width: 608px;
   text-align: left;
   border: none;
   outline: none;
@@ -1347,7 +1348,7 @@
   display: block;
   width: 97%;
   height: 100%;
-  left: -7px;
+  left: -9px;
   top: 0;
   content: "";
   -webkit-transform: rotate(-4.21deg);
@@ -1777,10 +1778,64 @@
   padding-top: 8px;
 }
 
-@media screen and (max-width: 1395px) {
-  .faq__title {
-    font-size: 50px;
-    text-align: center;
+@media screen and (max-width: 1415px) {
+  .faq {
+    padding: 0 20px 137px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .faq__position {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .join-form__price-title {
+    font-size: 40px;
+    white-space: nowrap;
+  }
+
+  .join-form__box::before {
+    left: -12px;
+  }
+}
+
+@media screen and (max-width: 1252px) {
+  .to-proceed {
+    padding-left: 0;
+  }
+
+  .to-proceed::before {
+    right: 150px;
+  }
+
+  .to-proceed__main {
+    max-width: 1100px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+
+  .to-proceed__block_first::before {
+    left: 35px;
+  }
+
+  .to-proceed__block_second {
+    padding-right: 50px;
+  }
+
+  .to-proceed__block_third::before {
+    left: 35px;
+  }
+
+  .to-proceed__block_fourth {
+    padding-right: 20px;
+  }
+
+  .to-proceed__block_fourth::before {
+    left: 35px;
   }
 }
 
@@ -1835,10 +1890,6 @@
     padding: 56px 30px 61px 50px;
   }
 
-  .join-form__price-title {
-    font-size: 28px;
-  }
-
   .join-form__block {
     padding: 25px 30px 30px 30px;
   }
@@ -1849,14 +1900,6 @@
 }
 
 @media screen and (max-width: 1220px) {
-  .faq__position {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-
   .course-advantages {
     max-width: 800px;
     margin-top: 75px;
@@ -2049,6 +2092,13 @@
   }
 }
 
+@media screen and (max-width: 1150px) {
+  .join-form__price-title {
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+
 @media screen and (max-width: 1131px) {
   .session-dates__list {
     -ms-flex-wrap: wrap;
@@ -2166,22 +2216,101 @@
   .teachers-feedback__title {
     margin: 40px auto 60px;
   }
+
+  .to-proceed {
+    background: none;
+    margin: 65px auto 81px;
+    max-width: 750px;
+    padding: 0 0 0 100px;
+  }
+
+  .to-proceed::before {
+    right: 30px;
+    bottom: 100px;
+    top: auto;
+  }
+
+  .to-proceed__heading {
+    margin: 0 0 40px;
+  }
+
+  .to-proceed__container {
+    margin: 0;
+    display: block;
+  }
+
+  .to-proceed__main {
+    padding: 0 20px;
+  }
+
+  .to-proceed__block {
+    max-width: none;
+    margin-bottom: 50px;
+  }
+
+  .to-proceed__block_first::before {
+    left: -80px;
+    top: 5px;
+  }
+
+  .to-proceed__block_second {
+    padding-right: 50px;
+  }
+
+  .to-proceed__block_second::before {
+    left: -80px;
+    top: 5px;
+  }
+
+  .to-proceed__block_third::before {
+    left: -80px;
+    top: 5px;
+  }
+
+  .to-proceed__block_fourth {
+    padding-right: 20px;
+  }
+
+  .to-proceed__block_fourth::before {
+    left: -80px;
+    top: 5px;
+  }
+
+  .join-form__box::before {
+    left: -15px;
+    width: 95%;
+  }
 }
 
 @media screen and (max-width: 1070px) {
   .course-faq {
     padding: 56px 20px 61px 35px;
   }
-}
 
-@media screen and (max-width: 1030px) {
+  .join-form {
+    padding: 128px 0 91px 20px;
+  }
+
   .join-form__price-form {
-    padding: 90px 40px 100px 30px;
+    padding: 30px 36px 0;
+  }
+
+  .join-form__price-title {
+    margin-bottom: 30px;
+  }
+
+  .join-form__price-full {
+    margin-bottom: 30px;
   }
 
   .join-form__title {
-    font-size: 35px;
-    line-height: normal;
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .join-form__subtitle {
+    font-size: 18px;
+    line-height: 24px;
   }
 }
 
@@ -2299,9 +2428,12 @@
 
   .session-dates__box_remote::after {
     position: absolute;
-    content: url("../img/container/session-dates/vertical-line__mobile_short.png");
+    content: "";
     bottom: -225px;
-    left: -6px;
+    left: -5px;
+    width: 4px;
+    height: 190%;
+    background-color: #E25A28;
   }
 
   .session-dates__box_full-time {
@@ -2315,25 +2447,33 @@
 
   .session-dates__box_session::after {
     position: absolute;
-    content: url("../img/container/session-dates/vertical-line__mobile_long.png");
+    content: "";
     bottom: -120px;
-    left: -6px;
+    left: -5px;
+    width: 4px;
+    height: 305%;
+    background-color: #E25A28;
   }
 }
 
 @media screen and (max-width: 933px) {
+  .join-form {
+    padding: 81px 20px 50px;
+  }
+
   .join-form__container {
+    padding-left: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    gap: 15px;
+    gap: 55px;
   }
 
   .join-form__price-form {
@@ -2350,6 +2490,10 @@
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+  }
+
+  .map-container__contacts {
+    display: none;
   }
 }
 
@@ -2630,6 +2774,11 @@
     padding: 0 20px;
     margin: 0;
   }
+
+  .to-proceed::before {
+    bottom: 160px;
+    right: 25px;
+  }
 }
 
 @media screen and (max-width: 690px) {
@@ -2669,6 +2818,29 @@
 
   .course-advantages__subtitle_narrow {
     max-width: none;
+  }
+
+  .faq__open-button {
+    bottom: auto;
+    top: 20px;
+    -webkit-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+  }
+
+  .faq__accordion_hide {
+    padding-right: 90px;
+  }
+
+  .faq__button {
+    padding-right: 90px;
+    min-width: auto;
+  }
+}
+
+@media screen and (max-width: 666px) {
+  .faq__button {
+    height: 120px;
   }
 }
 
@@ -2793,6 +2965,12 @@
   }
 }
 
+@media screen and (max-width: 630px) {
+  .to-proceed {
+    padding-left: 70px;
+  }
+}
+
 @media screen and (max-width: 612px) {
   .course-advantages {
     margin-top: 55px;
@@ -2874,6 +3052,78 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
+
+  .to-proceed::before {
+    right: 10px;
+    bottom: 180px;
+    -webkit-transform: scale(0.74);
+        -ms-transform: scale(0.74);
+            transform: scale(0.74);
+  }
+
+  .join-form {
+    padding-right: 0;
+  }
+
+  .join-form__block {
+    margin-left: 15px;
+  }
+
+  .join-form__container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .join-form__price-form {
+    padding: 25px 15px 30px 30px;
+    margin-right: 15px;
+  }
+
+  .join-form__price-title {
+    font-size: 36px;
+    line-height: 40px;
+    white-space: normal;
+  }
+
+  .join-form__price-month {
+    font-size: 54px;
+    line-height: 63px;
+  }
+
+  .join-form__price-month span {
+    font-size: 30px;
+    line-height: 31px;
+  }
+
+  .join-form__price-full {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .join-form__list-item {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .join-form__title {
+    font-size: 36px;
+    line-height: 43px;
+  }
+
+  .join-form__subtitle {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .join-form__input {
+    font-size: 14px;
+    line-height: 23px;
+  }
+
+  .join-form__image {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 592px) {
@@ -2947,13 +3197,14 @@
     padding: 73px 20px 83px;
   }
 
-  .session-dates__container {
-    padding: 0 0 83px;
-    border-radius: 0;
-  }
-
   .session-dates__content {
     padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 564px) {
+  .to-proceed::before {
+    bottom: 205px;
   }
 }
 
@@ -2977,6 +3228,25 @@
 
   .teachers-feedback__author-job {
     bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .session-dates {
+    padding-left: 40px;
+  }
+
+  .session-dates__title {
+    padding-right: 20px;
+  }
+
+  .session-dates__block {
+    margin: 0;
+  }
+
+  .session-dates__box {
+    width: 100%;
+    padding: 34px 30px 43px 40px;
   }
 }
 
@@ -3017,6 +3287,108 @@
 
   .course-program__title {
     font-size: 36px;
+  }
+
+  .to-proceed::before {
+    bottom: 235px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .session-dates__box {
+    padding: 18px 0 32px 42px;
+    max-width: 325px;
+  }
+
+  .session-dates__box::before {
+    top: 43px;
+  }
+
+  .session-dates__box_remote::after {
+    bottom: -175px;
+  }
+
+  .session-dates__box_session::after {
+    bottom: -85px;
+  }
+
+  .session-dates__subtitle {
+    font-size: 22px;
+    line-height: 49px;
+  }
+
+  .session-dates__session-time {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .to-proceed::before {
+    bottom: 112px;
+    right: 25px;
+  }
+
+  .to-proceed__heading {
+    white-space: nowrap;
+  }
+
+  .to-proceed__main {
+    padding: 0 15px 0 17px;
+  }
+
+  .to-proceed__heading {
+    position: relative;
+    left: -60px;
+    font-size: 36px;
+  }
+
+  .to-proceed__block {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .to-proceed__block_first::before {
+    top: 0;
+  }
+
+  .to-proceed__block_second {
+    max-width: 232px;
+  }
+
+  .to-proceed__block_second::before {
+    top: 0;
+  }
+
+  .to-proceed__block_third::before {
+    top: 0;
+  }
+
+  .to-proceed__block_fourth::before {
+    top: 0;
+    right: 5px;
+  }
+
+  .faq__button {
+    padding-right: 75px;
+    padding-left: 20px;
+  }
+
+  .faq__accordion_hide {
+    padding-right: 75px;
+    padding-left: 20px;
+  }
+
+  .faq__open-button {
+    right: 15px;
+    -webkit-transform: scale(0.7);
+        -ms-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+
+  .faq__close-button {
+    right: 15px;
+    -webkit-transform: scale(0.7);
+        -ms-transform: scale(0.7);
+            transform: scale(0.7);
   }
 }
 
@@ -3090,11 +3462,34 @@
     line-height: 22px;
     padding: 0;
   }
+
+  .session-dates__title {
+    font-size: 36px;
+  }
+
+  .join-form__price-form {
+    padding-left: 24px;
+    padding-right: 20px;
+  }
+
+  .join-form__list-item {
+    max-width: 300px;
+  }
 }
 
 @media screen and (max-width: 450px) {
   .course-information__title {
     font-size: 30px;
+  }
+
+  .session-dates {
+    padding: 45px 10px 83px 30px;
+  }
+
+  .session-dates__format {
+    font-size: 28px;
+    margin: 28px 0;
+    padding-right: 20px;
   }
 
   .contacts {
@@ -3131,17 +3526,8 @@
     padding: 68px 0 50px;
   }
 
-  .join-form__container {
-    gap: 0;
-  }
-
   .join-form__block {
-    border-radius: 0;
     padding: 25px 10px 30px;
-  }
-
-  .join-form__price-form {
-    border-radius: 0;
   }
 
   .scrollUp-button {
@@ -3173,6 +3559,10 @@
     font-size: 40px;
   }
 
+  .session-dates__box {
+    padding-left: 25px;
+  }
+
   .teachers-feedback {
     padding: 25px 20px 0;
   }
@@ -3181,6 +3571,25 @@
   .teachers-feedback__author-job {
     font-size: 20px;
     line-height: 24px;
+  }
+
+  .join-form__price-form {
+    padding-right: 10px;
+    padding-left: 20px;
+  }
+
+  .join-form__price-month {
+    font-size: 46px;
+    line-height: 52px;
+  }
+
+  .join-form__price-full {
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .join-form__list-item {
+    gap: 15px;
   }
 }
 
@@ -3191,6 +3600,57 @@
 
   .course-faq__tags {
     font-size: 24px;
+  }
+
+  .session-dates {
+    padding-left: 22px;
+  }
+
+  .to-proceed::before {
+    right: 0;
+    bottom: 230px;
+  }
+
+  .join-form__title {
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 3px;
+  }
+
+  .join-form__subtitle {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .join-form__description {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .join-form__button {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .session-dates__subtitle {
+    font-size: 20px;
+  }
+
+  .session-dates__title {
+    font-size: 36px;
+    padding-right: 10px;
+  }
+
+  .session-dates__box::before {
+    -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+
+  .session-dates__session-time {
+    font-size: 16px;
   }
 }
 
@@ -3214,11 +3674,43 @@
     font-size: 32px;
     line-height: 36px;
   }
+
+  .to-proceed__main {
+    padding-left: 5px;
+  }
+
+  .to-proceed__block {
+    padding: 0;
+  }
+
+  .to-proceed__block_first::before {
+    top: 0;
+    left: -65px;
+  }
+
+  .to-proceed__block_second::before {
+    top: 0;
+    left: -65px;
+  }
+
+  .to-proceed__block_third::before {
+    top: 0;
+    left: -65px;
+  }
+
+  .to-proceed__block_fourth::before {
+    top: 0;
+    left: -65px;
+  }
 }
 
 @media screen and (max-width: 370px) {
   .header__logo {
     width: 80%;
+  }
+
+  .session-dates {
+    padding-left: 18px;
   }
 
   .footer__link {
@@ -3227,6 +3719,7 @@
 
   .join-form__button {
     font-size: 18px;
+    padding: 18px 5px;
   }
 }
 
@@ -3242,8 +3735,17 @@
     font-size: 30px;
   }
 
+  .session-dates {
+    padding-right: 5px;
+    margin: 115px 15px 0;
+  }
+
   .session-dates__header {
     font-size: 34px;
+  }
+
+  .session-dates__box {
+    padding-left: 15px;
   }
 
   .contacts__adaptive {
