@@ -1311,7 +1311,7 @@
     }
 
     &__price-form {
-      padding: 25px 15px 1px 30px;
+      padding: 38px 15px 1px 30px;
       margin-right: 15px;
     }
 
@@ -1719,8 +1719,15 @@
   }
 
   .join-form {
+    padding-left: 16px;
+
+    &__title {
+      margin-bottom: 6px;
+    }
+
     &__block {
       padding-left: 45px;
+      padding-top: 40px;
     }
 
     &__price-month {
@@ -1732,10 +1739,23 @@
       }
     }
 
+    &__input {
+      padding: 12px 18px;
+      margin-bottom: 15px;
+    }
+
+    &__selected {
+      padding: 8px 18px 8px;
+    }
+
     &__price-full {
       font-size: 30px;
       line-height: 40px;
+      margin-bottom: 39px;
     }
+  }
+  .join-form__select-box .join-form__options-container {
+    top: 50px;
   }
 }
 
