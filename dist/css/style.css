@@ -127,7 +127,7 @@
   z-index: 0;
   display: none;
   width: 42px;
-  height: 30px;
+  height: 31px;
   position: relative;
   margin: 0 auto;
   -webkit-transform: rotate(0deg);
@@ -162,11 +162,11 @@
 
 .header__burger-menu span:nth-child(2),
 .header__burger-menu span:nth-child(3) {
-  top: 15px;
+  top: 14px;
 }
 
 .header__burger-menu span:nth-child(4) {
-  top: 30px;
+  top: 28px;
 }
 
 .header__burger-menu.open span:nth-child(1) {
@@ -2000,14 +2000,14 @@
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    background-color: #ffffff;
+    background-color: #F7F9FD;
     top: -370px;
     right: 0;
     max-width: 487px;
     gap: 12px;
     margin: 0 auto;
     border-radius: 0 0 10px 10px;
-    padding: 33px 0 62px 55px;
+    padding: 33px 0 62px;
     -webkit-transition: top 1s ease-out;
     -o-transition: top 1s ease-out;
     transition: top 1s ease-out;
@@ -2020,7 +2020,14 @@
   }
 
   .header__link {
-    padding-left: 15px;
+    padding-left: 70px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+
+  .header__link:hover {
+    background-color: #D3CCEE;
   }
 
   .header__link:after {
@@ -2035,6 +2042,7 @@
   .header__button {
     max-width: 200px;
     text-align: center;
+    margin-left: 70px;
   }
 
   .course-advantages {
@@ -3106,7 +3114,7 @@
 
 @media screen and (max-width: 502px) {
   .header__nav-menu {
-    padding: 30px 20px 30px 30px;
+    padding: 30px 0 30px 0;
     max-width: none;
     position: absolute;
     width: 100%;
