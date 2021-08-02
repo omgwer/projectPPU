@@ -444,8 +444,7 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  gap: 147px;
-  margin: 0 15px 0 30px;
+  gap: 158px;
 }
 
 .course-program__title {
@@ -459,7 +458,7 @@
 }
 
 .training-block {
-  padding: 0 20px;
+  padding: 0 20px 0 30px;
   margin-top: 100px;
 }
 
@@ -599,14 +598,14 @@
 .tutor-teachers {
   max-width: 1247px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 20px 0 30px;
 }
 
 .tutor-teachers__header {
   color: #1b1d21;
   max-width: 682px;
   margin-bottom: 84px;
-  padding-left: 30px;
+  padding-left: 40px;
 }
 
 .tutor-teachers__container {
@@ -620,7 +619,7 @@
 }
 
 .tutor-teachers__title {
-  padding: 15px 0 0 30px;
+  padding: 15px 0 0 40px;
   max-width: 246px;
   margin-bottom: 224px;
   color: #1b1d21;
@@ -742,7 +741,7 @@
 }
 
 .program-experts__block {
-  max-width: 1208px;
+  max-width: 1202px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1772,6 +1771,16 @@
   }
 }
 
+@media screen and (max-width: 1330px) {
+  .tutor-teachers__header {
+    padding: 0;
+  }
+
+  .tutor-teachers__title {
+    padding: 0;
+  }
+}
+
 @media screen and (max-width: 1300px) {
   .faq__position {
     -ms-flex-wrap: wrap;
@@ -1898,6 +1907,10 @@
     max-width: 700px;
     margin: 0 0 auto;
     padding-left: 35px;
+  }
+
+  .course-program__container {
+    padding: 0 10px 0 30px;
   }
 
   .people-target__title {
@@ -2600,6 +2613,10 @@
   .people-target__title {
     margin-bottom: 50px;
   }
+
+  .to-proceed {
+    padding-left: 90px;
+  }
 }
 
 @media screen and (max-width: 846px) {
@@ -2631,6 +2648,8 @@
   }
 
   .course-faq__tags::before {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     content: "";
     width: 13px;
     height: 13px;
@@ -2644,7 +2663,7 @@
 
 @media screen and (max-width: 800px) {
   .course-information {
-    background-position: right 35% bottom 45%;
+    background-position: right 25% bottom 45%;
   }
 
   .teachers-feedback__slider {
@@ -2703,7 +2722,7 @@
 
 @media screen and (max-width: 700px) {
   .about-authors {
-    padding: 0 20px;
+    padding: 0 20px 0 30px;
     margin: 0;
   }
 
@@ -2777,24 +2796,67 @@
 }
 
 @media screen and (max-width: 660px) {
+  .b-font__title_h2 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .b-font__title_h3 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .b-font__title_upper {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .b-font__text_small {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .b-font__text_main {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
   .course-information {
     background-image: url("../img/container/course-information/course-information__background_mobile.jpg");
-    background-position: right 10%;
     padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .course-information__container {
-    padding: 22px 20px 92px 20px;
+    padding: 40px 20px 95px 20px;
   }
 
   .course-information__description {
-    margin-bottom: 31px;
+    margin-bottom: 41px;
     max-width: 100%;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .course-information__title {
+    font-size: 50px;
+    line-height: 36px;
+    margin-bottom: 27px;
   }
 
   .course-information__subtitle {
     text-align: left;
     max-width: 496px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .course-information__button {
+    border: 1px solid #2A285A;
+    font-size: 18px;
+    line-height: 28px;
+    padding: 14.5px 35px;
   }
 
   .course-information__box {
@@ -2803,6 +2865,8 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    gap: 120px;
+    row-gap: 130px;
   }
 
   .course-faq {
@@ -2854,6 +2918,32 @@
   .teachers-feedback {
     padding: 50px 50px 0;
   }
+
+  .session-dates__box::before {
+    top: 45px;
+  }
+
+  .session-dates__box_remote::after {
+    bottom: -167px;
+  }
+
+  .session-dates__box_session::after {
+    bottom: -97px;
+  }
+
+  .faq__button {
+    padding-right: 62px;
+    padding-left: 20px;
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .faq__accordion_hide {
+    padding-right: 65px;
+    padding-left: 20px;
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 @media screen and (max-width: 640px) {
@@ -2890,12 +2980,6 @@
   }
 }
 
-@media screen and (max-width: 630px) {
-  .to-proceed {
-    padding-left: 70px;
-  }
-}
-
 @media screen and (max-width: 612px) {
   .course-advantages {
     margin-top: 35px;
@@ -2915,12 +2999,12 @@
   }
 
   .about-authors__title {
-    margin: 40px auto 45px;
+    margin: 62px auto 28px;
     max-width: none;
   }
 
   .faq {
-    padding: 0 10px 59px;
+    padding: 0 24px 59px;
   }
 
   .faq__title {
@@ -2934,33 +3018,25 @@
     max-width: 450px;
   }
 
-  .course-information__box {
-    row-gap: 123px;
-  }
-
-  .course-information__button {
-    border: 1px solid #2A285A;
-  }
-
-  .course-information .session-dates__list {
+  .session-dates__list {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     gap: 25px;
   }
 
-  .course-information .session-dates__items {
+  .session-dates__items {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
 
-  .course-information .session-dates__dates {
+  .session-dates__dates {
     display: block;
     line-height: 40px;
   }
 
-  .course-information .session-dates__list-item {
+  .session-dates__list-item {
     gap: 5px;
     max-width: 296px;
     -ms-flex-wrap: wrap;
@@ -2982,18 +3058,15 @@
     padding-right: 0;
   }
 
-  .join-form__block {
-    margin-left: 15px;
-  }
-
   .join-form__container {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding-left: 16px;
   }
 
   .join-form__price-form {
-    padding: 25px 15px 30px 30px;
+    padding: 25px 15px 1px 30px;
     margin-right: 15px;
   }
 
@@ -3003,6 +3076,14 @@
 
   .join-form__image {
     display: none;
+  }
+
+  .join-form__list-item {
+    gap: 25px;
+  }
+
+  .join-form__text {
+    max-width: 291px;
   }
 }
 
@@ -3028,7 +3109,7 @@
   }
 
   .about-authors {
-    padding-right: 0;
+    padding-right: 10px;
   }
 
   .about-authors__list-item {
@@ -3085,7 +3166,7 @@
 
 @media screen and (max-width: 550px) {
   .session-dates {
-    padding-left: 40px;
+    padding: 53px 20px 63px 50px;
   }
 
   .session-dates__title {
@@ -3132,21 +3213,48 @@
 }
 
 @media screen and (max-width: 500px) {
-  .session-dates__box {
-    padding: 18px 0 32px 42px;
-    max-width: 325px;
+  .people-target__image {
+    margin-bottom: 10px;
   }
 
-  .session-dates__box::before {
-    top: 43px;
+  .people-target__subtitle_small {
+    padding-right: 15px;
   }
 
-  .session-dates__box_remote::after {
-    bottom: -175px;
+  .people-target__subtitle_narrow {
+    padding-right: 20px;
   }
 
-  .session-dates__box_session::after {
-    bottom: -85px;
+  .course-advantages {
+    padding: 0 20px 0 30px;
+  }
+
+  .course-advantages__container {
+    margin-bottom: 27px;
+  }
+
+  .course-advantages__image {
+    margin: 0 15px 25px 0;
+  }
+
+  .course-advantages__title {
+    margin-bottom: 39px;
+  }
+
+  .course-advantages__box {
+    margin-bottom: 25px;
+  }
+
+  .course-advantages__subtitle_narrow {
+    padding-right: 40px;
+  }
+
+  .course-advantages__subtitle_small {
+    padding-right: 20px;
+  }
+
+  .course-program__title {
+    margin-bottom: 18px;
   }
 
   .to-proceed::before {
@@ -3156,15 +3264,12 @@
 
   .to-proceed__heading {
     white-space: nowrap;
+    position: relative;
+    left: -80px;
   }
 
   .to-proceed__main {
     padding: 0 15px 0 17px;
-  }
-
-  .to-proceed__heading {
-    position: relative;
-    left: -60px;
   }
 
   .to-proceed__block_first::before {
@@ -3189,13 +3294,17 @@
   }
 
   .faq__button {
-    padding-right: 75px;
+    padding-right: 62px;
     padding-left: 20px;
+    font-size: 22px;
+    line-height: 28px;
   }
 
   .faq__accordion_hide {
-    padding-right: 75px;
+    padding-right: 62px;
     padding-left: 20px;
+    font-size: 18px;
+    line-height: 24px;
   }
 
   .faq__open-button {
@@ -3210,6 +3319,118 @@
     -webkit-transform: scale(0.7);
         -ms-transform: scale(0.7);
             transform: scale(0.7);
+  }
+
+  .training-block__subtitle {
+    margin-bottom: 25px;
+  }
+
+  .training-block__subtitle_narrow {
+    max-width: 357px;
+  }
+
+  .training-block__text {
+    margin-top: 35px;
+  }
+
+  .training-block__block-mobile {
+    padding-right: 15px;
+    font-size: 18px;
+  }
+
+  .training-block__title {
+    font-size: 22px;
+  }
+
+  .training-block__link {
+    margin: 50px auto 90px;
+  }
+
+  .tutor-teachers__title {
+    margin: 0;
+  }
+
+  .tutor-teachers__list-item {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .tutor-teachers__container {
+    gap: 36px;
+  }
+
+  .about-authors__subtitle_small {
+    padding-right: 20px;
+  }
+
+  .about-authors__subtitle_mobile {
+    padding-right: 20px;
+  }
+
+  .program-experts__title {
+    max-width: 340px;
+    margin-bottom: 18px;
+  }
+
+  .teachers-feedback__slide-text {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .session-dates__box {
+    padding: 18px 0 32px 40px;
+    max-width: 325px;
+  }
+
+  .session-dates__box_remote {
+    margin: 24px 0 40px;
+  }
+
+  .session-dates__box_session {
+    margin: 40px 0 40px;
+  }
+
+  .session-dates__subtitle {
+    line-height: 50px;
+  }
+
+  .session-dates__format {
+    padding-right: 20px;
+    font-size: 28px;
+    line-height: 54px;
+    margin-top: 33px;
+  }
+
+  .session-dates__box::before {
+    top: 43px;
+  }
+
+  .session-dates__box_remote::after {
+    bottom: -188px;
+  }
+
+  .session-dates__box_session::after {
+    bottom: -90px;
+    height: 320%;
+  }
+
+  .join-form__block {
+    padding-left: 45px;
+  }
+
+  .join-form__price-month {
+    font-size: 54px;
+    line-height: 63px;
+  }
+
+  .join-form__price-month span {
+    font-size: 30px;
+  }
+
+  .join-form__price-full {
+    font-size: 30px;
+    line-height: 40px;
   }
 }
 

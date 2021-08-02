@@ -188,8 +188,7 @@
   &__container {
     display: flex;
     justify-content: flex-start;
-    gap: 147px;
-    margin: 0 15px 0 30px;
+    gap: 158px;
   }
 
   &__title {
@@ -204,7 +203,7 @@
 }
 
 .training-block {
-  padding: 0 20px;
+  padding: 0 20px 0 30px;
   margin-top: 100px;
 
   &__container {
@@ -335,13 +334,13 @@
 .tutor-teachers {
   max-width: 1247px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 20px 0 30px;
 
   &__header {
     color: #1b1d21;
     max-width: 682px;
     margin-bottom: 84px;
-    padding-left: 30px;
+    padding-left: 40px;
   }
 
   &__container {
@@ -351,7 +350,7 @@
   }
 
   &__title {
-    padding: 15px 0 0 30px;
+    padding: 15px 0 0 40px;
     max-width: 246px;
     margin-bottom: 224px;
     color: #1b1d21;
@@ -458,7 +457,7 @@
   background-color: #453A72;
 
   &__block {
-    max-width: 1208px;
+    max-width: 1202px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;

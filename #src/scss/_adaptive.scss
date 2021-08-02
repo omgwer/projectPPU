@@ -4,6 +4,18 @@
     }
 }
 
+@media screen and (max-width: 1330px) {
+  .tutor-teachers {
+    &__header {
+      padding: 0;
+    }
+
+    &__title {
+      padding: 0;
+    }
+  }
+}
+
 @media screen and (max-width: 1300px) {
   .faq {
     &__position {
@@ -140,6 +152,12 @@
         margin: 0 0 auto;
         padding-left: 35px;
       }
+    }
+  }
+
+  .course-program {
+    &__container {
+      padding: 0 10px 0 30px;
     }
   }
 
@@ -816,6 +834,10 @@
       margin-bottom: 50px;
     }
   }
+
+  .to-proceed {
+    padding-left: 90px;
+  }
 }
 
 @media screen and (max-width: 846px) {
@@ -849,6 +871,7 @@
       position: relative;
 
       &::before {
+        box-sizing: border-box;
         content: '';
         width: 13px;
         height: 13px;
@@ -864,7 +887,7 @@
 
 @media screen and (max-width: 800px) {
   .course-information {
-    background-position: right 35% bottom 45%;
+    background-position: right 25% bottom 45%;
   }
 
   .teachers-feedback {
@@ -925,7 +948,7 @@
 
 @media screen and (max-width: 700px) {
   .about-authors {
-    padding: 0 20px;
+    padding: 0 20px 0 30px;
     margin: 0;
   }
 
@@ -1000,28 +1023,79 @@
 }
 
 @media screen and (max-width: 660px) {
+  .b-font {
+    &__title {
+      &_h2 {
+        font-size: 36px;
+        line-height: 40px;
+      }
+
+      &_h3 {
+        font-size: 22px;
+        line-height: 28px;
+      }
+
+      &_upper {
+        font-size: 28px;
+        line-height: 32px;
+      }
+    }
+
+    &__text {
+      &_small {
+        font-size: 16px;
+        line-height: 22px;
+      }
+
+      &_main {
+        font-size: 18px;
+        line-height: 24px;
+      }
+    }
+  }
+
   .course-information {
     background-image: url("../img/container/course-information/course-information__background_mobile.jpg");
-    background-position: right 10%;
     padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
 
     &__container {
-      padding: 22px 20px   92px 20px;
+      padding: 40px 20px 95px 20px;
     }
 
     &__description {
-      margin-bottom: 31px;
+      margin-bottom: 41px;
       max-width: 100%;
+      font-size: 18px;
+      line-height: 22px;
+    }
+
+    &__title {
+      font-size: 50px;
+      line-height: 36px;
+      margin-bottom: 27px;
     }
 
     &__subtitle {
       text-align: left;
       max-width: 496px;
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    &__button {
+      border: 1px solid #2A285A;
+      font-size: 18px;
+      line-height: 28px;
+      padding: 14.5px 35px;
     }
 
     &__box {
       flex-wrap: wrap-reverse;
       justify-content: space-between;
+      gap: 120px;
+      row-gap: 130px;
     }
 
   }
@@ -1069,6 +1143,45 @@
     padding: 50px 50px 0;
   }
 
+  .session-dates {
+    &__box {
+      &::before {
+        top: 45px;
+      }
+    }
+
+    &__box{
+
+      &_remote {
+        &::after {
+          bottom: -167px;
+        }
+      }
+
+      &_session {
+        &::after {
+          bottom: -97px;
+        }
+      }
+    }
+  }
+
+  .faq {
+
+    &__button {
+      padding-right: 62px;
+      padding-left: 20px;
+      font-size: 22px;
+      line-height: 28px;
+    }
+
+    &__accordion_hide {
+      padding-right: 65px;
+      padding-left: 20px;
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
 }
 
 @media screen and (max-width: 640px) {
@@ -1110,12 +1223,6 @@
   }
 }
 
-@media screen and (max-width: 630px) {
-  .to-proceed {
-    padding-left: 70px;
-  }
-}
-
 @media screen and (max-width: 612px) {
 
   .course-advantages {
@@ -1139,13 +1246,13 @@
   .about-authors {
 
     &__title {
-      margin: 40px auto 45px;
+      margin: 62px auto 28px;
       max-width: none;
     }
   }
 
   .faq {
-    padding: 0 10px 59px;
+    padding: 0 24px 59px;
 
     &__title {
       margin: 40px 0 35px;
@@ -1160,16 +1267,9 @@
       margin-bottom: 30px;
       max-width: 450px;
     }
+  }
 
-    &__box {
-      row-gap: 123px;
-    }
-
-    &__button {
-      border: 1px solid #2A285A;
-    }
-
-    .session-dates {
+  .session-dates {
 
       &__list {
         justify-content: center;
@@ -1192,7 +1292,6 @@
         justify-content: center;
       }
     }
-  }
 
   .to-proceed {
 
@@ -1206,16 +1305,13 @@
   .join-form {
     padding-right: 0;
 
-    &__block {
-      margin-left: 15px;
-    }
-
     &__container {
       align-items: center;
+      padding-left: 16px;
     }
 
     &__price-form {
-      padding: 25px 15px 30px 30px;
+      padding: 25px 15px 1px 30px;
       margin-right: 15px;
     }
 
@@ -1225,6 +1321,14 @@
 
     &__image {
       display: none;
+    }
+
+    &__list-item {
+      gap: 25px;
+    }
+
+    &__text {
+      max-width: 291px;
     }
   }
 }
@@ -1248,7 +1352,7 @@
   }
 
   .about-authors {
-    padding-right: 0;
+    padding-right: 10px;
 
     &__list-item {
       column-gap: 10px;
@@ -1306,7 +1410,7 @@
 
 @media screen and (max-width: 550px) {
   .session-dates {
-    padding-left: 40px;
+    padding: 53px 20px 63px 50px;
 
     &__title {
       padding-right: 20px;
@@ -1368,27 +1472,57 @@
 }
 
 @media screen and (max-width: 500px) {
-  .session-dates {
+
+  .people-target {
+    &__image {
+      margin-bottom: 10px;
+    }
+
+    &__subtitle {
+
+      &_small {
+        padding-right: 15px;
+      }
+
+      &_narrow {
+        padding-right: 20px;
+      }
+    }
+  }
+
+  .course-advantages {
+    padding: 0 20px 0 30px;
+
+    &__container {
+      margin-bottom: 27px;
+    }
+
+    &__image {
+      margin: 0 15px 25px 0;
+    }
+
+    &__title {
+      margin-bottom: 39px;
+    }
 
     &__box {
-      padding: 18px 0 32px 42px;
-      max-width: 325px;
+      margin-bottom: 25px;
+    }
 
-      &::before {
-        top: 43px;
+    &__subtitle {
+      &_narrow {
+        padding-right: 40px;
       }
 
-      &_remote {
-        &::after {
-          bottom: -175px;
-        }
+      &_small {
+        padding-right: 20px;
       }
+    }
+  }
 
-      &_session {
-        &::after {
-          bottom: -85px;
-        }
-      }
+  .course-program {
+    &__title {
+      margin-bottom: 18px;
     }
   }
 
@@ -1401,15 +1535,12 @@
 
     &__heading {
       white-space: nowrap;
+      position: relative;
+      left: -80px;
     }
 
     &__main {
       padding: 0 15px 0 17px;
-    }
-
-    &__heading {
-      position: relative;
-      left: -60px;
     }
 
     &__block {
@@ -1445,14 +1576,17 @@
   .faq {
 
     &__button {
-      padding-right: 75px;
+      padding-right: 62px;
       padding-left: 20px;
-
+      font-size: 22px;
+      line-height: 28px;
     }
 
     &__accordion_hide {
-      padding-right: 75px;
+      padding-right: 62px;
       padding-left: 20px;
+      font-size: 18px;
+      line-height: 24px;
     }
 
     &__open-button {
@@ -1463,6 +1597,144 @@
     &__close-button {
       right: 15px;
       transform: scale(0.7);
+    }
+  }
+
+  .training-block {
+
+    &__subtitle {
+      margin-bottom: 25px;
+
+      &_narrow {
+        max-width: 357px;
+      }
+    }
+
+    &__text {
+      margin-top: 35px;
+    }
+
+    &__block-mobile {
+      padding-right: 15px;
+      font-size: 18px;
+    }
+
+    &__title {
+      font-size: 22px;
+    }
+
+    &__link {
+      margin: 50px auto 90px;
+    }
+  }
+
+  .tutor-teachers {
+    &__title {
+      margin: 0;
+    }
+
+    &__list-item {
+      align-items: flex-start;
+    }
+
+    &__container {
+      gap: 36px;
+    }
+  }
+
+  .about-authors {
+
+    &__subtitle {
+      &_small {
+        padding-right: 20px;
+      }
+
+      &_mobile {
+        padding-right: 20px;
+      }
+    }
+  }
+
+  .program-experts {
+    &__title {
+      max-width: 340px;
+      margin-bottom: 18px;
+    }
+  }
+
+  .teachers-feedback {
+    &__slide-text {
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+
+  .session-dates {
+
+    &__box {
+      padding: 18px 0 32px 40px;
+      max-width: 325px;
+
+      &_remote {
+        margin: 24px 0 40px;
+      }
+
+      &_session {
+        margin: 40px 0 40px;
+      }
+    }
+
+    &__subtitle {
+      line-height: 50px;
+    }
+
+    &__format {
+      padding-right: 20px;
+      font-size: 28px;
+      line-height: 54px;
+      margin-top: 33px;
+    }
+
+    &__box {
+      &::before {
+        top: 43px;
+      }
+    }
+
+    &__box{
+
+      &_remote {
+        &::after {
+          bottom: -188px;
+        }
+      }
+
+      &_session {
+        &::after {
+          bottom: -90px;
+          height: 320%;
+        }
+      }
+    }
+  }
+
+  .join-form {
+    &__block {
+      padding-left: 45px;
+    }
+
+    &__price-month {
+      font-size: 54px;
+      line-height: 63px ;
+
+      & span {
+        font-size: 30px;
+      }
+    }
+
+    &__price-full {
+      font-size: 30px;
+      line-height: 40px;
     }
   }
 }
