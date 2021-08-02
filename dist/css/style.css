@@ -2486,14 +2486,8 @@
     margin: 60px auto 80px;
   }
 
-  .course-program__title {
-    font-size: 36px;
-  }
-
   .tutor-teachers__header {
-    font-size: 36px;
     margin-bottom: 40px;
-    line-height: 40px;
   }
 
   .tutor-teachers__list {
@@ -2527,10 +2521,6 @@
     -webkit-column-gap: 40px;
        -moz-column-gap: 40px;
             column-gap: 40px;
-  }
-
-  .tutor-teachers__title {
-    font-size: 28px;
   }
 
   .tutor-teachers__subtitle,
@@ -2567,8 +2557,6 @@
   }
 
   .course-advantages__title {
-    font-size: 36px;
-    line-height: 40px;
     margin-bottom: 50px;
     max-width: none;
   }
@@ -2602,7 +2590,6 @@
   }
 
   .people-target__title {
-    font-size: 50px;
     margin-bottom: 50px;
   }
 }
@@ -2614,13 +2601,8 @@
 }
 
 @media screen and (max-width: 818px) {
-  .about-authors__header {
-    font-size: 40px;
-  }
-
   .about-authors__title {
     margin: 40px auto 45px;
-    font-size: 28px;
     max-width: none;
   }
 
@@ -2697,7 +2679,6 @@
   }
 
   .faq__title {
-    font-size: 40px;
     margin: 100px 0 45px;
   }
 }
@@ -2705,11 +2686,6 @@
 @media screen and (max-width: 740px) {
   .course-faq {
     padding: 56px 20px 61px 70px;
-  }
-
-  .program-experts__title {
-    font-size: 36px;
-    line-height: 40px;
   }
 
   .contacts {
@@ -2804,18 +2780,12 @@
   }
 
   .course-information__description {
-    font-size: 22px;
     margin-bottom: 31px;
     max-width: 100%;
   }
 
-  .course-information__title {
-    font-size: 50px;
-  }
-
   .course-information__subtitle {
     text-align: left;
-    font-size: 18px;
     max-width: 496px;
   }
 
@@ -2845,8 +2815,6 @@
   }
 
   .people-target__title {
-    font-size: 36px;
-    line-height: normal;
     margin-top: 50px;
   }
 
@@ -2938,19 +2906,8 @@
     margin-top: 20px;
   }
 
-  .tutor-teachers__title {
-    font-size: 26px;
-    line-height: 32px;
-  }
-
-  .about-authors__header {
-    font-size: 40px;
-  }
-
   .about-authors__title {
     margin: 40px auto 45px;
-    font-size: 26px;
-    line-height: 32px;
     max-width: none;
   }
 
@@ -2959,19 +2916,13 @@
   }
 
   .faq__title {
-    font-size: 30px;
     margin: 40px 0 35px;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .course-information__description {
-    font-size: 18px;
-  }
-
   .course-information__subtitle {
     margin-bottom: 30px;
-    font-size: 16px;
     max-width: 450px;
   }
 
@@ -3039,44 +2990,7 @@
   }
 
   .join-form__price-title {
-    font-size: 36px;
-    line-height: 40px;
     white-space: normal;
-  }
-
-  .join-form__price-month {
-    font-size: 54px;
-    line-height: 63px;
-  }
-
-  .join-form__price-month span {
-    font-size: 30px;
-    line-height: 31px;
-  }
-
-  .join-form__price-full {
-    font-size: 30px;
-    line-height: 40px;
-  }
-
-  .join-form__list-item {
-    font-size: 18px;
-    line-height: 26px;
-  }
-
-  .join-form__title {
-    font-size: 36px;
-    line-height: 43px;
-  }
-
-  .join-form__subtitle {
-    font-size: 18px;
-    line-height: 24px;
-  }
-
-  .join-form__input {
-    font-size: 14px;
-    line-height: 23px;
   }
 
   .join-form__image {
@@ -3105,16 +3019,6 @@
             transform: scale(0.94);
   }
 
-  .tutor-teachers__name {
-    font-size: 22px;
-    line-height: 26px;
-  }
-
-  .tutor-teachers__subtitle {
-    font-size: 16px;
-    line-height: 22px;
-  }
-
   .about-authors {
     padding-right: 0;
   }
@@ -3134,23 +3038,9 @@
         -ms-transform: scale(0.94);
             transform: scale(0.94);
   }
-
-  .about-authors__name {
-    font-size: 22px;
-    line-height: 26px;
-  }
-
-  .about-authors__subtitle {
-    font-size: 16px;
-    line-height: 22px;
-  }
 }
 
 @media screen and (max-width: 570px) {
-  .course-information__description {
-    font-size: 18px;
-  }
-
   .session-dates {
     padding: 73px 20px 83px;
   }
@@ -3205,19 +3095,8 @@
 }
 
 @media screen and (max-width: 530px) {
-  .course-information__subtitle {
-    font-size: 16px;
-  }
-
   .faq__title {
-    font-size: 24px;
-    line-height: normal;
     margin: 20px 0 25px;
-  }
-
-  .about-authors__name {
-    font-size: 22px;
-    line-height: 25px;
   }
 
   .about-authors__list-item {
@@ -3237,10 +3116,6 @@
 
   .people-target__list-item {
     display: block;
-  }
-
-  .course-program__title {
-    font-size: 36px;
   }
 
   .to-proceed::before {
@@ -3266,16 +3141,6 @@
     bottom: -85px;
   }
 
-  .session-dates__subtitle {
-    font-size: 22px;
-    line-height: 49px;
-  }
-
-  .session-dates__session-time {
-    font-size: 18px;
-    line-height: 22px;
-  }
-
   .to-proceed::before {
     bottom: 112px;
     right: 25px;
@@ -3292,12 +3157,6 @@
   .to-proceed__heading {
     position: relative;
     left: -60px;
-    font-size: 36px;
-  }
-
-  .to-proceed__block {
-    font-size: 18px;
-    line-height: 24px;
   }
 
   .to-proceed__block_first::before {
@@ -3401,24 +3260,8 @@
 }
 
 @media screen and (max-width: 463px) {
-  .course-program__title {
-    font-size: 30px;
-    line-height: 36px;
-  }
-
-  .course-program__subtitle {
-    font-size: 18px;
-    line-height: 22px;
-  }
-
   .training-block__container-mobile {
-    font-size: 18px;
-    line-height: 22px;
     padding: 0;
-  }
-
-  .session-dates__title {
-    font-size: 36px;
   }
 
   .join-form__price-form {
@@ -3432,16 +3275,11 @@
 }
 
 @media screen and (max-width: 450px) {
-  .course-information__title {
-    font-size: 30px;
-  }
-
   .session-dates {
     padding: 45px 10px 83px 30px;
   }
 
   .session-dates__format {
-    font-size: 28px;
     margin: 28px 0;
     padding-right: 20px;
   }
@@ -3450,16 +3288,6 @@
     padding: 50px 20px 80px;
     margin: 0;
     border-radius: 0;
-  }
-
-  .contacts__title {
-    font-size: 30px;
-    line-height: normal;
-  }
-
-  .contacts__subtitle {
-    font-size: 26px;
-    line-height: normal;
   }
 
   .contacts__links {
@@ -3509,10 +3337,6 @@
 }
 
 @media screen and (max-width: 420px) {
-  .session-dates__title {
-    font-size: 40px;
-  }
-
   .session-dates__box {
     padding-left: 25px;
   }
@@ -3521,25 +3345,9 @@
     padding: 25px 20px 0;
   }
 
-  .teachers-feedback__author,
-  .teachers-feedback__author-job {
-    font-size: 20px;
-    line-height: 24px;
-  }
-
   .join-form__price-form {
     padding-right: 10px;
     padding-left: 20px;
-  }
-
-  .join-form__price-month {
-    font-size: 46px;
-    line-height: 52px;
-  }
-
-  .join-form__price-full {
-    font-size: 28px;
-    line-height: 38px;
   }
 
   .join-form__list-item {
@@ -3552,10 +3360,6 @@
     margin: 0 20px;
   }
 
-  .course-faq__tags {
-    font-size: 24px;
-  }
-
   .session-dates {
     padding-left: 22px;
   }
@@ -3566,34 +3370,12 @@
   }
 
   .join-form__title {
-    font-size: 30px;
-    line-height: 36px;
     margin-bottom: 3px;
-  }
-
-  .join-form__subtitle {
-    font-size: 16px;
-    line-height: 22px;
-  }
-
-  .join-form__description {
-    font-size: 16px;
-    line-height: 22px;
-  }
-
-  .join-form__button {
-    font-size: 20px;
-    line-height: 26px;
   }
 }
 
 @media screen and (max-width: 390px) {
-  .session-dates__subtitle {
-    font-size: 20px;
-  }
-
   .session-dates__title {
-    font-size: 36px;
     padding-right: 10px;
   }
 
@@ -3601,10 +3383,6 @@
     -webkit-transform: scale(0.8);
         -ms-transform: scale(0.8);
             transform: scale(0.8);
-  }
-
-  .session-dates__session-time {
-    font-size: 16px;
   }
 }
 
@@ -3619,14 +3397,8 @@
   }
 
   .training-block__link {
-    font-size: 20px;
     padding: 18px 23px;
     margin: 60px 20px 80px;
-  }
-
-  .tutor-teachers__header {
-    font-size: 32px;
-    line-height: 36px;
   }
 
   .to-proceed__main {
@@ -3667,35 +3439,21 @@
     padding-left: 18px;
   }
 
-  .footer__link {
-    font-size: 18px;
-  }
-
   .join-form__button {
-    font-size: 18px;
     padding: 18px 5px;
   }
 }
 
 @media screen and (max-width: 360px) {
   .course-information__button {
-    font-size: 18px;
     padding: 18px 41px;
   }
 }
 
 @media screen and (max-width: 350px) {
-  .course-advantages__title {
-    font-size: 30px;
-  }
-
   .session-dates {
     padding-right: 5px;
     margin: 20px 15px 0;
-  }
-
-  .session-dates__header {
-    font-size: 34px;
   }
 
   .session-dates__box {
@@ -3708,10 +3466,6 @@
 }
 
 @media screen and (max-width: 329px) {
-  .course-information__description {
-    font-size: 16px;
-  }
-
   .teachers-feedback__author {
     bottom: 171px;
   }
