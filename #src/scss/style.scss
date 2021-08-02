@@ -13,6 +13,32 @@
   opacity: 0;
 }
 
+.b-font {
+  &__title {
+    &_h2 {
+      font: 600 48px/54px 'Raleway', sans-serif;
+    }
+
+    &_h3 {
+      font: 600 28px/34px 'Raleway', sans-serif;
+    }
+
+    &_upper {
+      font: 600 36px/42px 'Raleway', sans-serif;
+    }
+  }
+
+  &__text {
+    &_main {
+      font: 400 22px/30px 'Raleway', sans-serif;
+    }
+
+    &_small {
+      font: 400 18px/26px 'Raleway', sans-serif;
+    }
+  }
+}
+
 @@include('_header.scss')
 @@include('_container.scss')
 @@include('_footer.scss')

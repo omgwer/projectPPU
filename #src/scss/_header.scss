@@ -4,7 +4,6 @@
   width: 100%;
   top: 0;
   transition: top 0.5s ease-out;
-  //box-shadow: 0 0 2px 0 #000000;
   z-index: 1;
 }
 
@@ -45,7 +44,7 @@
   }
 
   &__link {
-    font: 400 22px/48px 'Raleway', sans-serif;
+    line-height: 48px;
     text-decoration: none;
     color: #484848;
     position: relative;
@@ -149,7 +148,8 @@
   }
 
   &__button {
-    font: 600 22px/48px 'Raleway', sans-serif;
+    font-weight: 600;
+    line-height: 48px;
     text-decoration: none;
     color: #ffffff;
     border-radius: 30px;

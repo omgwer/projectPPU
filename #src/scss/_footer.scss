@@ -3,11 +3,11 @@
     color: #ffffff;
     text-align: center;
     background-color: #17144D;
+    line-height: 48px;
 
     &__link {
         color: #ffffff;
         text-decoration: none;
-        font: 400 22px/48px 'Raleway', sans-serif;
     }
 
     &__block {
@@ -24,5 +24,3 @@
         padding-top: 8px;
     }
 }
-
-

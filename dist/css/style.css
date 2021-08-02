@@ -13,6 +13,26 @@
   opacity: 0;
 }
 
+.b-font__title_h2 {
+  font: 600 48px/54px "Raleway", sans-serif;
+}
+
+.b-font__title_h3 {
+  font: 600 28px/34px "Raleway", sans-serif;
+}
+
+.b-font__title_upper {
+  font: 600 36px/42px "Raleway", sans-serif;
+}
+
+.b-font__text_main {
+  font: 400 22px/30px "Raleway", sans-serif;
+}
+
+.b-font__text_small {
+  font: 400 18px/26px "Raleway", sans-serif;
+}
+
 .header-container {
   position: fixed;
   background-color: #ffffff;
@@ -74,7 +94,7 @@
 }
 
 .header__link {
-  font: 400 22px/48px "Raleway", sans-serif;
+  line-height: 48px;
   text-decoration: none;
   color: #484848;
   position: relative;
@@ -174,7 +194,8 @@
 }
 
 .header__button {
-  font: 600 22px/48px "Raleway", sans-serif;
+  font-weight: 600;
+  line-height: 48px;
   text-decoration: none;
   color: #ffffff;
   border-radius: 30px;
@@ -207,7 +228,8 @@
 }
 
 .course-information__description {
-  font: 500 28px/34px "Raleway", sans-serif;
+  font-weight: 500;
+  line-height: 34px;
   margin-bottom: 51px;
   max-width: 442px;
 }
@@ -219,7 +241,6 @@
 }
 
 .course-information__subtitle {
-  font: 400 22px/30px "Raleway", sans-serif;
   max-width: 593px;
   margin-bottom: 48px;
 }
@@ -229,7 +250,8 @@
   display: inline-block;
   border-radius: 80px;
   background-color: #E25A28;
-  font: 600 22px/34px "Raleway", sans-serif;
+  font-weight: 600;
+  line-height: 34px;
   padding: 18px 46px;
   -webkit-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
@@ -245,7 +267,8 @@
 }
 
 .course-information__start-time {
-  font: 500 22px/34px "Raleway", sans-serif;
+  font-weight: 500;
+  line-height: 34px;
 }
 
 .course-information__box {
@@ -305,13 +328,11 @@
 }
 
 .course-faq__tags {
-  font: 600 28px/34px "Raleway", sans-serif;
   margin-bottom: 10px;
   color: #1b1d21;
 }
 
 .course-faq__tag {
-  font: 400 18px/26px "Raleway", sans-serif;
   color: #282b33;
 }
 
@@ -323,7 +344,7 @@
 
 .people-target__title {
   margin-bottom: 62px;
-  font: 600 48px/90px "Raleway", sans-serif;
+  line-height: 90px;
   color: #1b1d21;
 }
 
@@ -349,13 +370,11 @@
 }
 
 .people-target__heading {
-  font: 600 28px/34px "Raleway", sans-serif;
   margin-bottom: 12px;
   color: #1b1d21;
 }
 
 .people-target__subtitle {
-  font: 400 18px/26px "Raleway", sans-serif;
   max-width: 294px;
   color: #282B33;
 }
@@ -394,7 +413,6 @@
 }
 
 .course-advantages__title {
-  font: 600 48px/54px "Raleway", sans-serif;
   max-width: 382px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -403,7 +421,6 @@
 }
 
 .course-advantages__subtitle {
-  font: 400 18px/26px "Raleway", sans-serif;
   max-width: 295px;
 }
 
@@ -432,13 +449,11 @@
 }
 
 .course-program__title {
-  font: 600 48px/54px "Raleway", sans-serif;
   color: #1b1d21;
   max-width: 285px;
 }
 
 .course-program__subtitle {
-  font: 400 22px/30px "Raleway", sans-serif;
   color: #282b33;
   max-width: 651px;
 }
@@ -491,7 +506,7 @@
 
 .training-block__menu-list {
   color: #1b1d21;
-  font: 600 28px/42px "Raleway", sans-serif;
+  line-height: 42px;
   padding: 53px 51px 30px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -512,7 +527,7 @@
 .training-block__block {
   max-width: 1079px;
   margin: 77px 0 50px;
-  font: 400 22px/28px "Raleway", sans-serif;
+  line-height: 28px;
   color: #282b33;
   display: none;
   padding: 0 20px 0 113px;
@@ -569,7 +584,8 @@
   max-width: 320px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font: 600 22px/34px "Raleway", sans-serif;
+  font-weight: 600;
+  line-height: 34px;
   text-align: center;
   -webkit-transition: background-color 0.4s ease;
   -o-transition: background-color 0.4s ease;
@@ -588,7 +604,6 @@
 
 .tutor-teachers__header {
   color: #1b1d21;
-  font: 600 48px/54px "Raleway", sans-serif;
   max-width: 682px;
   margin-bottom: 84px;
   padding-left: 30px;
@@ -606,7 +621,6 @@
 
 .tutor-teachers__title {
   padding: 15px 0 0 30px;
-  font: 600 36px/42px "Raleway", sans-serif;
   max-width: 246px;
   margin-bottom: 224px;
   color: #1b1d21;
@@ -631,13 +645,11 @@
 
 .tutor-teachers__name {
   color: #1b1d21;
-  font: 600 28px/34px "Raleway", sans-serif;
   margin: 40px 0 13px;
 }
 
 .tutor-teachers__subtitle {
   color: #282b33;
-  font: 400 18px/26px "Raleway", sans-serif;
 }
 
 .tutor-teachers__subtitle_narrow {
@@ -658,13 +670,7 @@
   padding-left: 43px;
 }
 
-.about-authors__header {
-  font: 600 48px/54px "Raleway", sans-serif;
-  max-width: 696px;
-}
-
 .about-authors__title {
-  font: 600 36px/42px "Raleway", sans-serif;
   color: #1b1d21;
   margin: 65px 0 60px;
   max-width: 440px;
@@ -706,13 +712,11 @@
 }
 
 .about-authors__name {
-  font: 600 28px/34px "Raleway", sans-serif;
   color: #1b1d21;
   margin-bottom: 17px;
 }
 
 .about-authors__subtitle {
-  font: 400 18px/26px "Raleway", sans-serif;
   color: #282b33;
   max-width: 320px;
 }
@@ -749,7 +753,6 @@
 }
 
 .program-experts__title {
-  font: 600 48px/54px "Raleway", sans-serif;
   max-width: 463px;
   padding-left: 18px;
   color: #ffffff;
@@ -819,14 +822,6 @@
   display: none;
 }
 
-.program-experts__subtitle {
-  font: 400 20px/30px "Raleway", sans-serif;
-  max-width: 220px;
-  text-align: center;
-  position: relative;
-  right: 60px;
-}
-
 .program-experts__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -865,7 +860,6 @@
 
 .teachers-feedback__title {
   color: #1b1d21;
-  font: 600 48px/54px "Raleway", sans-serif;
   margin: 75px auto 82px;
   max-width: 180px;
 }
@@ -900,7 +894,7 @@
 }
 
 .teachers-feedback__slider-navigation {
-  font: 500 22px/30px "Raleway", sans-serif;
+  font-weight: 500;
   color: #1B1D21;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -945,9 +939,9 @@
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-.teachers-feedback__slideText {
+.teachers-feedback__slide-text {
   color: #282b33;
-  font: 400 18px/28px "Raleway", sans-serif;
+  line-height: 28px;
   max-width: 756px;
   margin: 0 auto;
   display: -webkit-box;
@@ -963,7 +957,8 @@
 }
 
 .teachers-feedback__author {
-  font: 600 22px/34px "Raleway", sans-serif;
+  line-height: 34px;
+  font-weight: 600;
   color: #1B1D21;
   margin-top: 24px;
   position: absolute;
@@ -972,7 +967,8 @@
 
 .teachers-feedback__author-job {
   position: absolute;
-  font: 600 22px/34px "Raleway", sans-serif;
+  line-height: 34px;
+  font-weight: 600;
   color: #1B1D21;
   bottom: 52px;
 }
@@ -1063,25 +1059,25 @@
 
 .session-dates__title {
   color: #1b1d21;
-  font: 600 48px/54px "Raleway", sans-serif;
   text-align: center;
 }
 
 .session-dates__format {
   color: #1b1d21;
-  font: 400 28px/54px "Raleway", sans-serif;
+  font-weight: 400;
+  line-height: 54px;
   text-align: center;
   margin-bottom: 24px;
 }
 
 .session-dates__subtitle {
   color: #1b1d21;
-  font: 600 28px/60px "Raleway", sans-serif;
+  line-height: 60px;
 }
 
 .session-dates__session-time {
   color: #484848;
-  font: 400 22px/28px "Raleway", sans-serif;
+  line-height: 30px;
 }
 
 .session-dates__box {
@@ -1133,7 +1129,6 @@
 
 .to-proceed__heading {
   color: #1b1d21;
-  font: 600 48px/54px "Raleway", sans-serif;
   margin-bottom: 155px;
 }
 
@@ -1146,11 +1141,9 @@
           justify-content: space-between;
   margin-bottom: 184px;
   color: #282b33;
-  font: 400 22px/30px "Raleway", sans-serif;
 }
 
 .to-proceed__block {
-  font: 400 22px/30px "Raleway", sans-serif;
   color: #282b33;
   max-width: 443px;
   list-style-type: none;
@@ -1206,7 +1199,6 @@
 
 .faq__title {
   margin: 10px 0 83px;
-  font: 600 48px/54px "Raleway", sans-serif;
   color: #1b1d21;
 }
 
@@ -1236,7 +1228,7 @@
 }
 
 .faq__accordion_hide {
-  font: 400 18px/24px "Raleway", sans-serif;
+  line-height: 24px;
   padding: 0 35px 0 30px;
   max-width: 464px;
   height: 0;
@@ -1288,7 +1280,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font: 500 22px/28px "Raleway", sans-serif;
+  line-height: 28px;
+  font-weight: 500;
   cursor: pointer;
   padding: 31px 20px 31px 30px;
   width: 100%;
@@ -1371,7 +1364,6 @@
 
 .join-form__price-title {
   margin-bottom: 55px;
-  font: 600 48px/55px "Raleway", sans-serif;
   max-width: 487px;
 }
 
@@ -1398,7 +1390,6 @@
 }
 
 .join-form__list-item {
-  font: 400 22px/30px "Raleway", sans-serif;
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1434,7 +1425,6 @@
 }
 
 .join-form__title {
-  font: 600 48px/55px "Raleway", sans-serif;
   color: #1B1D21;
 }
 
@@ -1442,7 +1432,6 @@
   margin-bottom: 23px;
   color: #484848;
   max-width: 455px;
-  font: 400 22px/30px "Raleway", sans-serif;
 }
 
 .join-form__input {
@@ -1455,7 +1444,7 @@
   border-radius: 10px;
   border: 1px solid #484848;
   padding: 17px 23px 13px;
-  font: 400 18px/30px "Raleway", sans-serif;
+  line-height: 30px;
   color: #93989D;
 }
 
@@ -1511,7 +1500,6 @@
 .join-form__description {
   text-align: center;
   max-width: 327px;
-  font: 400 18px/26px "Raleway", sans-serif;
   margin: 0 auto 45px;
   color: #484848;
 }
@@ -1520,7 +1508,8 @@
   background-color: #E25A28;
   border-radius: 80px;
   color: #ffffff;
-  font: 600 22px/34px "Raleway", sans-serif;
+  line-height: 34px;
+  font-weight: 600;
   border: none;
   width: 100%;
   padding: 18px 0;
@@ -1617,7 +1606,7 @@
 
 .join-form__select-box label span {
   color: #93989D;
-  font: 400 18px/30px "Raleway", sans-serif;
+  line-height: 30px;
 }
 
 .join-form__select-box .join-form__options-container.active {
@@ -1704,18 +1693,17 @@
 }
 
 .map-container__title {
-  font: 600 48px/48px "Raleway", sans-serif;
   color: #1b1d21;
 }
 
 .map-container__subtitle {
   margin: 42px 0 45px;
-  font: 600 28px/30px "Raleway", sans-serif;
+  line-height: 30px;
   color: #1B1D21;
 }
 
 .map-container__description {
-  font: 400 22px/34px "Raleway", sans-serif;
+  line-height: 34px;
   color: #282B33;
   max-width: 466px;
   margin-bottom: 50px;
@@ -1751,12 +1739,12 @@
   color: #ffffff;
   text-align: center;
   background-color: #17144D;
+  line-height: 48px;
 }
 
 .footer__link {
   color: #ffffff;
   text-decoration: none;
-  font: 400 22px/48px "Raleway", sans-serif;
 }
 
 .footer__block {
@@ -1794,7 +1782,6 @@
   }
 
   .join-form__price-title {
-    font-size: 40px;
     white-space: nowrap;
   }
 
@@ -1946,7 +1933,6 @@
   }
 
   .about-authors__header {
-    font-size: 50px;
     max-width: none;
   }
 
@@ -2087,15 +2073,7 @@
   }
 
   .teachers-feedback__title {
-    font-size: 50px;
     margin-top: 80px;
-  }
-}
-
-@media screen and (max-width: 1150px) {
-  .join-form__price-title {
-    font-size: 40px;
-    line-height: 48px;
   }
 }
 
@@ -2141,11 +2119,6 @@
 
   .tutor-teachers__image {
     display: none;
-  }
-
-  .program-experts__title {
-    font-size: 40px;
-    line-height: 46px;
   }
 
   .program-experts__block {
@@ -2301,16 +2274,6 @@
 
   .join-form__price-full {
     margin-bottom: 30px;
-  }
-
-  .join-form__title {
-    font-size: 40px;
-    line-height: 48px;
-  }
-
-  .join-form__subtitle {
-    font-size: 18px;
-    line-height: 24px;
   }
 }
 
@@ -2497,20 +2460,6 @@
   }
 }
 
-@media screen and (max-width: 925px) {
-  .session-dates__title {
-    font-size: 50px;
-  }
-
-  .session-dates__list {
-    font-size: 26px;
-  }
-
-  .session-dates__items {
-    font-size: 26px;
-  }
-}
-
 @media screen and (max-width: 850px) {
   .training-block__box::before {
     display: none;
@@ -2522,7 +2471,6 @@
 
   .training-block__container-mobile {
     display: block;
-    font: 400 22px/28px "Raleway", sans-serif;
   }
 
   .training-block__block-mobile {
