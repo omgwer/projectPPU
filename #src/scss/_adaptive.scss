@@ -253,7 +253,7 @@
       position: absolute;
       flex-direction: column;
       align-items: flex-start;
-      background-color: #F7F9FD;
+      background-color: #ffffff;
       top: -370px;
       right: 0;
       max-width: 487px;
@@ -1451,6 +1451,7 @@
       position: absolute;
       width: 100%;
       box-sizing: border-box;
+      background-color: #F7F9FD;
     }
   }
 
@@ -1471,7 +1472,7 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 500px)  {
 
   .people-target {
     &__image {
@@ -1754,13 +1755,13 @@
       margin-bottom: 39px;
     }
   }
+
   .join-form__select-box .join-form__options-container {
     top: 50px;
   }
 }
 
 @media screen and (max-width: 480px) {
-
   .course-faq {
     &__content {
       width: auto;
@@ -1837,6 +1838,83 @@
 }
 
 @media screen and (max-width: 450px) {
+
+  .b-font {
+    &__title {
+
+      &_h2 {
+        font-size: 28px;
+        line-height: 32px;
+      }
+      &_h3 {
+        font-size: 22px;
+        line-height: 27px;
+      }
+
+      &_upper {
+        font-size: 22px;
+        line-height: 22px;
+      }
+    }
+
+    &__text {
+      &_main {
+        font-size: 16px;
+        line-height: 23px;
+      }
+      &_small {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+
+  .course-information {
+    &__description {
+      font-size: 14px;
+      line-height: 16px;
+      margin-bottom: 25px ;
+    }
+
+    &__title {
+      font-size: 40px;
+      line-height: 40px;
+      margin-bottom: 12px;
+    }
+
+    &__start-time {
+      font-size: 14px;
+      line-height: 21px;
+    }
+
+    &__subtitle {
+      font-size: 12px;
+      line-height: 17px;
+      max-width: 325px;
+      margin-bottom: 25px;
+    }
+
+    &__button {
+      font-size: 14px;
+      line-height: 21.5px;
+      padding: 11px 28.5px;
+    }
+
+    &__container {
+      padding-top: 30px;
+      padding-bottom: 75px  ;
+    }
+
+    &__box {
+      row-gap: 95px;
+    }
+  }
+
+  .course-faq {
+    &__container {
+      
+    }
+  }
 
   .session-dates {
     padding: 45px 10px 83px 30px;

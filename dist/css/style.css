@@ -2013,7 +2013,7 @@
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    background-color: #F7F9FD;
+    background-color: #ffffff;
     top: -370px;
     right: 0;
     max-width: 487px;
@@ -3201,6 +3201,7 @@
     width: 100%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+    background-color: #F7F9FD;
   }
 
   .people-target__list-item {
@@ -3527,6 +3528,70 @@
 }
 
 @media screen and (max-width: 450px) {
+  .b-font__title_h2 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .b-font__title_h3 {
+    font-size: 22px;
+    line-height: 27px;
+  }
+
+  .b-font__title_upper {
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  .b-font__text_main {
+    font-size: 16px;
+    line-height: 23px;
+  }
+
+  .b-font__text_small {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .course-information__description {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 25px;
+  }
+
+  .course-information__title {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 12px;
+  }
+
+  .course-information__start-time {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .course-information__subtitle {
+    font-size: 12px;
+    line-height: 17px;
+    max-width: 325px;
+    margin-bottom: 25px;
+  }
+
+  .course-information__button {
+    font-size: 14px;
+    line-height: 21.5px;
+    padding: 11px 28.5px;
+  }
+
+  .course-information__container {
+    padding-top: 30px;
+    padding-bottom: 75px;
+  }
+
+  .course-information__box {
+    row-gap: 95px;
+  }
+
   .session-dates {
     padding: 45px 10px 83px 30px;
   }
