@@ -199,6 +199,10 @@
   &__subtitle {
     color: #282b33;
     max-width: 651px;
+
+    &_break {
+      display: none;
+    }
   }
 }
 

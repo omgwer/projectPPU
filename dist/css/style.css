@@ -457,6 +457,10 @@
   max-width: 651px;
 }
 
+.course-program__subtitle_break {
+  display: none;
+}
+
 .training-block {
   padding: 0 20px 0 30px;
   margin-top: 100px;
@@ -2865,7 +2869,9 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    gap: 120px;
+    -webkit-column-gap: 200px;
+       -moz-column-gap: 200px;
+            column-gap: 200px;
     row-gap: 130px;
   }
 
@@ -2948,7 +2954,7 @@
 
 @media screen and (max-width: 640px) {
   .program-experts__block {
-    padding-right: 20px;
+    padding-left: 30px;
   }
 
   .program-experts__box {
@@ -2977,6 +2983,12 @@
 
   .teachers-feedback__container::before {
     right: 20px;
+  }
+}
+
+@media screen and (max-width: 633px) {
+  .program-experts__title {
+    padding: 0;
   }
 }
 
@@ -3226,6 +3238,10 @@
     padding-right: 20px;
   }
 
+  .people-target__list {
+    margin-bottom: 45px;
+  }
+
   .course-advantages {
     padding: 0 20px 0 30px;
   }
@@ -3323,11 +3339,15 @@
   }
 
   .training-block__subtitle {
-    margin-bottom: 25px;
+    margin-bottom: 0;
   }
 
   .training-block__subtitle_narrow {
     max-width: 357px;
+  }
+
+  .training-block__list {
+    margin-top: 25px;
   }
 
   .training-block__text {
@@ -3372,6 +3392,11 @@
   .program-experts__title {
     max-width: 340px;
     margin-bottom: 18px;
+    padding-left: 10px;
+  }
+
+  .program-experts__block {
+    padding-left: 20px;
   }
 
   .teachers-feedback__slide-text {
@@ -3455,6 +3480,16 @@
 
   .join-form__select-box .join-form__options-container {
     top: 50px;
+  }
+}
+
+@media screen and (max-width: 481px) {
+  .tutor-teachers__avatar {
+    max-width: 132px;
+  }
+
+  .about-authors__avatar {
+    max-width: 132px;
   }
 }
 
@@ -3592,6 +3627,65 @@
     row-gap: 95px;
   }
 
+  .course-faq {
+    margin: 0 25px;
+    padding-top: 32px;
+    padding-left: 58px;
+    padding-bottom: 35px;
+  }
+
+  .course-faq__tags::before {
+    width: 10px;
+    height: 10px;
+    left: -26px;
+  }
+
+  .people-target {
+    padding-right: 10px;
+    padding-left: 25px;
+  }
+
+  .people-target__title {
+    margin: 32px 0 24px;
+  }
+
+  .people-target__image {
+    -webkit-transform: scale(0.77);
+        -ms-transform: scale(0.77);
+            transform: scale(0.77);
+    margin: 0;
+    position: relative;
+    bottom: -6px;
+  }
+
+  .people-target__heading {
+    margin-bottom: 7px;
+  }
+
+  .people-target__list-item {
+    margin-bottom: 0;
+  }
+
+  .people-target__subtitle_small {
+    padding-right: 0;
+  }
+
+  .people-target__subtitle_narrow {
+    padding-right: 0;
+  }
+
+  .people-target__list {
+    margin-bottom: 55px;
+  }
+
+  .course-advantages {
+    padding-left: 25px;
+  }
+
+  .course-advantages__title {
+    margin-bottom: 30px;
+  }
+
   .session-dates {
     padding: 45px 10px 83px 30px;
   }
@@ -3635,24 +3729,6 @@
   }
 }
 
-@media screen and (max-width: 440px) {
-  .course-advantages {
-    padding: 0 15px 0 30px;
-  }
-
-  .course-advantages__image {
-    margin-right: 8px;
-  }
-
-  .course-faq {
-    padding-left: 40px;
-  }
-
-  .course-faq__tags::before {
-    left: -22px;
-  }
-}
-
 @media screen and (max-width: 420px) {
   .session-dates__box {
     padding-left: 25px;
@@ -3673,10 +3749,6 @@
 }
 
 @media screen and (max-width: 400px) {
-  .course-faq {
-    margin: 0 20px;
-  }
-
   .session-dates {
     padding-left: 22px;
   }
@@ -3700,6 +3772,161 @@
     -webkit-transform: scale(0.8);
         -ms-transform: scale(0.8);
             transform: scale(0.8);
+  }
+}
+
+@media screen and (max-width: 382px) {
+  .course-advantages {
+    padding-right: 1px;
+    padding-left: 20px;
+  }
+
+  .course-advantages__image {
+    -webkit-transform: scale(0.78);
+        -ms-transform: scale(0.78);
+            transform: scale(0.78);
+    margin: 0 4px 0 0;
+    position: relative;
+    right: 5px;
+  }
+
+  .course-advantages__subtitle_small {
+    padding-right: 12px;
+  }
+
+  .course-advantages__subtitle_narrow {
+    padding-right: 12px;
+  }
+
+  .course-advantages__subtitle_adaptive {
+    padding-right: 10px;
+  }
+
+  .course-program__container {
+    padding-left: 25px;
+  }
+
+  .course-program__subtitle_break {
+    display: block;
+  }
+
+  .training-block {
+    margin-top: 30px;
+    padding-left: 25px;
+  }
+
+  .training-block__text {
+    max-width: 290px;
+    margin-top: 27px;
+  }
+
+  .training-block__block-mobile {
+    padding: 37px 4px 34px 19px;
+  }
+
+  .training-block__block-mobile {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .training-block__title {
+    font-size: 18px;
+  }
+
+  .training-block__list-item {
+    margin: 13px 0;
+  }
+
+  .training-block__list-item:first-child {
+    margin-top: 20px;
+  }
+
+  .training-block__list-item::before {
+    -webkit-transform: scale(0.78);
+        -ms-transform: scale(0.78);
+            transform: scale(0.78);
+    top: -2px;
+  }
+
+  .training-block__subtitle:last-child {
+    max-width: 280px;
+  }
+
+  .training-block__link {
+    margin: 40px auto 75px;
+    font-size: 18px;
+    line-height: 27px;
+    padding: 14px 30px;
+    max-width: 192px;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+  }
+
+  .tutor-teachers {
+    padding-left: 25px;
+  }
+
+  .tutor-teachers__container {
+    gap: 36px;
+  }
+
+  .tutor-teachers__header {
+    margin-bottom: 30px;
+  }
+
+  .tutor-teachers__name {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .tutor-teachers__subtitle {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .tutor-teachers__list {
+    row-gap: 25px;
+  }
+
+  .tutor-teachers__list-item {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+
+  .about-authors {
+    padding-left: 25px;
+    padding-bottom: 60px;
+  }
+
+  .about-authors__container {
+    gap: 36px;
+  }
+
+  .about-authors__header {
+    margin-bottom: 30px;
+  }
+
+  .about-authors__name {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .about-authors__subtitle {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .about-authors__list {
+    row-gap: 25px;
+  }
+
+  .about-authors__list-item {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+
+  .program-experts__title {
+    padding: 0;
   }
 }
 
