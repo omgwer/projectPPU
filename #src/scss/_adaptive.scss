@@ -38,6 +38,36 @@
   }
 }
 
+@media screen and (max-width: 1266px) {
+  .join-form {
+    padding: 81px 20px 50px;
+
+    &__container {
+      max-width: 620px;
+      padding-left: 0;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: flex-end;
+      gap: 55px;
+    }
+
+    &__block {
+      border-radius: 10px;
+      left: 0;
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
+  .map-container {
+    &__contacts {
+      box-sizing: border-box;
+      width: 620px;
+      left: -1px;
+    }
+  }
+}
+
 @media screen and (max-width: 1252px) {
   .to-proceed {
     padding-left: 0;
@@ -123,13 +153,6 @@
   .course-faq {
     margin: 0 30px;
     padding: 56px 30px 61px 50px;
-  }
-
-  .join-form {
-
-    &__block {
-      padding: 25px 30px 30px 30px;
-    }
   }
 
   .tutor-teachers {
@@ -678,27 +701,6 @@
 }
 
 @media screen and (max-width: 933px) {
-  .join-form {
-    padding: 81px 20px 50px;
-
-    &__container {
-      padding-left: 20px;
-      display: flex;
-      flex-direction: column-reverse;
-      align-items: center;
-      gap: 55px;
-    }
-
-    &__price-form {
-      max-width: 100%;
-      border-radius: 10px;
-    }
-
-    &__block {
-      border-radius: 10px;
-    }
-  }
-
   .map-container {
     &__contacts {
       display: none;
@@ -967,6 +969,15 @@
     margin: 0 20px;
 
   }
+
+  .join-form {
+    padding-left: 16px;
+    padding-right: 16px;
+
+    &__container {
+      margin-right: 0;
+    }
+  }
 }
 
 @media screen and (max-width: 676px) {
@@ -1169,17 +1180,30 @@
   .faq {
 
     &__button {
-      padding-right: 62px;
+      padding-right: 65px;
       padding-left: 20px;
       font-size: 22px;
       line-height: 28px;
     }
 
     &__accordion_hide {
-      padding-right: 65px;
+      padding-right: 70px;
       padding-left: 20px;
       font-size: 18px;
       line-height: 24px;
+    }
+  }
+
+  .to-proceed {
+    &__block {
+      padding-top: 10px;
+    }
+  }
+
+  .join-form {
+    &__container {
+      margin: 0 auto;
+      max-width: 550px;
     }
   }
 }
@@ -1316,6 +1340,7 @@
     &__container {
       align-items: center;
       padding-left: 16px;
+
     }
 
     &__price-form {
@@ -1337,6 +1362,11 @@
 
     &__text {
       max-width: 291px;
+    }
+
+    &__block {
+      left: 0;
+      padding:
     }
   }
 }

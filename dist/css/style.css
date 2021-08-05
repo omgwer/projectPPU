@@ -1803,6 +1803,42 @@
   }
 }
 
+@media screen and (max-width: 1266px) {
+  .join-form {
+    padding: 81px 20px 50px;
+  }
+
+  .join-form__container {
+    max-width: 620px;
+    padding-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    gap: 55px;
+  }
+
+  .join-form__block {
+    border-radius: 10px;
+    left: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .map-container__contacts {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 620px;
+    left: -1px;
+  }
+}
+
 @media screen and (max-width: 1252px) {
   .to-proceed {
     padding-left: 0;
@@ -1888,10 +1924,6 @@
   .course-faq {
     margin: 0 30px;
     padding: 56px 30px 61px 50px;
-  }
-
-  .join-form__block {
-    padding: 25px 30px 30px 30px;
   }
 
   .tutor-teachers__container {
@@ -2445,34 +2477,6 @@
 }
 
 @media screen and (max-width: 933px) {
-  .join-form {
-    padding: 81px 20px 50px;
-  }
-
-  .join-form__container {
-    padding-left: 20px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 55px;
-  }
-
-  .join-form__price-form {
-    max-width: 100%;
-    border-radius: 10px;
-  }
-
-  .join-form__block {
-    border-radius: 10px;
-  }
-
   .map-container__contacts {
     display: none;
   }
@@ -2741,6 +2745,15 @@
     padding: 50px 20px 80px;
     margin: 0 20px;
   }
+
+  .join-form {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .join-form__container {
+    margin-right: 0;
+  }
 }
 
 @media screen and (max-width: 676px) {
@@ -2938,17 +2951,26 @@
   }
 
   .faq__button {
-    padding-right: 62px;
+    padding-right: 65px;
     padding-left: 20px;
     font-size: 22px;
     line-height: 28px;
   }
 
   .faq__accordion_hide {
-    padding-right: 65px;
+    padding-right: 70px;
     padding-left: 20px;
     font-size: 18px;
     line-height: 24px;
+  }
+
+  .to-proceed__block {
+    padding-top: 10px;
+  }
+
+  .join-form__container {
+    margin: 0 auto;
+    max-width: 550px;
   }
 }
 
@@ -3096,6 +3118,10 @@
 
   .join-form__text {
     max-width: 291px;
+  }
+
+  .join-form__block {
+    left: 0;
   }
 }
 
